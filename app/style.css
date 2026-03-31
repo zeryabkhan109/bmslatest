@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white-1100: #FDFDFD;
+  --color-orange-1100: #EF8F19;
+  --color-black-1100: #060606;
+  --color-black-1200: #202020;
+  --color-yellow-1200: #89520E;
+  --color-grey-1100: #DCDCDC;
+  --color-yellow13: #FFD8A7;
+  --color-yellow14: #FFAE4B;
+  --color-blue12: #4285F4;
+  --color-brown-1100: #C5730F;
+  --color-yellow-1300: #FFDEB5;
+  --color-black-1300: #2a2a2a;
+  --text-shadow-xl: 8px 8px 12px rgba(0, 0, 0, 0.25);
+  --shadow-3xl: 8px 8px 12px 0 rgba(0, 0, 0, 0.25);
+  --shadow-4xl: 4px 16px 24px 0 rgba(255, 255, 255, 0.09), 0 0 8px 0 rgba(255, 255, 255, 0.32);
+  --shadow-5xl: 4px 4px 8px 0 rgba(0, 0, 0, 0.25) inset, 8px 8px 12px 0 rgba(0, 0, 0, 0.25);
+  --font-sora: "Sora", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --animate-marquee: marquee 20s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 20s linear infinite;
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1366px;
+  --breakpoint-3xl: 1440px;
+  --breakpoint-4xl: 1600px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-33.333%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.text-gradient {
+  background: var(--Gradient-1, linear-gradient(270deg, #89520E 0%, #EF8F19 54%, #89520E 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* width */
+.agentur-sec ::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* track (background) */
+.agentur-sec ::-webkit-scrollbar-track {
+  background: #202020;
+  /* your var(--Site-Black_800) */
+  border-radius: 4px;
+}
+
+/* thumb (scroll handle) */
+.agentur-sec ::-webkit-scrollbar-thumb {
+  background: #555;
+  /* change as needed */
+  border-radius: 4px;
+}
+
+/* hover effect */
+.agentur-sec ::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+.text-gradient2 {
+  background: linear-gradient(176deg, rgba(253, 253, 253, 0.12) 3.15%, rgba(253, 253, 253, 0.00) 80.62%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
