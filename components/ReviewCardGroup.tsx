@@ -142,7 +142,7 @@ export function ReviewCardGroup({ className = "" }: { className?: string }) {
         },
       },
       breakpoints: {
-        0: { slidesPerView: 1.4, spaceBetween: 16 },
+        0: { slidesPerView: 1.1, spaceBetween: 16 },
         768: { slidesPerView: 2, spaceBetween: 24 },
         1200: { slidesPerView: 3, spaceBetween: 32 },
       },

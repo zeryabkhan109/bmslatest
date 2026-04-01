@@ -104,7 +104,7 @@ const page = () => {
         className="bg-[linear-gradient(180deg,#060606_0%,rgba(6,6,6,0)_18.5%,rgba(6,6,6,0)_84.79%,#060606_100%),url('/images/hero-mblbg.jpg')]
   md:bg-[linear-gradient(180deg,#060606_0%,rgba(6,6,6,0)_18.5%,rgba(6,6,6,0)_84.79%,#060606_100%),url('/images/herobg.jpg')]
   bg-no-repeat bg-cover bg-center
-  pt-75.25 md:pt-77 xl:pt-55.75 pb-29.75 xl:pb-5
+  pt-93.25 md:pt-77 xl:pt-55.75 pb-29.75 xl:pb-5
 "
       >
         <div className="max-w-208 mx-auto w-full text-center px-4">
@@ -138,7 +138,7 @@ const page = () => {
       <section className="xl:py-45 md:py-30 pt-20 pb-17.5 overflow-hidden">
         <div className="max-w-338 w-full mx-auto md:px-10 px-4 xl:px-4">
           <div className="flex items-center md:flex-row flex-col lg:gap-10 xl:gap-15">
-            <div className="md:w-[40%] w-full md:pb-0 pb-8">
+            <div className="xl:w-[40%] md:w-1/2 w-full md:pb-0 pb-8">
               <h2
                 className="xl:text-5xl md:text-[32px] text-[28px] leading-8.5 md:leading-11 font-bold xl:leading-16.75 text-white-1100 pb-3 md:normal-case
                uppercase"
@@ -150,16 +150,17 @@ const page = () => {
                 individuelle Strategien und Lösungen für langfristigen Erfolg.
               </p>
             </div>
-            <div className="md:w-[60%] relative">
+            <div className="xl:w-[60%] md:w-1/2 w-full relative">
               <PartnerLogosMarquee />
-              <span className="bg-[linear-gradient(90deg,#060606_0.08%,rgba(6,6,6,0)_99.92%)] absolute top-0 left-0 w-40 h-full"></span>
+              <span className="bg-[linear-gradient(90deg,#060606_0.08%,rgba(6,6,6,0)_99.92%)] absolute top-0 left-0 w-10 md:w-40 h-full"></span>
+              <span className="bg-[linear-gradient(90deg,#060606_0.08%,rgba(6,6,6,0)_99.92%)] sm:hidden block absolute top-0 right-0 w-10 md:w-40 h-full rotate-180"></span>
             </div>
           </div>
         </div>
       </section>
       <section className="audience-sec">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative">
-          <div className="flex items-end md:flex-row flex-col-reverse lg:items-start lg:gap-17.75 relative z-1 rounded-2xl bg-black-1100 pt-10.75 md:pt-22.75 pr-6 xl:pr-12 shadow-4xl">
+          <div className="flex items-end md:flex-row flex-col-reverse lg:items-start lg:gap-17.75 relative z-1 rounded-2xl bg-black-1100 pt-10.75 md:pt-[47px] xl:pt-22.75 pr-6 xl:pr-12 shadow-4xl">
             <div className="lg:w-2/5 md:w-1/3 w-full relative z-1">
               <div ref={sectionRef} className="relative">
                 <div className="relative">
@@ -170,7 +171,7 @@ const page = () => {
                     <img
                       src="/images/audience-img.png"
                       alt="Audience target"
-                      className="md:size-full h-71 object-cover"
+                      className="xl:size-full md:h-73 h-[284px] object-cover"
                     />
                   </motion.div>
                 </div>
@@ -221,7 +222,12 @@ const page = () => {
             <img
               src="images/dots-shape.svg"
               alt=""
-              className="absolute top-12 left-1/2 -translate-x-1/2"
+              className="absolute md:block hidden top-12 left-1/2 -translate-x-1/2"
+            />
+            <img
+              src="images/dots-shape-mbl.svg"
+              alt=""
+              className="absolute top-12 md:hidden block left-1/2 -translate-x-1/2"
             />
           </div>
           <img
@@ -352,7 +358,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="md:pt-66.25 pt-22 pb-24.5 md:pb-83.5 bg-[url(/images/missionbg.jpg)] bg-no-repeat bg-cover overflow-hidden">
+      <section className="bg-[url(/images/missionbg.jpg)] bg-no-repeat bg-cover overflow-hidden">
         <div className="max-w-330 w-full px-4 md:px-5 mx-auto">
           <Clientswiper />
         </div>
@@ -404,7 +410,12 @@ const page = () => {
               <img
                 src="images/online-marketing.jpg"
                 alt=""
-                className="rounded-xl shadow-4xl xl:h-auto sm:block hidden h-50 sm:h-full object-cover"
+                className="rounded-xl shadow-4xl xl:h-auto xl:block hidden h-50 sm:h-full object-cover"
+              />
+              <img
+                src="images/online-marketing-tablet.jpg"
+                alt=""
+                className="rounded-xl shadow-4xl xl:h-auto xl:hidden sm:block hidden h-50 sm:h-full object-cover"
               />
               <img
                 src="images/online-marketing-mbl.jpg"
@@ -419,7 +430,7 @@ const page = () => {
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative z-40">
           <div className="text-center border-b border-solid border-white-1100/40 pb-8 xl:pb-10 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
-            <h2 className="text-white font-bold md:text-[32px] text-xl leading-6 md:leading-11 xl:text-5xl xl:leading-[140%]">
+            <h2 className="text-white md:max-w-full max-w-[290px] mx-auto w-full font-bold md:text-[32px] text-xl leading-6 md:leading-11 xl:text-5xl xl:leading-[140%]">
               Full Stack Online Marketing für deinen Erfolg
             </h2>
             <p className="text-grey-1100 md:text-base text-sm leading-4.25 md:leading-[140%] font-normal mt-6 max-w-250 w-full mx-auto">
@@ -535,7 +546,7 @@ const page = () => {
         <div className="max-w-308 md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 mb-14 xl:mb-16 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
-            <h4 className="text-2xl font-semibold leading-8.25 text-white-1100 pb-6">
+            <h4 className="md:text-2xl font-semibold text-base leading-[19px] md:leading-8.25 text-white-1100 pb-6">
               <span className="text-orange-1100">
                 Möchtest du mehr darüber erfahren,
               </span>{" "}
@@ -547,8 +558,8 @@ const page = () => {
               Ads Agentur und lass uns gemeinsam deine Ziele erreichen!
             </p>
           </div>
-          <div className="flex md:max-w-249.25 md:flex-row flex-col w-full mx-auto bg-white-1100 rounded-2xl ">
-            <div className="bg-white-1100 md:rounded-tl-2xl rounded-t-2xl md:rounded-bl-2xl  xl:py-7.25 py-6 px-6 md:w-[36%] w-full">
+          <div className="flex md:max-w-[540px] max-w-full xl:max-w-249.25 xl:flex-row flex-col w-full mx-auto bg-white-1100 rounded-2xl ">
+            <div className="bg-white-1100 md:rounded-tl-2xl rounded-t-2xl md:rounded-bl-2xl  xl:py-7.25 py-6 px-6 xl:mx-0 md:mx-auto mx-0 md:w-[42%]  xl:w-[36%] w-full">
               <Link
                 href="/"
                 className="xl:mb-13.5 mb-9 md:mb-11.25 inline-flex"
@@ -589,7 +600,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="md:w-[64%] w-full">
+            <div className="md:w-[64%] w-full xl:mx-0 md:mx-auto mx-0">
               <MeetingEmbed />
             </div>
           </div>
@@ -599,7 +610,7 @@ const page = () => {
         <div className="max-w-308 mx-auto w-full md:px-10 px-4 xl:px-4 relative z-40">
           <div className="text-center border-b border-solid border-white-1100/40 pb-8 xl:pb-10 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
-            <h2 className="text-white font-bold xl:text-5xl text-xl leading-6 md:text-[32px] md:leading-11 xl:leading-[140%]">
+            <h2 className="text-white font-bold xl:text-5xl text-xl md:tracking-normal -tracking-[0.4px] leading-6 md:text-[32px] md:leading-11 xl:leading-[140%]">
               Du fragst dich, ob dein Online <br className="xl:hidden block" />{" "}
               Marketing optimal aufgestellt ist?
             </h2>
@@ -630,7 +641,7 @@ const page = () => {
             <CaseStudiesSlider />
           </div>
         </div>
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full text-center xl:pt-0 pt-8">
+        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full text-center xl:pt-3 pt-8">
           <CtaButton href="/" label="Website-Analyse anfordern" />
           <p className="text-xs leading-4 text-white-1100 font-normal pt-3">
             Finde heraus, wie Online Marketing dir mehr Kunden bringt.
@@ -652,52 +663,73 @@ const page = () => {
             </p>
           </div>
           <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8 py-8 md:py-14 xl:py-16 xl:max-w-full max-w-166 mx-auto xl:w-auto w-full">
-            <div className="bg-[url(/images/border.png)]  transition-opacity duration-500 group-hover:opacity-100 bg-no-repeat group bg-size-[100%_100%] xl:bg-cover hover:bg-none border-solid border-transparent border hover:border-transparent  min-h-auto xl:min-h-46.75 2xl:min-h-47.75">
-              <div className="bg-[url(/images/agentur-img1.png)] group-hover:bg-[url(/images/statbg.png)] h-full bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8 ">
-                <div className="transition-opacity duration-300 group-hover:opacity-0">
-                  <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
-                    +312%
-                  </h3>
-                  <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-xs md:leading-4 sm:break-normal break-all">
-                    Steigerung der organischen Sichtbarkeit mit SEO
-                  </p>
+            <div className="md:p-px p-[0.01px] rounded-2xl group border border-transparent hover:border-white-1100 bg-linear-to-b from-yellow-1300 via-orange-1100 to-yellow-1300">
+              <div className="rounded-2xl bg-black h-full overflow-hidden">
+                <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8">
+                  <div className="absolute inset-0 bg-[url(/images/agentur-img1.png)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
+
+                  {/* Hover background */}
+                  <div className="absolute inset-0 bg-[url(/images/statbg.png)] bg-no-repeat bg-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
+
+                  {/* Content */}
+                  <div className="relative z-10">
+                    <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
+                      +312%
+                    </h3>
+                    <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-3 md:leading-4 break-all">
+                      Steigerung der organischen Sichtbarkeit mit SEO
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="bg-[url(/images/border.png)]  transition-opacity duration-500 group-hover:opacity-100 group hover:bg-none border-solid border-transparent border hover:border-transparent bg-no-repeat bg-size-[100%_100%] xl:bg-cover min-h-auto xl:min-h-46.75 2xl:min-h-47.75">
-              <div className="bg-[url(/images/agentur-img1.png)] group-hover:bg-[url(/images/statbg.png)] h-full bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8 ">
-                <div className="transition-opacity duration-300 group-hover:opacity-0">
-                  <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
-                    +542%
-                  </h3>
-                  <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-xs md:leading-4 sm:break-normal break-all">
-                    Anstieg der rankenden Keywords
-                  </p>
+            <div className="md:p-px p-[0.01px] rounded-2xl group border border-transparent hover:border-white-1100 bg-linear-to-b from-yellow-1300 via-orange-1100 to-yellow-1300">
+              <div className="rounded-2xl bg-black h-full overflow-hidden">
+                <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8">
+                  <div className="absolute inset-0 bg-[url(/images/agentur-img2.png)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
+                  <div className="absolute inset-0 bg-[url(/images/statbg.png)] bg-no-repeat bg-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
+                  <div className="relative z-10">
+                    <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
+                      +542%
+                    </h3>
+                    <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-3 md:leading-4 break-all">
+                      Anstieg der rankenden Keywords
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="bg-[url(/images/border.png)] group  transition-opacity duration-500 group-hover:opacity-100 hover:bg-none border-solid border-transparent border hover:border-transparent bg-no-repeat bg-size-[100%_100%] xl:bg-cover min-h-auto xl:min-h-46.75 2xl:min-h-47.75">
-              <div className="bg-[url(/images/agentur-img1.png)] group-hover:bg-[url(/images/statbg.png)] h-full bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8 ">
-                <div className="transition-opacity duration-300 group-hover:opacity-0">
-                  <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
-                    +74%
-                  </h3>
-                  <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-xs md:leading-4 sm:break-normal break-all">
-                    Mehr Umsatz durch zielgerichtete Suchmaschinenwerbung (SEA)
-                  </p>
+            <div className="md:p-px p-[0.01px] rounded-2xl group border border-transparent hover:border-white-1100 bg-linear-to-b from-yellow-1300 via-orange-1100 to-yellow-1300">
+              <div className="rounded-2xl bg-black h-full overflow-hidden">
+                <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8">
+                  <div className="absolute inset-0 bg-[url(/images/agentur-img3.png)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
+                  <div className="absolute inset-0 bg-[url(/images/statbg.png)] bg-no-repeat bg-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
+                  <div className="relative z-10">
+                    <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
+                      +74%
+                    </h3>
+                    <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-3 md:leading-4 break-all">
+                      Mehr Umsatz durch zielgerichtete Suchmaschinenwerbung
+                      (SEA)
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="bg-[url(/images/border.png)] group hover:bg-none border-solid border-transparent border hover:border-transparent bg-no-repeat bg-size-[100%_100%] xl:bg-cover  min-h-auto xl:min-h-46.75 2xl:min-h-47.75 transition-opacity duration-500 group-hover:opacity-100">
-              <div className="bg-[url(/images/agentur-img1.png)] group-hover:bg-[url(/images/statbg.png)] h-full bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8 ">
-                <div className="transition-opacity duration-300 group-hover:opacity-0">
-                  <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
-                    +103%
-                  </h3>
-                  <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-xs md:leading-4 sm:break-normal break-all">
-                    Erhöhung der qualifizierten Leads durch eine integrierte
-                    Marketingstrategie
-                  </p>
+            <div className="md:p-px p-[0.01px] rounded-2xl group border border-transparent hover:border-white-1100 bg-linear-to-b from-yellow-1300 via-orange-1100 to-yellow-1300">
+              <div className="rounded-2xl bg-black h-full overflow-hidden">
+                <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8">
+                  <div className="absolute inset-0 bg-[url(/images/agentur-img4.png)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
+                  <div className="absolute inset-0 bg-[url(/images/statbg.png)] bg-no-repeat bg-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
+                  <div className="relative z-10">
+                    <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
+                      +103%
+                    </h3>
+                    <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-3 md:leading-4 break-all">
+                      Erhöhung der qualifizierten Leads durch eine integrierte
+                      Marketingstrategie
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -706,7 +738,11 @@ const page = () => {
             <div className="border border-solid bg-[url(/images/info-bg.png)] group bg-no-repeat bg-cover border-white-1100 rounded-2xl xl:py-4 py-5 px-4 md:p-6 xl:px-6 bg-linear-to-r from-cyan-500 to-blue-500">
               <div className="flex items-center gap-4 mb-4 xl:min-h-16.5">
                 <span>
-                  <img src="images/check.svg" alt="" />
+                  <img
+                    src="images/check.svg"
+                    alt=""
+                    className="transition-all duration-300 ease-in-out group-hover:scale-110"
+                  />
                 </span>
                 <h4 className="md:text-2xl text-base transition-transform duration-300 ease-in-out group-hover:translate-x-2 text-white-1100 font-semibold leading-4.75 md:leading-8.25 flex-1">
                   Jahrelange Online Marketing <br className="xl:block hidden" />{" "}
@@ -723,7 +759,11 @@ const page = () => {
             <div className="border border-solid bg-[url(/images/info-bg.png)] group hover:bg-none bg-no-repeat bg-cover border-white-1100 rounded-2xl md:py-4 py-5 px-4 md:px-6 bg-linear-to-r from-cyan-500 to-blue-500">
               <div className="flex items-start gap-4 mb-4 md:min-h-16.5">
                 <span className="block mt-2.25">
-                  <img src="images/check.svg" alt="" />
+                  <img
+                    src="images/check.svg"
+                    alt=""
+                    className="transition-all duration-300 ease-in-out group-hover:scale-110"
+                  />
                 </span>
                 <h4 className="md:text-2xl text-base transition-transform duration-300 ease-in-out group-hover:translate-x-2 text-white-1100 font-semibold leading-4.75 md:leading-8.25 flex-1">
                   Vertrauen und Zusammenarbeit
@@ -739,7 +779,11 @@ const page = () => {
             <div className="border border-solid bg-[url(/images/info-bg.png)] group bg-no-repeat bg-cover border-white-1100 rounded-2xl md:py-4 py-5 px-4 md:px-6 bg-linear-to-r from-cyan-500 to-blue-500">
               <div className="flex items-center gap-4 mb-4 xl:min-h-16.5">
                 <span>
-                  <img src="images/check.svg" alt="" />
+                  <img
+                    src="images/check.svg"
+                    alt=""
+                    className="transition-all duration-300 ease-in-out group-hover:scale-110"
+                  />
                 </span>
                 <h4 className="md:text-2xl text-base transition-transform duration-300 ease-in-out group-hover:translate-x-2 text-white-1100 font-semibold leading-4.75 md:leading-8.25 flex-1">
                   Messbare Erfolge dank gezieltem{" "}
@@ -756,7 +800,11 @@ const page = () => {
             <div className="border border-solid bg-[url(/images/info-bg.png)] group bg-no-repeat bg-cover border-white-1100 rounded-2xl md:py-4 py-5 px-4 md:px-6 bg-linear-to-r from-cyan-500 to-blue-500">
               <div className="flex items-center gap-4 mb-4 xl:min-h-16.5">
                 <span>
-                  <img src="images/check.svg" alt="" />
+                  <img
+                    src="images/check.svg"
+                    alt=""
+                    className="transition-all duration-300 ease-in-out group-hover:scale-110"
+                  />
                 </span>
                 <h4 className="md:text-2xl text-base transition-transform duration-300 ease-in-out group-hover:translate-x-2 text-white-1100 font-semibold leading-4.75 md:leading-8.25 flex-1">
                   Individuelles Full-Stack Marketing, die zu dir passen
@@ -785,7 +833,7 @@ const page = () => {
       <section className="bg-linear-to-r from-yellow-1200 via-orange-1100 to-yellow-1200 py-10 relative z-1">
         <div className="max-w-346.25  md:px-10 px-4 pr-0 xl:px-4 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-8 md:mr-0 mr-4 xl:pb-10">
-            <h2 className="md:text-[32px] font-medium text-white-1100 text-base leading-4.75 md:leading-9.75">
+            <h2 className="md:text-[32px] xl:max-w-full md:max-w-166 w-full mx-auto md:font-bold font-semibold xl:font-medium text-white-1100 text-base leading-4.75 md:leading-9.75">
               Lass dich von den Online Marketing Erfahrungen unserer Kunden
               überzeugen!
             </h2>
@@ -793,7 +841,7 @@ const page = () => {
           <ReviewCardGroup />
         </div>
       </section>
-      <section className="xl:py-45 md:pt-30 pt-20 relative">
+      <section className="xl:py-45 md:min-h-[950px] md:pt-30 pt-20 relative bg-[url(/images/faq-bg.png)] bg-no-repeat bg-cover">
         <div className="max-w-311.5 md:px-10 px-4 xl:px-4 mx-auto relative z-1">
           <div className="flex items-start xl:gap-33.5 gap-8 md:gap-16 xl:flex-row flex-col">
             <div className="xl:max-w-72.5 w-full">
@@ -834,16 +882,11 @@ const page = () => {
             </div>
           </div>
         </div>
-        <img
-          src="images/faq-bg.png"
-          alt=""
-          className="absolute -top-20 left-0 w-full h-full"
-        />
       </section>
       <section className="overflow-hidden py-20 md:py-30 xl:pb-45">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 relative">
-            <h2 className="xl:text-5xl text-xl text-white-1100 font-bold md:text-[32px] md:leading-11 xl:leading-16.75 leading-6">
+            <h2 className="xl:text-5xl text-xl xl:max-w-full md:max-w-[530px] w-full max-w-full mx-auto text-white-1100 font-bold md:text-[32px] md:leading-11 xl:leading-16.75 leading-6">
               Insider-Wissen für dein Online Marketing: Full-Stack-Strategien
               für deinen Erfolg
             </h2>
@@ -865,11 +908,12 @@ const page = () => {
       </section>
       <section className="relative">
         <div className="relative z-3 bg-[url(/images/securebg.png)] bg-no-repeat bg-cover">
-          <div className="max-w-308 mx-auto px-4 w-full">
+          <div className="max-w-308 mx-auto px-4 md:px-10 xl:px-4 w-full">
             <div className="xl:max-w-192.25 max-w-134 w-full relative z-2 py-9.75 md:py-11">
               <h2 className="xl:text-5xl md:text-[40px] xl:leading-14.75 text-xl leading-6 md:leading-12.25 font-semibold md:max-w-full max-w-65.25 text-white-1100 uppercase pb-5 md:pb-8 xl:pb-10">
-                Geh den direkten Weg zu mehr Kunden – sichere dir deine Online
-                Marketing Beratung jetzt!
+                Geh den direkten <br className="xl:hidden md:block hidden" />{" "}
+                Weg zu mehr Kunden – sichere dir deine Online Marketing Beratung
+                jetzt!
               </h2>
               <CtaButton href="/" label="Jetzt Kennenlerngespräch buchen" />
               <p className="text-xs leading-4 text-white-1100 pt-3">
@@ -880,12 +924,17 @@ const page = () => {
           <img
             src="images/secure-img.png"
             alt=""
-            className="absolute  md:block hidden bottom-0 xl:h-auto h-71.25 md:h-118.75  right-0 z-1"
+            className="absolute  xl:block hidden bottom-0 xl:h-auto h-71.25 md:h-118.75  right-0 z-1"
+          />
+          <img
+            src="images/secure-imgtablet.png"
+            alt=""
+            className="absolute  xl:hidden md:block hidden bottom-0 xl:h-auto h-71.25 md:h-118.75  right-0 z-1"
           />
           <img
             src="images/secure-imgmbl.png"
             alt=""
-            className="absolute md:hidden block  bottom-0 xl:h-auto h-71.25 md:h-118.75  right-0 z-1"
+            className="absolute xl:hidden md:hidden block  bottom-0 xl:h-auto h-71.25 md:h-118.75  right-0 z-1"
           />
         </div>
         <span className="-top-20 right-0 w-full md:w-196.25 h-41.25 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute  blur-[150px] opacity-60"></span>
@@ -898,7 +947,7 @@ const page = () => {
             </h2>
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
             <h3 className="md:text-[32px] text-xl leading-6 md:leading-9.75 text-white-1100 font-bold xl:font-medium xl:pb-0 pb-4 md:pb-6">
-              Einführung, Strategien & <br className="md:hidden block" />{" "}
+              Einführung, Strategien & <br className="xl:hidden block" />{" "}
               Full-Service-Pakete
             </h3>
             <p className="md:text-base text-sm text-white-1100 font-normal leading-4.25 md:leading-5.5 pb-8 xl:pb-6">
@@ -917,7 +966,7 @@ const page = () => {
               Nummer eintragen - wir rufen zurück!
             </p>
           </div>
-          <div className="md:sticky top-0 rounded-2xl bg-black-1200 py-6 md:py-8 min-h-131 px-4 md:px-6 xl:p-8 shadow-4xl md:mb-11.75 mb-4">
+          <div className="xl:sticky top-0 rounded-2xl bg-black-1200 py-6 md:py-8 min-h-131 px-4 md:px-6 xl:p-8 shadow-4xl xl:mb-11.75 mb-4">
             <h4 className="xl:text-2xl md:text-xl text-base font-semibold text-white-1100 leading-4.75 md:leading-7 xl:leading-8.25 pb-6 xl:pb-8">
               Was ist eine Full-Service Online Marketing Agentur?
             </h4>
@@ -1032,7 +1081,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="md:sticky top-0 rounded-2xl bg-[url(/images/listboxbg.png)] min-h-131 bg-cover bg-no-repeat  py-6 md:py-8 px-4 md:px-6 xl:p-8 shadow-4xl md:mb-11.75 mb-4">
+          <div className="xl:sticky top-0 rounded-2xl bg-[url(/images/listboxbg.png)] min-h-131 bg-cover bg-no-repeat  py-6 md:py-8 px-4 md:px-6 xl:p-8 shadow-4xl xl:mb-11.75 mb-4">
             <h4 className="xl:text-2xl md:text-xl text-base font-semibold text-white-1100 leading-4.75 md:leading-7 xl:leading-8.25 pb-6 xl:pb-8">
               Warum eine Online Marketing Agentur entscheidend für deinen Erfolg
               ist
@@ -1149,7 +1198,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="md:sticky top-0 rounded-2xl bg-black-1200 min-h-131 px-4 md:px-6 xl:p-8 py-6 md:py-8 shadow-4xl md:mb-11.75 mb-4">
+          <div className="xl:sticky top-0 rounded-2xl bg-black-1200 min-h-131 px-4 md:px-6 xl:p-8 py-6 md:py-8 shadow-4xl xl:mb-11.75 mb-4">
             <h4 className="xl:text-2xl md:text-xl text-base font-semibold text-white-1100 leading-4.75 md:leading-7 xl:leading-8.25 pb-6 xl:pb-8">
               Maßgeschneiderte Lösungen deiner Online Marketing Agentur für jede
               Branche
@@ -1262,7 +1311,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="md:sticky top-0 rounded-2xl bg-[url(/images/listboxbg.png)] min-h-131 bg-cover bg-no-repeat  py-6 md:py-8 px-4 md:px-6 xl:p-8 shadow-4xl md:mb-11.75 mb-4">
+          <div className="xl:sticky top-0 rounded-2xl bg-[url(/images/listboxbg.png)] min-h-131 bg-cover bg-no-repeat  py-6 md:py-8 px-4 md:px-6 xl:p-8 shadow-4xl xl:mb-11.75 mb-4">
             <h4 className="xl:text-2xl md:text-xl text-base font-semibold text-white-1100 leading-4.75 md:leading-7 xl:leading-8.25 pb-6 xl:pb-8">
               Full-Service Pakete deiner Online Marketing Agentur: Alles aus
               einer Hand
@@ -1373,7 +1422,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="md:sticky top-0 rounded-2xl bg-black-1200  min-h-131 py-6 md:py-8 px-4 md:px-6 xl:p-8 shadow-4xl">
+          <div className="xl:sticky top-0 rounded-2xl bg-black-1200  min-h-131 py-6 md:py-8 px-4 md:px-6 xl:p-8 shadow-4xl">
             <h4 className="xl:text-2xl md:text-xl text-base font-semibold text-white-1100 leading-4.75 md:leading-7 xl:leading-8.25 pb-6 xl:pb-8">
               Omnichannel-Marketing und Cross-Channel-Strategien deiner Online
               Marketing Agentur
@@ -1519,7 +1568,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="xl:pt-45 md:pt-30 pt-20 bg-[url(/images/marketingbg.jpg)] bg-no-repeat bg-cover agentur-sec">
+      <section className="xl:pt-45 md:pt-30 pt-20 xl:bg-[url(/images/marketingbg.jpg)] bg-no-repeat bg-cover agentur-sec relative">
         <div className="max-w-308 pb-42 md:pb-68.5 xl:pb-97 md:px-10 px-4 xl:px-4 mx-auto w-full relative">
           <div className="text-center relative border-b border-solid border-white/50 pb-10 mb-8 md:mb-14 xl:mb-16">
             <h2 className="text-orange-1100 md:text-[32px] xl:text-5xl font-bold md:leading-11 xl:leading-16.75 text-xl leading-6 md:pb-3">
@@ -2109,6 +2158,11 @@ const page = () => {
             className="absolute  md:-bottom-27.5 -bottom-14.5 right-2.5 md:right-10 lg:right-30 xl:h-auto h-57.25 md:h-88"
           />
         </div>
+        <img
+          src="images/marketing-tabletbg.png"
+          alt=""
+          className="xl:hidden block absolute -z-1 -bottom-[133px] md:-bottom-107.5 left-0 w-full h-[301px] md:h-full object-cover object-top"
+        />
       </section>
     </>
   );

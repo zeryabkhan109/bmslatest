@@ -61,13 +61,24 @@ export default function AdvantageCards({
               active === i ? "bg-white/10" : "bg-transparent hover:bg-white/5"
             }`}
           >
-            <p
-              className={`xl:text-2xl text-sm font-semibold leading-4.75 xl:leading-8.25 transition-colors duration-300 ${
-                active === i ? "text-orange-1100" : "text-white/50"
-              }`}
-            >
-              {benefit.title}
-            </p>
+            {/* Title + Arrow */}
+            <div className="flex items-center justify-between">
+              <p
+                className={`xl:text-2xl text-sm xl:font-semibold md:tracking-normal -tracking-[0.14px] md:font-bold font-semibold leading-4.25 md:leading-4.75 xl:leading-8.25 transition-colors duration-300 ${
+                  active === i ? "text-orange-1100" : "text-white/50"
+                }`}
+              >
+                {benefit.title}
+              </p>
+
+              <img
+                src="images/drop-arw.svg"
+                alt="arrow"
+                className={`w-5 h-5 transition-transform duration-300 ${
+                  active === i ? "rotate-180" : "rotate-0"
+                }`}
+              />
+            </div>
 
             <div
               className="grid transition-all duration-500 ease-in-out"

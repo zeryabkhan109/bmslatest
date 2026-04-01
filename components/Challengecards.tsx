@@ -22,7 +22,7 @@ function ChallengeCard({
         <img
           src={icon}
           alt=""
-          className="md:w-20 md:h-20 w-12.75 h-12.75 object-contain -scale-y-100"
+          className="md:w-20 md:h-20 w-12.75 h-12.75 object-contain"
         />
       </div>
 

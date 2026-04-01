@@ -53,18 +53,12 @@ const Header = () => {
   useEffect(() => {
     if (drawerOpen) {
       document.body.style.overflow = "hidden";
-      document.body.style.position = "fixed";
-      document.body.style.width = "100%";
     } else {
       document.body.style.overflow = "";
-      document.body.style.position = "";
-      document.body.style.width = "";
     }
 
     return () => {
       document.body.style.overflow = "";
-      document.body.style.position = "";
-      document.body.style.width = "";
     };
   }, [drawerOpen]);
 
@@ -222,7 +216,7 @@ const Header = () => {
     flex flex-col gap-6
     px-5 xl:pr-30 py-5 pt-10 min-w-full
     md:min-w-70 xl:min-w-100.75
-    overflow-y-auto
+    overflow-y-auto overscroll-contain
     transition-transform duration-300 ease-in-out
     top-37.5 h-[calc(100vh-150px)]
        lg:top-32.75 lg:h-[calc(100vh-131px)]

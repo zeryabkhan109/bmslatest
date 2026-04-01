@@ -11,7 +11,7 @@ const Footer = () => {
               <Link href="/" className="inline-block">
                 <img src="images/footer-logo.svg" alt="" />
               </Link>
-              <p className="text-xs text-white-1100 my-6 font-normal leading-4">
+              <p className="xl:text-xs md:text-base md:leading-[22px] text-sm leading-[17px] text-white-1100 my-6 font-normal xl:leading-4">
                 Sicher dir jetzt ein kostenloses Beratungsgespräch.
               </p>
               <div className="space-y-3 text-center">

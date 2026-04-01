@@ -85,8 +85,8 @@ const CASE_STUDIES: CaseStudy[] = [
 
 function CaseStudyCard({ study }: { study: CaseStudy }) {
   return (
-    <div className="flex gap-5 items-start h-full md:pr-4 md:px-0 px-4 md:flex-row flex-col">
-      <div className="relative rounded-xl overflow-hidden md:w-auto w-full h-65 md:h-80.5 xl:h-83.5 flex items-center justify-center  shadow-4xl px-5 py-5 md:py-10 xl:py-7 bg-[url(/images/case-studybg.png)] bg-no-repeat bg-cover">
+    <div className="flex gap-5 md:items-end items-start h-full md:pr-4 md:px-0 px-4 md:flex-row flex-col">
+      <div className="relative rounded-xl overflow-hidden md:w-94.75 w-full h-65 md:h-81.25  flex items-center justify-center  shadow-4xl px-5 py-5 md:py-10 xl:py-7 bg-[url(/images/case-studybg.png)] bg-no-repeat bg-cover">
         <img
           src={study.image}
           alt={study.title}
