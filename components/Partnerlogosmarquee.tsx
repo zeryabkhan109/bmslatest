@@ -29,7 +29,6 @@ function MarqueeRow({
   icons: string[];
   reverse?: boolean;
 }) {
-  // Duplicate for seamless loop
   const items = [...icons, ...icons, ...icons];
 
   return (

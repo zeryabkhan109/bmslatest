@@ -222,14 +222,14 @@ function ServiceInfoCard({ card }: { card: ServiceCard }) {
 function ServiceSlide({ service }: { service: Service }) {
   return (
     <div className="flex gap-8 w-full md:flex-row flex-col h-full md:px-5 2xl:pb-8 pb-4 md:pb-11">
-      <div className="rounded-2xl w-full md:w-[42%]">
+      <div className="rounded-2xl w-full md:px-0 px-4 md:w-[42%]">
         <img
           className="md:h-full object-cover md:w-auto w-full object-center rounded-2xl  h-41.5"
           src={service.sideImage}
           alt={service.title}
         />
       </div>
-      <div className="flex flex-col gap-6 w-full md:w-[58%]">
+      <div className="flex flex-col gap-6 md:px-0 px-4 w-full md:w-[58%]">
         <div className="flex gap-6 items-end w-full">
           <div className="flex flex-col gap-3 flex-1 text-white-1100">
             <p className="font-semibold md:text-2xl text-lg leading-5.5 md:leading-8.25 text-white-1100 ">

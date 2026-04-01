@@ -71,7 +71,7 @@ function ArticleCard({ article }: { article: Article }) {
         <img
           src={article.image}
           alt={article.title}
-          className="absolute inset-0 w-full h-full object-cover rounded-2xl group-hover:scale-[1.1] transition-all delay-400"
+          className="absolute inset-0 w-full h-full object-cover rounded-2xl transform transition-transform duration-700 ease-out group-hover:scale-110 will-change-transform"
         />
       </div>
 
@@ -82,7 +82,7 @@ function ArticleCard({ article }: { article: Article }) {
       </div>
 
       <div className="flex flex-col gap-4 w-full">
-        <p className="font-bold text-base leading-4.75 xl:leading-5.5 text-white-1100 group-hover:text-orange-1100">
+        <p className="font-bold text-base leading-4.75 xl:leading-5.5 text-white-1100 group-hover:text-orange-1100 transition-colors duration-500 ease-out">
           {article.title}
         </p>
         <p className="font-normal text-[14px] leading-4.25 text-grey-1100">

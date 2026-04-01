@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import TopHeader from "@/components/TopHeader";
 import { Sora, Inter } from "next/font/google";
 import "./style.css";
 import { cn } from "@/lib/utils";
@@ -35,6 +36,7 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col font-sora bg-black-1100">
+        <TopHeader />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

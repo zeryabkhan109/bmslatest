@@ -71,7 +71,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`absolute top-0 left-0 w-full py-4 xl:py-6 z-60 transition-colors duration-300 ${
+        className={`absolute top-18.75 sm:top-18 lg:top-12.5 xl:top-12.5 left-0 w-full py-4 xl:py-6 z-60 transition-colors duration-300 ${
           drawerOpen
             ? "border-b border-[rgba(255,255,255,0.50)] bg-black-1100"
             : ""
@@ -218,18 +218,17 @@ const Header = () => {
 
       <div
         className={`bg-[url(/images/header-mblbg.png)] bg-no-repeat bg-cover xl:bg-none xl:bg-black-1100
-          fixed right-0 z-55
-          flex flex-col gap-6
-          px-5 xl:pr-30 py-5 pt-10 min-w-full
-          md:min-w-70 xl:min-w-100.75
-          overflow-y-auto
-          transition-transform duration-300 ease-in-out
-          ${drawerOpen ? "translate-x-0" : "translate-x-full"}
-        `}
-        style={{
-          top: HEADER_HEIGHT,
-          height: `calc(100vh - ${HEADER_HEIGHT}px)`,
-        }}
+    fixed right-0 z-55
+    flex flex-col gap-6
+    px-5 xl:pr-30 py-5 pt-10 min-w-full
+    md:min-w-70 xl:min-w-100.75
+    overflow-y-auto
+    transition-transform duration-300 ease-in-out
+    top-37.5 h-[calc(100vh-150px)]
+       lg:top-32.75 lg:h-[calc(100vh-131px)]
+    xl:top-36.75 xl:h-[calc(100vh-147px)]
+    ${drawerOpen ? "translate-x-0" : "translate-x-full"}
+  `}
       >
         <div>
           <div className="md:hidden block mb-6 w-full">

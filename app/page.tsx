@@ -4,7 +4,6 @@ import ChallengeCards from "@/components/Challengecards";
 import Clientswiper from "@/components/Clientswiper";
 import AdvantageCards from "@/components/Advantagecards";
 import CaseStudiesSlider from "@/components/CaseStudiesSlider";
-import ChecklistSection from "@/components/ChecklistSection";
 import Link from "next/link";
 import PartnerLogosMarquee from "@/components/Partnerlogosmarquee";
 import { ReviewCardGroup } from "@/components/ReviewCardGroup";
@@ -101,7 +100,13 @@ const page = () => {
   };
   return (
     <>
-      <section className="bg-[url(/images/herobg.jpg)] bg-no-repeat bg-cover pt-75.25 md:pt-77 xl:pt-55.75 pb-29.75 xl:pb-5">
+      <section
+        className="bg-[linear-gradient(180deg,#060606_0%,rgba(6,6,6,0)_18.5%,rgba(6,6,6,0)_84.79%,#060606_100%),url('/images/hero-mblbg.jpg')]
+  md:bg-[linear-gradient(180deg,#060606_0%,rgba(6,6,6,0)_18.5%,rgba(6,6,6,0)_84.79%,#060606_100%),url('/images/herobg.jpg')]
+  bg-no-repeat bg-cover bg-center
+  pt-75.25 md:pt-77 xl:pt-55.75 pb-29.75 xl:pb-5
+"
+      >
         <div className="max-w-208 mx-auto w-full text-center px-4">
           <div className="md:pb-8 pb-6 xl:max-w-full max-w-116 w-full mx-auto">
             <h1 className="xl:text-[70px] text-[30px] leading-7.75 md:text-[50px]  md:leading-13 pb-2 md:pb-4 xl:leading-18 font-extrabold text-shadow-xl text-white-1100 uppercase max-w-153.5 w-full mx-auto">
@@ -112,7 +117,7 @@ const page = () => {
               Durch gezieltes <br /> Online Marketing!
             </p>
           </div>
-          <div className="mb-6 md:mb-8 w-full sm:w-113.25 mx-auto rounded-2xl backdrop-blur-[2.5px] bg-black-1100/40 py-4 h-16.5 sm:h-19 px-6">
+          <div className="mb-6 md:mb-8 shadow-4xl w-full sm:w-113.25 mx-auto rounded-2xl backdrop-blur-[2.5px] bg-black-1100/40 py-4 h-16.5 sm:h-19 px-6">
             <BenefitsList />
           </div>
           <div>
@@ -147,11 +152,7 @@ const page = () => {
             </div>
             <div className="md:w-[60%] relative">
               <PartnerLogosMarquee />
-              <img
-                src="images/marqueebg.png"
-                alt=""
-                className="xl:hidden block absolute top-0 -left-2.5 lg:left-0"
-              />
+              <span className="bg-[linear-gradient(90deg,#060606_0.08%,rgba(6,6,6,0)_99.92%)] absolute top-0 left-0 w-40 h-full"></span>
             </div>
           </div>
         </div>
@@ -403,7 +404,12 @@ const page = () => {
               <img
                 src="images/online-marketing.jpg"
                 alt=""
-                className="rounded-xl shadow-4xl xl:h-auto h-full object-cover"
+                className="rounded-xl shadow-4xl xl:h-auto sm:block hidden h-50 sm:h-full object-cover"
+              />
+              <img
+                src="images/online-marketing-mbl.jpg"
+                alt=""
+                className="rounded-xl shadow-4xl h-50 w-full sm:hidden block object-cover"
               />
             </div>
           </div>
@@ -430,27 +436,29 @@ const page = () => {
                 onClick={() => toggleCard(index)}
                 className="group/card cursor-pointer relative transition-all duration-500 ease-in-out rounded-2xl bg-black-1100 shadow-4xl overflow-hidden xl:h-auto h-100"
               >
-                <div
-                  className={`transition-all duration-500 ease-in-out flex flex-col rounded-2xl relative ${
-                    activeIndex === index
-                      ? "-translate-x-full"
-                      : "xl:group-hover/card:-translate-x-full"
-                  }`}
-                >
-                  <Image
-                    src={card.img}
-                    alt={card.title}
-                    width={800}
-                    height={600}
-                    className="w-full rounded-2xl object-cover xl:h-auto h-100"
-                  />
-                  <div className="absolute top-0 left-0 px-6 xl:px-10 py-8 xl:py-12">
-                    <h3 className="text-white-1100 font-medium text-xl xl:text-[32px] xl:leading-[124%]">
-                      {card.title}
-                    </h3>
+                <div className="relative">
+                  <div
+                    className={`transition-all duration-500 ease-in-out flex flex-col rounded-2xl relative ${
+                      activeIndex === index
+                        ? "-translate-x-full"
+                        : "xl:group-hover/card:-translate-x-full"
+                    }`}
+                  >
+                    <Image
+                      src={card.img}
+                      alt={card.title}
+                      width={800}
+                      height={600}
+                      className="w-full rounded-2xl object-cover xl:h-auto h-100"
+                    />
+                    <div className="absolute top-0 left-0 px-6 xl:px-10 py-8 xl:py-12 z-2">
+                      <h3 className="text-white-1100 font-medium text-xl xl:text-[32px] xl:leading-[124%]">
+                        {card.title}
+                      </h3>
+                    </div>
                   </div>
+                  <span className="bg-[linear-gradient(176deg,#060606_2.08%,rgba(6,6,6,0)_88.83%)] inline-block absolute top-0 left-0 w-full h-28.5 md:h-22.75 xl:h-44"></span>
                 </div>
-
                 <div
                   className={`h-full absolute top-0 transition-all duration-500 ease-in-out bg-black-1100 rounded-2xl text-center xl:p-10 py-10 md:px-5 px-8 flex flex-col items-center justify-center z-2 ${
                     activeIndex === index
@@ -540,7 +548,7 @@ const page = () => {
             </p>
           </div>
           <div className="flex md:max-w-249.25 md:flex-row flex-col w-full mx-auto bg-white-1100 rounded-2xl ">
-            <div className="bg-white-1100 md:rounded-tl-2xl rounded-t-2xl md:rounded-bl-2xl py-7.25 xl:py-5 px-6 md:w-[36%] w-full">
+            <div className="bg-white-1100 md:rounded-tl-2xl rounded-t-2xl md:rounded-bl-2xl  xl:py-7.25 py-6 px-6 md:w-[36%] w-full">
               <Link
                 href="/"
                 className="xl:mb-13.5 mb-9 md:mb-11.25 inline-flex"
@@ -551,32 +559,32 @@ const page = () => {
                   className="xl:h-auto h-3.25"
                 />
               </Link>
-              <h3 className="xl:text-xl text-[13px] leading-4 font-extrabold xl:leading-6 text-orange-1100 uppercase">
+              <h3 className="xl:text-xl font-extrabold md:text-[13px] md:leading-4 text-xl leading-6 xl:leading-6 text-orange-1100 uppercase">
                 KENNENLERNGESPRÄCH
               </h3>
               <p className="xl:text-xs text-[8px] font-light leading-2.25 xl:leading-3.5 text-black-1200 -tracking-[0.12px] py-2 xl:py-3">
                 30 Minuten - Google Meet
               </p>
-              <h4 className="text-black-1200 text-[10px] xl:text-base font-bold leading-sm xl:leading-5.5 pb-1">
+              <h4 className="text-black-1200 text-[10px] xl:text-base font-bold leading-sm xl:leading-5.5 pb-3 md:pb-1">
                 ONLINE MARKETING BERATUNG
               </h4>
               <p className="text-black-1200 xl:text-sm text-[9px] leading-3 font-semibold xl:leading-4.75">
                 DU VERDIENST ES, ONLINE SICHTBAR ZU SEIN!
               </p>
               <div className="xl:pt-8 pt-4">
-                <p className="xl:text-xs text-[8px] leading-2.25 font-normal xl:leading-3.5 -tracking-[0.12px] pb-4">
+                <p className="xl:text-xs md:text-[8px] md:leading-2.25 text-sm leading-4.5 font-normal xl:leading-3.5 -tracking-[0.12px] pb-4">
                   Im Kennenlerngespräch analysieren wir gemeinsam deine
                   Online-Präsenz und besprechen, wie du deine Reichweite,
                   Sichtbarkeit und den Erfolg steigern kannst.
                 </p>
-                <p className="xl:text-xs text-[8px] leading-2.25 font-normal xl:leading-3.5 -tracking-[0.12px] pb-4">
+                <p className="xl:text-xs md:text-[8px] md:leading-2.25 text-sm leading-4.5 font-normal xl:leading-3.5 -tracking-[0.12px] pb-4">
                   <span className="text-orange-1100">
                     Wähle einfach deinen Wunschtermin im Kalender aus
                   </span>{" "}
                   und gib deine Kontaktdaten ein. Du erhältst im Anschluss eine
                   E-Mail mit deinem persönlichen Meeting-Link.
                 </p>
-                <p className="xl:text-xs text-[8px] leading-2.25 font-normal xl:leading-3.5 -tracking-[0.12px]">
+                <p className="xl:text-xs md:text-[8px] md:leading-2.25 text-sm leading-4.5 font-normal xl:leading-3.5 -tracking-[0.12px]">
                   Wir freuen uns auf unser Treffen!
                 </p>
               </div>
@@ -644,45 +652,53 @@ const page = () => {
             </p>
           </div>
           <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8 py-8 md:py-14 xl:py-16 xl:max-w-full max-w-166 mx-auto xl:w-auto w-full">
-            <div className="bg-[url(/images/border.png)] bg-no-repeat group bg-size-[100%_100%] xl:bg-cover hover:bg-none border-solid border-transparent border hover:border-white-1100 rounded-2xl min-h-auto xl:min-h-46.75 2xl:min-h-47.75">
-              <div className="bg-[url(/images/agentur-img1.png)] group-hover:bg-[url(/images/statbg.png)] h-full bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8 sm:border-0 border border-solid border-orange-1100">
-                <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
-                  +312%
-                </h3>
-                <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-4 sm:break-normal break-all">
-                  Steigerung der organischen Sichtbarkeit mit SEO
-                </p>
+            <div className="bg-[url(/images/border.png)]  transition-opacity duration-500 group-hover:opacity-100 bg-no-repeat group bg-size-[100%_100%] xl:bg-cover hover:bg-none border-solid border-transparent border hover:border-transparent  min-h-auto xl:min-h-46.75 2xl:min-h-47.75">
+              <div className="bg-[url(/images/agentur-img1.png)] group-hover:bg-[url(/images/statbg.png)] h-full bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8 ">
+                <div className="transition-opacity duration-300 group-hover:opacity-0">
+                  <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
+                    +312%
+                  </h3>
+                  <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-xs md:leading-4 sm:break-normal break-all">
+                    Steigerung der organischen Sichtbarkeit mit SEO
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="bg-[url(/images/border.png)] group hover:bg-none border-solid border-transparent border hover:border-white-1100 bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl min-h-auto xl:min-h-46.75 2xl:min-h-47.75">
-              <div className="bg-[url(/images/agentur-img1.png)] group-hover:bg-[url(/images/statbg.png)] h-full bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8 sm:border-0 border border-solid border-orange-1100">
-                <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
-                  +542%
-                </h3>
-                <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-4 sm:break-normal break-all">
-                  Anstieg der rankenden Keywords
-                </p>
+            <div className="bg-[url(/images/border.png)]  transition-opacity duration-500 group-hover:opacity-100 group hover:bg-none border-solid border-transparent border hover:border-transparent bg-no-repeat bg-size-[100%_100%] xl:bg-cover min-h-auto xl:min-h-46.75 2xl:min-h-47.75">
+              <div className="bg-[url(/images/agentur-img1.png)] group-hover:bg-[url(/images/statbg.png)] h-full bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8 ">
+                <div className="transition-opacity duration-300 group-hover:opacity-0">
+                  <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
+                    +542%
+                  </h3>
+                  <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-xs md:leading-4 sm:break-normal break-all">
+                    Anstieg der rankenden Keywords
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="bg-[url(/images/border.png)] group hover:bg-none border-solid border-transparent border hover:border-white-1100 bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl min-h-auto xl:min-h-46.75 2xl:min-h-47.75">
-              <div className="bg-[url(/images/agentur-img1.png)] group-hover:bg-[url(/images/statbg.png)] h-full bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8 sm:border-0 border border-solid border-orange-1100">
-                <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
-                  +74%
-                </h3>
-                <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-4 sm:break-normal break-all">
-                  Mehr Umsatz durch zielgerichtete Suchmaschinenwerbung (SEA)
-                </p>
+            <div className="bg-[url(/images/border.png)] group  transition-opacity duration-500 group-hover:opacity-100 hover:bg-none border-solid border-transparent border hover:border-transparent bg-no-repeat bg-size-[100%_100%] xl:bg-cover min-h-auto xl:min-h-46.75 2xl:min-h-47.75">
+              <div className="bg-[url(/images/agentur-img1.png)] group-hover:bg-[url(/images/statbg.png)] h-full bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8 ">
+                <div className="transition-opacity duration-300 group-hover:opacity-0">
+                  <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
+                    +74%
+                  </h3>
+                  <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-xs md:leading-4 sm:break-normal break-all">
+                    Mehr Umsatz durch zielgerichtete Suchmaschinenwerbung (SEA)
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="bg-[url(/images/border.png)] group hover:bg-none border-solid border-transparent border hover:border-white-1100 bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl min-h-auto xl:min-h-46.75 2xl:min-h-47.75">
-              <div className="bg-[url(/images/agentur-img1.png)] group-hover:bg-[url(/images/statbg.png)] h-full bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8 sm:border-0 border border-solid border-orange-1100">
-                <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
-                  +103%
-                </h3>
-                <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-4 sm:break-normal break-all">
-                  Erhöhung der qualifizierten Leads durch eine integrierte
-                  Marketingstrategie
-                </p>
+            <div className="bg-[url(/images/border.png)] group hover:bg-none border-solid border-transparent border hover:border-transparent bg-no-repeat bg-size-[100%_100%] xl:bg-cover  min-h-auto xl:min-h-46.75 2xl:min-h-47.75 transition-opacity duration-500 group-hover:opacity-100">
+              <div className="bg-[url(/images/agentur-img1.png)] group-hover:bg-[url(/images/statbg.png)] h-full bg-no-repeat bg-size-[100%_100%] xl:bg-cover rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8 ">
+                <div className="transition-opacity duration-300 group-hover:opacity-0">
+                  <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
+                    +103%
+                  </h3>
+                  <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-xs md:leading-4 sm:break-normal break-all">
+                    Erhöhung der qualifizierten Leads durch eine integrierte
+                    Marketingstrategie
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -767,8 +783,8 @@ const page = () => {
         </div>
       </section>
       <section className="bg-linear-to-r from-yellow-1200 via-orange-1100 to-yellow-1200 py-10 relative z-1">
-        <div className="max-w-346.25  md:px-10 px-4 xl:px-4 mx-auto w-full">
-          <div className="text-center border-b border-solid border-white-1100/40 pb-8 xl:pb-10">
+        <div className="max-w-346.25  md:px-10 px-4 pr-0 xl:px-4 mx-auto w-full">
+          <div className="text-center border-b border-solid border-white-1100/40 pb-8 md:mr-0 mr-4 xl:pb-10">
             <h2 className="md:text-[32px] font-medium text-white-1100 text-base leading-4.75 md:leading-9.75">
               Lass dich von den Online Marketing Erfahrungen unserer Kunden
               überzeugen!
@@ -850,8 +866,8 @@ const page = () => {
       <section className="relative">
         <div className="relative z-3 bg-[url(/images/securebg.png)] bg-no-repeat bg-cover">
           <div className="max-w-308 mx-auto px-4 w-full">
-            <div className="xl:max-w-192.25 max-w-134 w-full relative z-2 py-11">
-              <h2 className="xl:text-5xl md:text-[40px] xl:leading-14.75 text-xl leading-6 md:leading-12.25 font-semibold text-white-1100 uppercase pb-5 md:pb-8 xl:pb-10">
+            <div className="xl:max-w-192.25 max-w-134 w-full relative z-2 py-9.75 md:py-11">
+              <h2 className="xl:text-5xl md:text-[40px] xl:leading-14.75 text-xl leading-6 md:leading-12.25 font-semibold md:max-w-full max-w-65.25 text-white-1100 uppercase pb-5 md:pb-8 xl:pb-10">
                 Geh den direkten Weg zu mehr Kunden – sichere dir deine Online
                 Marketing Beratung jetzt!
               </h2>
@@ -864,20 +880,26 @@ const page = () => {
           <img
             src="images/secure-img.png"
             alt=""
-            className="absolute  bottom-0 xl:h-auto h-71.25 md:h-118.75  right-0 z-1"
+            className="absolute  md:block hidden bottom-0 xl:h-auto h-71.25 md:h-118.75  right-0 z-1"
+          />
+          <img
+            src="images/secure-imgmbl.png"
+            alt=""
+            className="absolute md:hidden block  bottom-0 xl:h-auto h-71.25 md:h-118.75  right-0 z-1"
           />
         </div>
         <span className="-top-20 right-0 w-full md:w-196.25 h-41.25 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute  blur-[150px] opacity-60"></span>
       </section>
       <section className="xl:pt-45 md:pt-30 pt-20">
         <div className="max-w-300 mx-auto w-full px-4 md:px-10 xl:px-4">
-          <div className="text-center pb-14 xl:pb-16.75 relative">
-            <h2 className="text-orange-1100 xl:text-5xl font-bold md:text-[32px] text-xl md:leading-11 xl:leading-16.75 leading-6  pb-2 xl:pb-3">
+          <div className="text-center pb-8 md:pb-14 xl:pb-16.75 relative">
+            <h2 className="text-orange-1100 xl:text-5xl font-bold md:text-[32px] text-xl md:leading-11 xl:leading-16.75 leading-6  md:pb-2 xl:pb-3">
               Online Marketing Agentur:
             </h2>
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
-            <h3 className="md:text-[32px] text-xl leading-6 md:leading-9.75 text-white-1100 font-medium xl:pb-0 pb-4 md:pb-6">
-              Einführung, Strategien & Full-Service-Pakete
+            <h3 className="md:text-[32px] text-xl leading-6 md:leading-9.75 text-white-1100 font-bold xl:font-medium xl:pb-0 pb-4 md:pb-6">
+              Einführung, Strategien & <br className="md:hidden block" />{" "}
+              Full-Service-Pakete
             </h3>
             <p className="md:text-base text-sm text-white-1100 font-normal leading-4.25 md:leading-5.5 pb-8 xl:pb-6">
               Als deine Online Marketing Agentur bieten wir dir individuelle
@@ -895,15 +917,19 @@ const page = () => {
               Nummer eintragen - wir rufen zurück!
             </p>
           </div>
-          <div className="sticky top-0 rounded-2xl bg-black-1200 py-8 min-h-131 px-6 xl:p-8 shadow-4xl mb-11.75">
+          <div className="md:sticky top-0 rounded-2xl bg-black-1200 py-6 md:py-8 min-h-131 px-4 md:px-6 xl:p-8 shadow-4xl md:mb-11.75 mb-4">
             <h4 className="xl:text-2xl md:text-xl text-base font-semibold text-white-1100 leading-4.75 md:leading-7 xl:leading-8.25 pb-6 xl:pb-8">
               Was ist eine Full-Service Online Marketing Agentur?
             </h4>
             <div className="grid xl:grid-cols-2 xl:gap-8 gap-6">
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -924,10 +950,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -948,10 +978,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -971,10 +1005,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -994,16 +1032,20 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="sticky top-0 rounded-2xl bg-[url(/images/listboxbg.png)] min-h-131 bg-cover bg-no-repeat  py-8 px-6 xl:p-8 shadow-4xl mb-11.75">
+          <div className="md:sticky top-0 rounded-2xl bg-[url(/images/listboxbg.png)] min-h-131 bg-cover bg-no-repeat  py-6 md:py-8 px-4 md:px-6 xl:p-8 shadow-4xl md:mb-11.75 mb-4">
             <h4 className="xl:text-2xl md:text-xl text-base font-semibold text-white-1100 leading-4.75 md:leading-7 xl:leading-8.25 pb-6 xl:pb-8">
               Warum eine Online Marketing Agentur entscheidend für deinen Erfolg
               ist
             </h4>
             <div className="grid xl:grid-cols-2 xl:gap-8 gap-6">
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1024,10 +1066,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1047,10 +1093,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1070,10 +1120,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1095,16 +1149,20 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="sticky top-0 rounded-2xl bg-black-1200 min-h-131 p-8 shadow-4xl mb-11.75">
+          <div className="md:sticky top-0 rounded-2xl bg-black-1200 min-h-131 px-4 md:px-6 xl:p-8 py-6 md:py-8 shadow-4xl md:mb-11.75 mb-4">
             <h4 className="xl:text-2xl md:text-xl text-base font-semibold text-white-1100 leading-4.75 md:leading-7 xl:leading-8.25 pb-6 xl:pb-8">
               Maßgeschneiderte Lösungen deiner Online Marketing Agentur für jede
               Branche
             </h4>
             <div className="grid xl:grid-cols-2 xl:gap-8 gap-6 relative">
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1124,10 +1182,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1146,10 +1208,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1168,10 +1234,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1192,16 +1262,20 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="sticky top-0 rounded-2xl bg-[url(/images/listboxbg.png)] min-h-131 bg-cover bg-no-repeat  py-8 px-6 xl:p-8 shadow-4xl mb-11.75">
+          <div className="md:sticky top-0 rounded-2xl bg-[url(/images/listboxbg.png)] min-h-131 bg-cover bg-no-repeat  py-6 md:py-8 px-4 md:px-6 xl:p-8 shadow-4xl md:mb-11.75 mb-4">
             <h4 className="xl:text-2xl md:text-xl text-base font-semibold text-white-1100 leading-4.75 md:leading-7 xl:leading-8.25 pb-6 xl:pb-8">
               Full-Service Pakete deiner Online Marketing Agentur: Alles aus
               einer Hand
             </h4>
             <div className="grid xl:grid-cols-2 xl:gap-8 gap-6">
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1220,10 +1294,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1242,10 +1320,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1263,10 +1345,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1287,16 +1373,20 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="sticky top-0 rounded-2xl bg-black-1200  min-h-131 py-8 px-6 xl:p-8 shadow-4xl">
+          <div className="md:sticky top-0 rounded-2xl bg-black-1200  min-h-131 py-6 md:py-8 px-4 md:px-6 xl:p-8 shadow-4xl">
             <h4 className="xl:text-2xl md:text-xl text-base font-semibold text-white-1100 leading-4.75 md:leading-7 xl:leading-8.25 pb-6 xl:pb-8">
               Omnichannel-Marketing und Cross-Channel-Strategien deiner Online
               Marketing Agentur
             </h4>
             <div className="grid xl:grid-cols-2 xl:gap-8 gap-6">
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1316,10 +1406,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1339,10 +1433,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1360,10 +1458,14 @@ const page = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
+              <div className="flex items-start md:gap-6 gap-4">
                 <div>
                   <span>
-                    <img src="images/check.svg" alt="" />
+                    <img
+                      src="images/check.svg"
+                      className="md:w-auto md:h-auto w-5 h-6"
+                      alt=""
+                    />
                   </span>
                 </div>
                 <div className="flex-1">
@@ -1388,13 +1490,13 @@ const page = () => {
         </div>
       </section>
       <section className="xl:pt-45 md:pt-30 pt-20">
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
+        <div className="max-w-308  md:px-10  xl:px-4 mx-auto w-full">
           <div className="text-center relative border-b border-solid border-white/50 pb-8 md:pb-10 mb-8 md:mb-14 xl:mb-16">
             <h2 className="text-orange-1100 xl:text-5xl leading-6 text-xl md:text-[32px] font-bold md:leading-11 xl:leading-16.75  pb-1 md:pb-3">
               Online Marketing Agentur:
             </h2>
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
-            <h3 className="xl:text-[32px] md:text-xl text-base font-medium leading-4.75 text-white-1100 md:leading-7 xl:leading-9.75 pb-4 md:pb-6">
+            <h3 className="xl:text-[32px] md:text-xl text-base font-semibold xl:font-medium leading-4.75 text-white-1100 md:leading-7 xl:leading-9.75 pb-4 md:pb-6">
               SEO-Strategien & Conversion Optimierung für dein Wachstum
             </h3>
             <p className="md:text-base text-sm font-normal leading-4.25 md:leading-5.5 text-white-1100">
@@ -1405,13 +1507,14 @@ const page = () => {
               Conversions für dein Unternehmen zu generieren.
             </p>
           </div>
-          <div className="md:-mx-5">
+          <div className="md:-mx-5 mx-0">
             <ServicesSlider />
           </div>
-          <div className="text-center 2xl:pt-0 pt-5">
+          <div className="text-center 2xl:pt-0 pt-5 md:px-0 px-4">
             <CtaButton href="/" label="Website-Analyse anfordern" />
             <p className="text-xs text-white-1100 font-normal pt-3">
-              Finde heraus, wie Online Marketing dir mehr Kunden bringt.
+              Finde heraus, wie Online Marketing{" "}
+              <br className="block md:hidden" /> dir mehr Kunden bringt.
             </p>
           </div>
         </div>
@@ -1419,11 +1522,11 @@ const page = () => {
       <section className="xl:pt-45 md:pt-30 pt-20 bg-[url(/images/marketingbg.jpg)] bg-no-repeat bg-cover agentur-sec">
         <div className="max-w-308 pb-42 md:pb-68.5 xl:pb-97 md:px-10 px-4 xl:px-4 mx-auto w-full relative">
           <div className="text-center relative border-b border-solid border-white/50 pb-10 mb-8 md:mb-14 xl:mb-16">
-            <h2 className="text-orange-1100 md:text-[32px] xl:text-5xl font-bold md:leading-11 xl:leading-16.75 text-xl leading-6 pb-3">
+            <h2 className="text-orange-1100 md:text-[32px] xl:text-5xl font-bold md:leading-11 xl:leading-16.75 text-xl leading-6 md:pb-3">
               Online Marketing Agentur:
             </h2>
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  blur-[150px] opacity-50"></span>
-            <h3 className="md:text-[32px] font-medium text-white-1100 text-xl leading-6 md:leading-11 xl:leading-9.75 pb-6">
+            <h3 className="md:text-[32px] font-bold xl:font-medium text-white-1100 text-xl leading-6 md:leading-11 xl:leading-9.75 pb-6">
               Moderne Marketingstrategien, Analysen & Trends für deinen Erfolg
             </h3>
             <p className="md:text-base text-sm font-normal leading-4.75 md:leading-5.5 text-white-1100">
@@ -1444,7 +1547,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1467,7 +1574,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1490,7 +1601,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1513,7 +1628,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1534,7 +1653,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1557,7 +1680,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1580,7 +1707,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1603,7 +1734,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1632,7 +1767,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1654,7 +1793,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1677,7 +1820,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1699,7 +1846,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1729,7 +1880,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1752,7 +1907,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1774,7 +1933,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1796,7 +1959,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1826,7 +1993,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1850,7 +2021,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1874,7 +2049,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">
@@ -1897,7 +2076,11 @@ const page = () => {
                   <div className="flex items-start gap-4">
                     <div>
                       <span>
-                        <img src="images/check.svg" alt="" />
+                        <img
+                          src="images/check.svg"
+                          className="md:w-auto md:h-auto w-6 h-6"
+                          alt=""
+                        />
                       </span>
                     </div>
                     <div className="flex-1">

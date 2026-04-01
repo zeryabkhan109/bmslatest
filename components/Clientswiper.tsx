@@ -1,87 +1,48 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import Swiper from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { cn } from "@/lib/utils";
 
-const SLIDES = [
+const solutions = [
   "Wir verstehen ...",
   "diese Herausforderungen und wissen, wie belastend sie sein können...",
   "VIELE UNSERER KUNDEN STANDEN VOR DENSELBEN PROBLEMEN...",
   "und wir haben gezielte Lösungen dafür.",
 ];
 
-const Clientswiper = () => {
-  const swiperRef = useRef<HTMLDivElement>(null);
-  const swiperInstance = useRef<Swiper | null>(null);
-
-  useEffect(() => {
-    if (!swiperRef.current) return;
-
-    // INIT SWIPER (paused initially)
-    const swiper = new Swiper(swiperRef.current, {
-      modules: [Autoplay],
-      direction: "vertical",
-      autoHeight: true,
-      slidesPerView: "auto",
-      allowTouchMove: false,
-
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-
-      speed: 700,
-      spaceBetween: 200,
-    });
-
-    swiper.autoplay.stop(); // ❗ stop initially
-    swiperInstance.current = swiper;
-
-    // INTERSECTION OBSERVER
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-
-        if (entry.isIntersecting) {
-          swiper.autoplay.start(); // ✅ start when visible
-        } else {
-          swiper.autoplay.stop(); // optional: stop when out
-        }
-      },
-      {
-        threshold: 0.5, // 50% visible triggers
-      },
-    );
-
-    observer.observe(swiperRef.current);
-
-    return () => {
-      observer.disconnect();
-      swiper.destroy(true, true);
-    };
-  }, []);
-
+export function Clientswiper() {
   return (
-    <div
-      ref={swiperRef}
-      className="swiper clientSwiper overflow-hidden"
-      style={{ height: "auto", minHeight: "250px" }}
-    >
-      <div className="swiper-wrapper">
-        {SLIDES.map((text, i) => (
-          <div key={i} className="swiper-slide">
-            <div className="text-center">
-              <h2 className="xl:text-[80px] font-extrabold md:text-[72px] text-[32px] md:leading-18.5 xl:leading-20.75 uppercase text-white-1100 text-shadow-xl">
+    <section className="mb-20 sm:mb-30 lg:mb-45 relative z-0">
+      <Swiper
+        direction="vertical"
+        slidesPerView={1}
+        loop={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        className="z-50 relative h-143 sm:h-200"
+      >
+        {solutions.map((text, index) => (
+          <SwiperSlide key={index}>
+            <div className="flex items-center justify-center text-center h-full">
+              <h2
+                className={cn(
+                  "xl:text-[80px] font-extrabold md:text-[72px] text-[32px] md:leading-18.5 xl:leading-20.75 uppercase text-white-1100 text-shadow-xl",
+                  index === 1 &&
+                    "xl:text-[80px] font-extrabold md:text-[72px] text-[32px] md:leading-18.5 xl:leading-20.75 uppercase text-white-1100 text-shadow-xl",
+                )}
+              >
                 {text}
               </h2>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
-    </div>
+      </Swiper>
+    </section>
   );
-};
-
+}
 export default Clientswiper;
