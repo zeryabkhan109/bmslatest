@@ -49,12 +49,15 @@ export function Clientswiper() {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         direction="vertical"
         slidesPerView={1}
-        loop={true}
+        loop={false}
         speed={800}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
           pauseOnMouseEnter: false,
+        }}
+        onReachEnd={(swiper) => {
+          swiper.autoplay.stop();
         }}
         modules={[Autoplay]}
         className="z-50 relative h-143 sm:h-200"

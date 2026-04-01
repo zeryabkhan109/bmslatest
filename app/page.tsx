@@ -2161,7 +2161,7 @@ const page = () => {
         <img
           src="images/marketing-tabletbg.png"
           alt=""
-          className="xl:hidden block absolute -z-1 -bottom-[133px] md:-bottom-107.5 left-0 w-full h-[301px] md:h-full object-cover object-top"
+          className="xl:hidden block absolute -z-1 -bottom-33.25 md:-bottom-107.5 left-0 w-full h-75.25 md:h-full object-cover object-top"
         />
       </section>
     </>
