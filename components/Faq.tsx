@@ -66,16 +66,23 @@ function FaqRow({
         <span className="flex-1 font-semibold text-base leading-4.75 md:leading-8.25 md:text-2xl text-white">
           {item.question}
         </span>
-
-        <span className="size-8 flex items-center justify-center">
+        <span className="relative size-8 flex items-center justify-center">
           <img
-            src={open ? "images/minus.svg" : "images/plus.svg"}
-            alt={open ? "minus icon" : "plus icon"}
-            className="transition-all duration-300"
+            src="images/plus.svg"
+            alt="plus icon"
+            className={`absolute transition-all duration-300 ease-in-out ${
+              open ? "opacity-0 scale-75" : "opacity-100 scale-100"
+            }`}
+          />
+          <img
+            src="images/minus.svg"
+            alt="minus icon"
+            className={`absolute transition-all duration-300 ease-in-out ${
+              open ? "opacity-100 scale-100" : "opacity-0 scale-75"
+            }`}
           />
         </span>
       </button>
-
       <div
         style={{
           maxHeight: height,

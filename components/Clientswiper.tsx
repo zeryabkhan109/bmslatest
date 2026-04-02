@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import { Autoplay } from "swiper/modules";
-import "swiper/css";
 import { cn } from "@/lib/utils";
 
 const solutions = [
@@ -44,7 +43,7 @@ export function Clientswiper() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="mb-20 sm:mb-30 lg:mb-45 relative z-0">
+    <section ref={sectionRef} className="relative z-0">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         direction="vertical"
@@ -59,15 +58,16 @@ export function Clientswiper() {
         onReachEnd={(swiper) => {
           swiper.autoplay.stop();
         }}
+        allowTouchMove={false}
         modules={[Autoplay]}
         className="z-50 relative h-143 sm:h-200"
       >
         {solutions.map((text, index) => (
           <SwiperSlide key={index}>
-            <div className="flex items-center justify-center text-center h-full">
+            <div className="flex  items-center justify-center text-center h-full">
               <h2
                 className={cn(
-                  "xl:text-[80px] font-extrabold md:text-[72px] xl:tracking-normal md:-tracking-[3.00px] text-[32px] md:leading-18.5 xl:leading-20.75 uppercase text-white-1100 text-shadow-xl",
+                  "xl:text-[80px] font-extrabold md:text-[72px] xl:tracking-normal md:-tracking-[3.00px] text-[32px] md:leading-18.5 xl:leading-20.75 uppercase text-white-1100 text-shadow-xl tracking-normal",
                 )}
               >
                 {text}

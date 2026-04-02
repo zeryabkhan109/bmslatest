@@ -358,7 +358,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[url(/images/missionbg.jpg)] bg-no-repeat bg-cover overflow-hidden">
+      <section className="bg-[url(/images/missionbg.jpg)] bg-no-repeat bg-cover overflow-hidden pt-[88px] pb-[98px] md:py-[5px] xl:py-[112px]">
         <div className="max-w-330 w-full px-4 md:px-5 mx-auto">
           <Clientswiper />
         </div>
@@ -841,7 +841,7 @@ const page = () => {
           <ReviewCardGroup />
         </div>
       </section>
-      <section className="xl:py-45 md:min-h-[950px] md:pt-30 pt-20 relative bg-[url(/images/faq-bg.png)] bg-no-repeat bg-cover">
+      <section className="xl:py-45 md:min-h-237.5 md:pt-30 pt-20 relative bg-[url(/images/faq-bg.png)] bg-no-repeat bg-cover">
         <div className="max-w-311.5 md:px-10 px-4 xl:px-4 mx-auto relative z-1">
           <div className="flex items-start xl:gap-33.5 gap-8 md:gap-16 xl:flex-row flex-col">
             <div className="xl:max-w-72.5 w-full">
