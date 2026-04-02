@@ -77,7 +77,7 @@ export function Clientswiper() {
           touchStartPreventDefault={false}
           simulateTouch={false}
           modules={[Autoplay]}
-          className="z-50 relative h-75 sm:h-200"
+          className="z-50 relative h-96.5 sm:h-200"
         >
           {solutions.map((text, index) => (
             <SwiperSlide key={index}>

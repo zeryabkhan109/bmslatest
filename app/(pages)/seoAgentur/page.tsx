@@ -490,7 +490,7 @@ const page = () => {
       <section>
         <div className='bg-[url("/images/case3-bg.png")] bg-cover bg-center'>
           <div className="max-w-310 md:px-10 px-4 xl:px-5 mx-auto w-full">
-            <h3 className="xl:text-[32px] md:text-2xl md:leading-[29px] text-lg leading-[22px] md:tracking-normal -tarcking-[0.18px] text-center font-medium text-white-1100 xl:leading-[124%] max-w-187.5 w-full mx-auto">
+            <h3 className="xl:text-[32px] md:text-2xl md:leading-7.25 text-lg leading-5.5 md:tracking-normal -tarcking-[0.18px] text-center font-medium text-white-1100 xl:leading-[124%] max-w-187.5 w-full mx-auto">
               Durch Local SEO-Beratung{" "}
               <span className="text-orange-1100">+377%</span> mehr Anfragen
             </h3>
@@ -538,7 +538,7 @@ const page = () => {
               </div>
               <div className="">
                 <div className="bg-white-1100 rounded-2xl shadow-4xl xl:py-8 xl:px-10 py-6 px-4">
-                  <h4 className="text-black-1100 font-semibold md:text-xl md:leading-7 text-lg leading-[22px] md:tracking-normal -tarcking-[0.18px] xl:text-2xl xl:leading-[140%]">
+                  <h4 className="text-black-1100 font-semibold md:text-xl md:leading-7 text-lg leading-5.5 md:tracking-normal -tarcking-[0.18px] xl:text-2xl xl:leading-[140%]">
                     Ergebnisse:
                   </h4>
                   <ul className="mt-6">
@@ -673,7 +673,7 @@ const page = () => {
               </div>
             </div>
             <div className="max-w-120.25 w-full ml-auto">
-              <div className="rounded-2xl mb-4 xl:mb-21.25 bg-black-1100 shadow-4xl md:py-4 md:px-5 p-4  xl:p-7 xl:max-w-94.5 md:max-w-[267px] max-w-[228px] w-full">
+              <div className="rounded-2xl mb-4 xl:mb-21.25 bg-black-1100 shadow-4xl md:py-4 md:px-5 p-4  xl:p-7 xl:max-w-94.5 md:max-w-66.75 max-w-57 w-full">
                 <h4 className="text-orange-1100 font-semibold md:font-bold text-sm leading-4.25 md:leading-4.75 xl:text-base xl:leading-[140%]">
                   Erhöhte Sichtbarkeit für gezielte Neukunden- und
                   Mitarbeiterakquise
@@ -684,7 +684,7 @@ const page = () => {
                   Fachkräften schneller gefunden wirst.
                 </p>
               </div>
-              <div className="rounded-2xl mb-4 xl:mb-26.75 bg-black-1100 shadow-4xl md:py-4 md:px-5 p-4  xl:p-7 xl:max-w-94.5 md:max-w-[267px] max-w-[228px] w-full ml-auto">
+              <div className="rounded-2xl mb-4 xl:mb-26.75 bg-black-1100 shadow-4xl md:py-4 md:px-5 p-4  xl:p-7 xl:max-w-94.5 md:max-w-66.75 max-w-57 w-full ml-auto">
                 <h4 className="text-orange-1100 font-semibold md:font-bold text-sm leading-4.25 md:leading-4.75 xl:text-base xl:leading-[140%]">
                   Stärkeres Vertrauen durch Top-Platzierungen in den
                   Suchmaschinen
@@ -695,7 +695,7 @@ const page = () => {
                   hochwertige Kunden sowie talentierte Fachkräfte an.
                 </p>
               </div>
-              <div className="rounded-2xl bg-black-1100 shadow-4xl md:py-4 md:px-5 p-4  xl:p-7 xl:max-w-94.5 md:max-w-[267px] max-w-[228px] w-full ">
+              <div className="rounded-2xl bg-black-1100 shadow-4xl md:py-4 md:px-5 p-4  xl:p-7 xl:max-w-94.5 md:max-w-66.75 max-w-57 w-full ">
                 <h4 className="text-orange-1100 font-semibold md:font-bold text-sm leading-4.25 md:leading-4.75 xl:text-base xl:leading-[140%]">
                   {" "}
                   Langfristige Kostenersparnis
