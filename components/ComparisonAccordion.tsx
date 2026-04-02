@@ -28,7 +28,6 @@ export default function ComparisonAccordion({ sections }: Props) {
     <div className="">
       {sections.map((section, index) => (
         <div key={index} className="mb-8 last-of-type:mb-0">
-
           {/* HEADER */}
           <button
             onClick={() => toggle(index)}
@@ -37,22 +36,35 @@ export default function ComparisonAccordion({ sections }: Props) {
             <span>{section.title}</span>
 
             <span
-              className={`transition-transform duration-300 ${openIndex === index ? "rotate-90" : ""
-                }`}
+              className={`transition-transform duration-300 ${
+                openIndex === index ? "rotate-90" : ""
+              }`}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17" viewBox="0 0 10 17" fill="none">
-                <path fillRule="evenodd" clipRule="evenodd" d="M9.428 9.428L1.88533 16.9707L0 15.0853L6.6 8.48533L0 1.88533L1.88533 0L9.428 7.54267C9.67796 7.7927 9.81838 8.13178 9.81838 8.48533C9.81838 8.83888 9.67796 9.17796 9.428 9.428Z" fill="#FDFDFD" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="17"
+                viewBox="0 0 10 17"
+                fill="none"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M9.428 9.428L1.88533 16.9707L0 15.0853L6.6 8.48533L0 1.88533L1.88533 0L9.428 7.54267C9.67796 7.7927 9.81838 8.13178 9.81838 8.48533C9.81838 8.83888 9.67796 9.17796 9.428 9.428Z"
+                  fill="#FDFDFD"
+                />
               </svg>
             </span>
           </button>
 
           {/* CONTENT */}
-          <div className={`overflow-hidden transition-all duration-500 ${openIndex === index ? "max-h-250" : "max-h-0"
-              }`}
+          <div
+            className={`overflow-hidden transition-all duration-500 ${
+              openIndex === index ? "max-h-250" : "max-h-0"
+            }`}
           >
             <div className="pb-4">
               <table className="w-full border-collapse">
-
                 {/* HEAD */}
                 <thead>
                   <tr className="text-orange-1100  text-base font-bold leading-[140%]">
@@ -65,25 +77,30 @@ export default function ComparisonAccordion({ sections }: Props) {
                 {/* BODY */}
                 <tbody>
                   {section.rows.map((row, i) => (
-                    <tr key={i} className="border-t border-white-1100 text-white-1100  text-sm font-normal leading-[124%]">
-
+                    <tr
+                      key={i}
+                      className="border-t border-white-1100 text-white-1100  text-sm font-normal leading-[124%]"
+                    >
                       {/* TITLE */}
                       <td className="py-8 align-top text-base font-bold leading-[140%]">
-                        {row.title}
+                        <p className="max-w-[241px] w-full">{row.title}</p>
                       </td>
 
                       {/* SEO */}
                       <td className="py-8 align-top">
                         <div className="flex gap-2">
                           <span
-                            className={`font-bold ${row.seo.positive
+                            className={`font-bold ${
+                              row.seo.positive
                                 ? "text-orange-1100"
                                 : "text-red123"
-                              }`}
+                            }`}
                           >
                             {row.seo.positive ? "✔" : "✖"}
                           </span>
-                          <span>{row.seo.text}</span>
+                          <span className="max-w-[347px] w-full">
+                            {row.seo.text}
+                          </span>
                         </div>
                       </td>
 
@@ -91,25 +108,23 @@ export default function ComparisonAccordion({ sections }: Props) {
                       <td className="py-8 align-top">
                         <div className="flex gap-2">
                           <span
-                            className={`font-bold ${row.ads.positive
+                            className={`font-bold ${
+                              row.ads.positive
                                 ? "text-orange-1100"
                                 : "text-red123"
-                              }`}
+                            }`}
                           >
                             {row.ads.positive ? "✔" : "✖"}
                           </span>
                           <span>{row.ads.text}</span>
                         </div>
                       </td>
-
                     </tr>
                   ))}
                 </tbody>
-
               </table>
             </div>
           </div>
-
         </div>
       ))}
     </div>

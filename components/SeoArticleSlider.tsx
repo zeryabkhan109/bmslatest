@@ -7,11 +7,11 @@ import "swiper/css";
 import "swiper/css/grid";
 import { ArticleCard } from "./ArticleCard";
 
-const imgPost1 = "images/post-img1.jpg";
-const imgPost2 = "images/post-img2.jpg";
-const imgPost3 = "images/post-img3.jpg";
-const imgPost4 = "images/post-img4.jpg";
-const imgPost5 = "images/post-img1.jpg";
+const seoagenturimg1 = "images/seoagentur-img1.jpg";
+const seoagenturimg2 = "images/seoagentur-img2.jpg";
+const seoagenturimg3 = "images/seoagentur-img3.jpg";
+const seoagenturimg4 = "images/seoagentur-img4.jpg";
+const seoagenturimg5 = "images/seoagentur-img1.jpg";
 
 interface Article {
   id: number;
@@ -24,42 +24,41 @@ interface Article {
 const ARTICLES: Article[] = [
   {
     id: 1,
-    image: imgPost1,
+    image: seoagenturimg1,
     category: "Social Media",
-    title: "Warum SEO und SEA zusammen unschlagbar sind",
+    title: "Die 5 größten SEO-Mythen",
     excerpt:
-      "Erfahre, wie du durch die Kombination von SEO und SEA maximale...",
+      "Was du wirklich über Suchmaschinenoptimierung wissen solltest ...",
   },
   {
     id: 2,
-    image: imgPost2,
+    image: seoagenturimg2,
     category: "Social Media",
-    title: "Die besten Conversion-Hacks für Google Ads",
-    excerpt:
-      "Entdecke einfache Techniken, um deine Google Ads-Kampagnen effizienter...",
+    title: "Warum SEO die langfristig profitabelste Marketingstrategie ist",
+    excerpt: "Erfahre, warum SEO langfristig die beste Investition ist...",
   },
   {
     id: 3,
-    image: imgPost3,
+    image: seoagenturimg1,
     category: "Social Media",
-    title: "Wie du mit Local SEO und Google Ads Kunden vor Ort gewinnst",
-    excerpt: "Lerne, wie du lokale SEO und Google Ads nutzt, um regionale...",
+    title: "7 häufige SEO-Fehler, die dein Ranking ruinieren",
+    excerpt: "Vermeide diese SEO-Fehler und verbessere dein Ranking...",
   },
   {
     id: 4,
-    image: imgPost4,
+    image: seoagenturimg4,
     category: "Social Media",
-    title: "Wie Full-Stack-Marketing dein Wachstum steigert.",
-    excerpt:
-      "Verstehe, wie du den gesamten Online Marketing Prozess optimierst...",
+    title:
+      "Die ultimative SEO-Checkliste für 2024: So optimierst du deine Website Schritt für Schritt",
+    excerpt: "So optimierst du deine Website Schritt für Schritt...",
   },
   {
     id: 5,
-    image: imgPost5,
+    image: seoagenturimg3,
     category: "Social Media",
-    title: "Wie Full-Stack-Marketing dein Wachstum steigert.",
+    title: "Die 5 größten SEO-Mythen",
     excerpt:
-      "Verstehe, wie du den gesamten Online Marketing Prozess optimierst...",
+      "Was du wirklich über Suchmaschinenoptimierung wissen solltest ...",
   },
 ];
 

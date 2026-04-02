@@ -65,7 +65,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`absolute top-18.75 sm:top-18 lg:top-12.5 xl:top-12.5 left-0 w-full py-4 xl:py-6 z-60 transition-colors duration-300 ${
+        className={`absolute top-18.75 sm:top-18 lg:top-17.5 xl:top-12.5 left-0 w-full py-4 xl:py-6 z-60 transition-colors duration-300 ${
           drawerOpen
             ? "border-b border-[rgba(255,255,255,0.50)] bg-black-1100"
             : ""

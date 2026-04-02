@@ -28,18 +28,14 @@ export function Clientswiper() {
         const entry = entries[0];
 
         if (entry.isIntersecting) {
-          // Restore pointer events in case they were disabled
           if (wrapperRef.current) {
             wrapperRef.current.style.pointerEvents = "auto";
           }
-          // Reset to first slide so it always replays from the start
           swiper.slideTo(0, 0);
-          // Small delay to let slideTo settle before starting autoplay
           setTimeout(() => {
             swiper.autoplay.start();
           }, 50);
         } else {
-          // Stop and reset when section leaves viewport
           swiper.autoplay.stop();
           swiper.slideTo(0, 0);
           if (wrapperRef.current) {
@@ -81,7 +77,7 @@ export function Clientswiper() {
           touchStartPreventDefault={false}
           simulateTouch={false}
           modules={[Autoplay]}
-          className="z-50 relative h-143 sm:h-200"
+          className="z-50 relative h-75 sm:h-200"
         >
           {solutions.map((text, index) => (
             <SwiperSlide key={index}>

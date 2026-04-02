@@ -4,9 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Swiper from "swiper";
 import { Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 const imgStar = "images/img-star.svg";
 const imgArrowPrev = "images/arw-prev.svg";

@@ -67,7 +67,6 @@ function FaqRow({
           {item.question}
         </span>
         <span className="relative size-8 flex items-center justify-center">
-          {/* PLUS ICON */}
           <img
             src="images/plus.svg"
             alt="plus icon"
@@ -78,7 +77,6 @@ function FaqRow({
             }`}
           />
 
-          {/* MINUS ICON */}
           <img
             src="images/minus.svg"
             alt="minus icon"
@@ -99,7 +97,7 @@ function FaqRow({
           ref={contentRef}
           className="px-6 pt-3 pb-5 bg-black-1200 rounded-b-2xl"
         >
-          <p className="text-base font-normal leading-5.5 text-white/80">
+          <p className="text-base font-normal leading-5.5 text-white/80 line-clamp-3">
             {item.answer}
           </p>
         </div>
