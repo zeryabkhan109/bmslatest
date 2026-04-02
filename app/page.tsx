@@ -626,7 +626,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="overflow-hidden xl:py-45 md:py-30 py-20">
+      <section className="xl:pb-45 md:pb-30 pb-20 pt-87.5 -mt-[280px] md:-mt-45 xl:mt-[-180px] overflow-hidden">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
           <div className="text-center border-b border-solid border-white-1100/40 md:pb-10 pb-8 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
@@ -637,7 +637,7 @@ const page = () => {
           </div>
         </div>
         <div className="md:pt-17 pt-8 -mx-5 ">
-          <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
+          <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
             <CaseStudiesSlider />
           </div>
         </div>
