@@ -16,6 +16,7 @@ const solutions = [
 export function Clientswiper() {
   const swiperRef = useRef<SwiperCore | null>(null);
   const sectionRef = useRef<HTMLElement | null>(null);
+  const wrapperRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (!sectionRef.current || !swiperRef.current) return;
@@ -27,9 +28,23 @@ export function Clientswiper() {
         const entry = entries[0];
 
         if (entry.isIntersecting) {
-          swiper.autoplay.start();
+          // Restore pointer events in case they were disabled
+          if (wrapperRef.current) {
+            wrapperRef.current.style.pointerEvents = "auto";
+          }
+          // Reset to first slide so it always replays from the start
+          swiper.slideTo(0, 0);
+          // Small delay to let slideTo settle before starting autoplay
+          setTimeout(() => {
+            swiper.autoplay.start();
+          }, 50);
         } else {
+          // Stop and reset when section leaves viewport
           swiper.autoplay.stop();
+          swiper.slideTo(0, 0);
+          if (wrapperRef.current) {
+            wrapperRef.current.style.pointerEvents = "auto";
+          }
         }
       },
       { threshold: 0.5 },
@@ -44,38 +59,45 @@ export function Clientswiper() {
 
   return (
     <section ref={sectionRef} className="relative z-0">
-      <Swiper
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
-        direction="vertical"
-        slidesPerView={1}
-        loop={false}
-        speed={800}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: false,
-        }}
-        onReachEnd={(swiper) => {
-          swiper.autoplay.stop();
-        }}
-        allowTouchMove={false}
-        modules={[Autoplay]}
-        className="z-50 relative h-143 sm:h-200"
-      >
-        {solutions.map((text, index) => (
-          <SwiperSlide key={index}>
-            <div className="flex  items-center justify-center text-center h-full">
-              <h2
-                className={cn(
-                  "xl:text-[80px] font-extrabold md:text-[72px] xl:tracking-normal md:-tracking-[3.00px] text-[32px] md:leading-18.5 xl:leading-20.75 uppercase text-white-1100 text-shadow-xl tracking-normal",
-                )}
-              >
-                {text}
-              </h2>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div ref={wrapperRef} style={{ touchAction: "pan-y" }}>
+        <Swiper
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          direction="vertical"
+          slidesPerView={1}
+          loop={false}
+          speed={800}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false,
+          }}
+          onReachEnd={(swiper) => {
+            swiper.autoplay.stop();
+            if (wrapperRef.current) {
+              wrapperRef.current.style.pointerEvents = "none";
+            }
+          }}
+          allowTouchMove={false}
+          touchStartPreventDefault={false}
+          simulateTouch={false}
+          modules={[Autoplay]}
+          className="z-50 relative h-143 sm:h-200"
+        >
+          {solutions.map((text, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex items-center justify-center text-center h-full">
+                <h2
+                  className={cn(
+                    "xl:text-[80px] font-extrabold md:text-[72px] xl:tracking-normal md:-tracking-[3.00px] text-[32px] md:leading-18.5 xl:leading-20.75 uppercase text-white-1100 text-shadow-xl tracking-normal",
+                  )}
+                >
+                  {text}
+                </h2>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 }
