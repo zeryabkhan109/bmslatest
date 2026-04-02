@@ -88,7 +88,7 @@ export function Clientswiper() {
               <div className="flex items-center justify-center text-center h-full">
                 <h2
                   className={cn(
-                    "xl:text-[80px] font-extrabold md:text-[72px] xl:tracking-normal md:-tracking-[3.00px] text-[32px] md:leading-18.5 xl:leading-20.75 uppercase text-white-1100 text-shadow-xl tracking-normal",
+                    "xl:text-[80px] font-extrabold md:text-[72px] xl:tracking-normal md:-tracking-[3.00px] text-[27px] md:leading-18.5 xl:leading-20.75 uppercase text-white-1100 text-shadow-xl tracking-normal",
                   )}
                 >
                   {text}

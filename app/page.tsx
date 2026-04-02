@@ -160,7 +160,7 @@ const page = () => {
       </section>
       <section className="audience-sec">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative">
-          <div className="flex items-end md:flex-row flex-col-reverse lg:items-start lg:gap-17.75 relative z-1 rounded-2xl bg-black-1100 pt-10.75 md:pt-[47px] xl:pt-22.75 pr-6 xl:pr-12 shadow-4xl">
+          <div className="flex items-end md:flex-row flex-col-reverse lg:items-start lg:gap-17.75 relative z-1 rounded-2xl bg-black-1100 pt-10.75 md:pt-11.75 xl:pt-22.75 pr-6 xl:pr-12 shadow-4xl">
             <div className="lg:w-2/5 md:w-1/3 w-full relative z-1">
               <div ref={sectionRef} className="relative">
                 <div className="relative">
@@ -171,7 +171,7 @@ const page = () => {
                     <img
                       src="/images/audience-img.png"
                       alt="Audience target"
-                      className="xl:size-full md:h-73 h-[284px] object-cover"
+                      className="xl:size-full md:h-73 h-71 object-cover"
                     />
                   </motion.div>
                 </div>
@@ -358,7 +358,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[url(/images/missionbg.jpg)] bg-no-repeat bg-cover overflow-hidden pt-[88px] pb-[98px] md:py-[5px] xl:py-[112px]">
+      <section className="bg-[url(/images/missionbg.jpg)] bg-no-repeat bg-cover overflow-hidden pt-22 pb-24.5 md:py-1.25 xl:py-28">
         <div className="max-w-330 w-full px-4 md:px-5 mx-auto">
           <Clientswiper />
         </div>
@@ -430,7 +430,7 @@ const page = () => {
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative z-40">
           <div className="text-center border-b border-solid border-white-1100/40 pb-8 xl:pb-10 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
-            <h2 className="text-white md:max-w-full max-w-[290px] mx-auto w-full font-bold md:text-[32px] text-xl leading-6 md:leading-11 xl:text-5xl xl:leading-[140%]">
+            <h2 className="text-white md:max-w-full max-w-72.5 mx-auto w-full font-bold md:text-[32px] text-xl leading-6 md:leading-11 xl:text-5xl xl:leading-[140%]">
               Full Stack Online Marketing für deinen Erfolg
             </h2>
             <p className="text-grey-1100 md:text-base text-sm leading-4.25 md:leading-[140%] font-normal mt-6 max-w-250 w-full mx-auto">
@@ -546,7 +546,7 @@ const page = () => {
         <div className="max-w-308 md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 mb-14 xl:mb-16 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
-            <h4 className="md:text-2xl font-semibold text-base leading-[19px] md:leading-8.25 text-white-1100 pb-6">
+            <h4 className="md:text-2xl font-semibold text-base leading-4.75 md:leading-8.25 text-white-1100 pb-6">
               <span className="text-orange-1100">
                 Möchtest du mehr darüber erfahren,
               </span>{" "}
@@ -558,7 +558,7 @@ const page = () => {
               Ads Agentur und lass uns gemeinsam deine Ziele erreichen!
             </p>
           </div>
-          <div className="flex md:max-w-[540px] max-w-full xl:max-w-249.25 xl:flex-row flex-col w-full mx-auto bg-white-1100 rounded-2xl ">
+          <div className="flex md:max-w-135 max-w-full xl:max-w-249.25 xl:flex-row flex-col w-full mx-auto bg-white-1100 rounded-2xl ">
             <div className="bg-white-1100 md:rounded-tl-2xl rounded-t-2xl md:rounded-bl-2xl  xl:py-7.25 py-6 px-6 xl:mx-0 md:mx-auto mx-0 md:w-[42%]  xl:w-[36%] w-full">
               <Link
                 href="/"
@@ -886,7 +886,7 @@ const page = () => {
       <section className="overflow-hidden py-20 md:py-30 xl:pb-45">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 relative">
-            <h2 className="xl:text-5xl text-xl xl:max-w-full md:max-w-[530px] w-full max-w-full mx-auto text-white-1100 font-bold md:text-[32px] md:leading-11 xl:leading-16.75 leading-6">
+            <h2 className="xl:text-5xl text-xl xl:max-w-full md:max-w-132.5 w-full max-w-full mx-auto text-white-1100 font-bold md:text-[32px] md:leading-11 xl:leading-16.75 leading-6">
               Insider-Wissen für dein Online Marketing: Full-Stack-Strategien
               für deinen Erfolg
             </h2>
