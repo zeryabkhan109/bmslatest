@@ -77,7 +77,7 @@ const servicesData = [
 
 export const ServicesOfferedCard = () => {
   return (
-    <div className="grid grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-6 items-center">
+    <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-6 items-center">
       {servicesData.map((item) => (
         <div
           key={item.id}
@@ -101,7 +101,7 @@ export const ServicesOfferedCard = () => {
               </span>
             </h3>
 
-            <p className="text-white-1100 text-xs leading-[140%] font-normal mt-2 min-h-16.75 xl:min-h-22.5 line-clamp-4">
+            <p className="text-white-1100 text-xs leading-[140%] font-normal mt-2 md:min-h-16.75 xl:min-h-22.5 line-clamp-4">
               {item.description}
             </p>
 

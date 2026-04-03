@@ -5,9 +5,7 @@ import Swiper from "swiper";
 import { Grid } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import Link from 'next/link';
-
-
+import Link from "next/link";
 
 interface Article {
   id: number;
@@ -32,7 +30,8 @@ const ARTICLES: Article[] = [
     dic2: "Grundlegende Suchmaschinenoptimierung ",
     dic3: "Keyword-Recherche ",
     dic4: "Basis-OnPage-Optimierungen ",
-    excerpt: "Ideal für kleine Unternehmen, die ihre Online-Präsenz verbessern möchten.",
+    excerpt:
+      "Ideal für kleine Unternehmen, die ihre Online-Präsenz verbessern möchten.",
     action: "Mehr erfahren",
   },
   {
@@ -44,10 +43,11 @@ const ARTICLES: Article[] = [
     dic2: "Fortschrittliche OffPage-Strategien (z. B. Linkbuilding) ",
     dic3: "Individuelle Markenstrategie",
     dic4: "Regelmäßige Analyse und datenbasierte Anpassungen",
-    excerpt: "Perfekt für Unternehmen, die mit mehr Sichtbarkeit und einem starken Markenauftritt wachsen wollen.",
+    excerpt:
+      "Perfekt für Unternehmen, die mit mehr Sichtbarkeit und einem starken Markenauftritt wachsen wollen.",
     action: "Mehr erfahren",
   },
-   {
+  {
     id: 3,
     category: "Benchmark Media E-Commerce SEO Paket für deinen Online-Shop",
     heading: "E-Commerce SEO Paket",
@@ -56,19 +56,22 @@ const ARTICLES: Article[] = [
     dic2: "Verbesserte Kategorien-Struktur",
     dic3: "Gezielte Conversion Optimierung ",
     dic4: "Strategien zur Umsatzsteigerung",
-    excerpt: "Das ideale Paket für Online-Shops, die ihre Umsätze im digitalen Handel maximieren wollen.",
+    excerpt:
+      "Das ideale Paket für Online-Shops, die ihre Umsätze im digitalen Handel maximieren wollen.",
     action: "Mehr erfahren",
   },
   {
     id: 4,
-    category: "Individuelle SEO Lösungen von Benchmark Media:Maßgeschneidert für deine Branche",
+    category:
+      "Individuelle SEO Lösungen von Benchmark Media:Maßgeschneidert für deine Branche",
     heading: "Individuelle SEO Lösungen",
     img: "/images/check-white.svg",
     dic: "Maßgeschneiderte Keyword- und Marktanalyse ",
     dic2: "Strategieentwicklung auf Basis deiner individuellen Ziele ",
     dic3: "Flexible OffPage-Strategien  ",
     dic4: "Fortlaufende Optimierung und Beratung ",
-    excerpt: "Ideal für Unternehmen mit speziellen Anforderungen, die eine individuelle SEO-Strategie zur Maximierung ihres Potenzials benötigen.",
+    excerpt:
+      "Ideal für Unternehmen mit speziellen Anforderungen, die eine individuelle SEO-Strategie zur Maximierung ihres Potenzials benötigen.",
     action: "Mehr erfahren",
   },
   {
@@ -80,7 +83,8 @@ const ARTICLES: Article[] = [
     dic2: "Grundlegende Suchmaschinenoptimierung ",
     dic3: "Keyword-Recherche ",
     dic4: "Basis-OnPage-Optimierungen ",
-    excerpt: "Ideal für kleine Unternehmen, die ihre Online-Präsenz verbessern möchten.",
+    excerpt:
+      "Ideal für kleine Unternehmen, die ihre Online-Präsenz verbessern möchten.",
     action: "Mehr erfahren",
   },
   {
@@ -92,10 +96,11 @@ const ARTICLES: Article[] = [
     dic2: "Fortschrittliche OffPage-Strategien (z. B. Linkbuilding) ",
     dic3: "Individuelle Markenstrategie",
     dic4: "Regelmäßige Analyse und datenbasierte Anpassungen",
-    excerpt: "Perfekt für Unternehmen, die mit mehr Sichtbarkeit und einem starken Markenauftritt wachsen wollen.",
+    excerpt:
+      "Perfekt für Unternehmen, die mit mehr Sichtbarkeit und einem starken Markenauftritt wachsen wollen.",
     action: "Mehr erfahren",
   },
-   {
+  {
     id: 7,
     category: "Benchmark Media E-Commerce SEO Paket für deinen Online-Shop",
     heading: "E-Commerce SEO Paket",
@@ -104,68 +109,97 @@ const ARTICLES: Article[] = [
     dic2: "Verbesserte Kategorien-Struktur",
     dic3: "Gezielte Conversion Optimierung ",
     dic4: "Strategien zur Umsatzsteigerung",
-    excerpt: "Das ideale Paket für Online-Shops, die ihre Umsätze im digitalen Handel maximieren wollen.",
+    excerpt:
+      "Das ideale Paket für Online-Shops, die ihre Umsätze im digitalen Handel maximieren wollen.",
     action: "Mehr erfahren",
   },
   {
     id: 8,
-    category: "Individuelle SEO Lösungen von Benchmark Media:Maßgeschneidert für deine Branche",
+    category:
+      "Individuelle SEO Lösungen von Benchmark Media:Maßgeschneidert für deine Branche",
     heading: "Individuelle SEO Lösungen",
     img: "/images/check-white.svg",
     dic: "Maßgeschneiderte Keyword- und Marktanalyse ",
     dic2: "Strategieentwicklung auf Basis deiner individuellen Ziele ",
     dic3: "Flexible OffPage-Strategien  ",
     dic4: "Fortlaufende Optimierung und Beratung ",
-    excerpt: "Ideal für Unternehmen mit speziellen Anforderungen, die eine individuelle SEO-Strategie zur Maximierung ihres Potenzials benötigen.",
+    excerpt:
+      "Ideal für Unternehmen mit speziellen Anforderungen, die eine individuelle SEO-Strategie zur Maximierung ihres Potenzials benötigen.",
     action: "Mehr erfahren",
   },
 ];
 
 function ArticleCard({ article }: { article: Article }) {
   return (
-    <div className="group hover:bg-white hover:bg-none hover:border-orange-1100 bg-[url('/images/galaxy-img3.png')] bg-cover bg-bottom overflow-hidden p-8 rounded-2xl h-full border border-solid border-white-1100">
-
+    <div className="group hover:bg-white hover:bg-none hover:border-orange-1100 bg-[url('/images/galaxy-img3.png')] bg-cover bg-bottom overflow-hidden md:py-8 md:px-6 py-6 px-4 xl:p-8 rounded-2xl h-full border border-solid border-white-1100">
       <div className="text-center">
-        <p className="group-hover:text-black-1100 text-white-1100 font-normal mb-6 text-xs leading-[140%]">
+        <p className="group-hover:text-black-1100 text-white-1100 xl:font-normal text-[10px] leading-sm mb-6 xl:text-xs xl:leading-[140%]">
           {article.category}
         </p>
-        <h3 className="group-hover:text-black-1100 text-white-1100 font-bold text-[22px] leading-[140%]">
+        <h3 className="group-hover:text-black-1100 text-white-1100 font-bold xl:text-[22px] md:text-sm md:leading-4.75 text-xl leading-6 md:tarcking-normal -tracking-[0.4px] xl:leading-[140%]">
           {article.heading}
         </h3>
       </div>
 
-      <div className="flex flex-col gap-4 w-full mt-6 mb-14.5">
-        <ul className="mb-6 min-h-41.75">
+      <div className="flex flex-col xl:gap-4 md:gap-0 gap-4 w-full mt-6 mb-14.5">
+        <ul className="mb-6 md:min-h-[132px] xl:min-h-41.75">
           <li className="flex items-center gap-4 mb-2">
             <span className="flex items-center justify-center w-6 h-6">
-              <img src={article.img} alt={article.heading} className="group-hover:brightness-0"  />
+              <img
+                src={article.img}
+                alt={article.heading}
+                className="group-hover:brightness-0"
+              />
             </span>
-            <span className="group-hover:text-black-1100 text-white-1100 font-normal text-sm leading-[140%] block flex-1">{article.dic}</span>
+            <span className="group-hover:text-black-1100 text-white-1100 xl:font-normal xl:text-sm text-[10px] leading-sm font-light xl:leading-[140%] block flex-1">
+              {article.dic}
+            </span>
           </li>
           <li className="flex items-center gap-4 mb-2">
             <span className="flex items-center justify-center w-6 h-6">
-              <img src={article.img} alt={article.dic2} className="group-hover:brightness-0"  />
+              <img
+                src={article.img}
+                alt={article.dic2}
+                className="group-hover:brightness-0"
+              />
             </span>
-            <span className="group-hover:text-black-1100 text-white-1100 font-normal text-sm leading-[140%]  block flex-1">{article.dic2}</span>
+            <span className="group-hover:text-black-1100 text-white-1100 xl:font-normal xl:text-sm text-[10px] leading-sm font-light xl:leading-[140%]  block flex-1">
+              {article.dic2}
+            </span>
           </li>
           <li className="flex items-center gap-4 mb-2">
             <span className="flex items-center justify-center w-6 h-6">
-              <img src={article.img} alt={article.dic3} className="group-hover:brightness-0"  />
+              <img
+                src={article.img}
+                alt={article.dic3}
+                className="group-hover:brightness-0"
+              />
             </span>
-            <span className="group-hover:text-black-1100 text-white-1100 font-normal text-sm leading-[140%]  block flex-1">{article.dic3}</span>
+            <span className="group-hover:text-black-1100 text-white-1100 xl:font-normal xl:text-sm text-[10px] leading-sm font-light xl:leading-[140%]  block flex-1">
+              {article.dic3}
+            </span>
           </li>
           <li className="flex items-center gap-4">
             <span className="flex items-center justify-center w-6 h-6">
-              <img src={article.img} alt={article.dic4} className="group-hover:brightness-0" />
+              <img
+                src={article.img}
+                alt={article.dic4}
+                className="group-hover:brightness-0"
+              />
             </span>
-            <span className="group-hover:text-black-1100 text-white-1100 font-normal text-sm leading-[140%]  block flex-1">{article.dic4}</span>
+            <span className="group-hover:text-black-1100 text-white-1100 xl:font-normal xl:text-sm text-[10px] leading-sm font-light xl:leading-[140%]  block flex-1">
+              {article.dic4}
+            </span>
           </li>
         </ul>
-        <p className="font-normal text-xs leading-[140%] group-hover:text-black-1100 text-white-1100 min-h-[68px]:">
+        <p className="xl:font-normal font-light text-[10px] leading-sm xl:text-xs xl:leading-[140%] group-hover:text-black-1100 text-white-1100 min-h-auto xl:min-h-17">
           {article.excerpt}
         </p>
       </div>
-      <Link href={'#'} className="flex items-center justify-center group-hover:bg-orange-1100 text-white-1100 text-base leading-[150%] font-normal border border-solid border-orange-1100 rounded h-12 w-full">
+      <Link
+        href={"#"}
+        className="flex items-center justify-center group-hover:bg-orange-1100 text-white-1100 text-base leading-[150%] font-normal border border-solid border-orange-1100 rounded h-12 w-full"
+      >
         {article.action}
       </Link>
     </div>
@@ -185,24 +219,33 @@ export default function Pricingslider({
     if (!swiperRef.current) return;
 
     const swiper = new Swiper(swiperRef.current, {
-      direction: "horizontal", 
+      modules: [Grid],
+
+      direction: "horizontal",
       on: {
         slideChange(s) {
           setActiveIndex(s.realIndex);
         },
       },
       breakpoints: {
-        0: {
+        320: {
           slidesPerView: 1,
-          spaceBetween: 32,
+          spaceBetween: 24,
         },
         768: {
           slidesPerView: 2,
           spaceBetween: 24,
+          grid: {
+            rows: 2,
+            fill: "row",
+          },
         },
         1200: {
           slidesPerView: 3.0,
           spaceBetween: 32,
+          grid: {
+            rows: 1,
+          },
         },
       },
     });
@@ -223,7 +266,7 @@ export default function Pricingslider({
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-7.5 mt-8 md:hidden">
+      <div className="flex items-center justify-center gap-2 md:gap-7.5 mt-8 md:hidden">
         {ARTICLES.map((_, i) => (
           <button
             key={i}
@@ -232,9 +275,9 @@ export default function Pricingslider({
             style={
               activeIndex === i
                 ? {
-                  backgroundImage:
-                    "linear-gradient(-90deg, #89520e 0%, #ef8f19 54%, #89520e 100%)",
-                }
+                    backgroundImage:
+                      "linear-gradient(-90deg, #89520e 0%, #ef8f19 54%, #89520e 100%)",
+                  }
                 : { backgroundColor: "#dcdcdc" }
             }
           />

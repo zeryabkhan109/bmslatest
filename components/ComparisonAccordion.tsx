@@ -27,11 +27,10 @@ export default function ComparisonAccordion({ sections }: Props) {
   return (
     <div className="">
       {sections.map((section, index) => (
-        <div key={index} className="mb-8 last-of-type:mb-0">
-          {/* HEADER */}
+        <div key={index} className="xl:mb-8 mb-4 last-of-type:mb-0">
           <button
             onClick={() => toggle(index)}
-            className="bg-black-1200 cursor-pointer border-[0.2px] border-solid border-white w-full text-white-1100 flex items-center justify-between rounded-2xl p-6 text-left text-2xl font-semibold leading-[140%]"
+            className="bg-black-1200 cursor-pointer border-[0.2px] border-solid border-white w-full text-white-1100 flex items-center justify-between rounded-2xl p-6 text-left xl:text-2xl font-semibold md:font-bold xl:font-semibold text-sm leading-[19px] xl:leading-[140%] md:tarcking-normal -tracking-[0.14px"
           >
             <span>{section.title}</span>
 
@@ -63,66 +62,68 @@ export default function ComparisonAccordion({ sections }: Props) {
               openIndex === index ? "max-h-250" : "max-h-0"
             }`}
           >
-            <div className="pb-4">
-              <table className="w-full border-collapse">
-                {/* HEAD */}
-                <thead>
-                  <tr className="text-orange-1100  text-base font-bold leading-[140%]">
-                    <th className="text-left py-8">Kriterium</th>
-                    <th className="text-left py-8">SEO</th>
-                    <th className="text-left py-8">Google Ads</th>
-                  </tr>
-                </thead>
-
-                {/* BODY */}
-                <tbody>
-                  {section.rows.map((row, i) => (
-                    <tr
-                      key={i}
-                      className="border-t border-white-1100 text-white-1100  text-sm font-normal leading-[124%]"
-                    >
-                      {/* TITLE */}
-                      <td className="py-8 align-top text-base font-bold leading-[140%]">
-                        <p className="max-w-[241px] w-full">{row.title}</p>
-                      </td>
-
-                      {/* SEO */}
-                      <td className="py-8 align-top">
-                        <div className="flex gap-2">
-                          <span
-                            className={`font-bold ${
-                              row.seo.positive
-                                ? "text-orange-1100"
-                                : "text-red123"
-                            }`}
-                          >
-                            {row.seo.positive ? "✔" : "✖"}
-                          </span>
-                          <span className="max-w-[347px] w-full">
-                            {row.seo.text}
-                          </span>
-                        </div>
-                      </td>
-
-                      {/* ADS */}
-                      <td className="py-8 align-top">
-                        <div className="flex gap-2">
-                          <span
-                            className={`font-bold ${
-                              row.ads.positive
-                                ? "text-orange-1100"
-                                : "text-red123"
-                            }`}
-                          >
-                            {row.ads.positive ? "✔" : "✖"}
-                          </span>
-                          <span>{row.ads.text}</span>
-                        </div>
-                      </td>
+            <div className="pb-4 overflow-x-auto">
+              <div className="sm:w-full w-[1000px]">
+                <table className="w-full  border-collapse">
+                  {/* HEAD */}
+                  <thead>
+                    <tr className="text-orange-1100  text-base font-bold leading-[140%]">
+                      <th className="text-left py-8">Kriterium</th>
+                      <th className="text-left py-8">SEO</th>
+                      <th className="text-left py-8">Google Ads</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+
+                  {/* BODY */}
+                  <tbody>
+                    {section.rows.map((row, i) => (
+                      <tr
+                        key={i}
+                        className="border-t border-white-1100 text-white-1100  text-sm font-normal leading-[124%]"
+                      >
+                        {/* TITLE */}
+                        <td className="py-8 align-top text-sm xl:text-base font-bold leading-[19px] xl:leading-[140%]">
+                          <p className="max-w-[241px] w-full">{row.title}</p>
+                        </td>
+
+                        {/* SEO */}
+                        <td className="py-8 align-top">
+                          <div className="flex gap-2">
+                            <span
+                              className={`font-bold ${
+                                row.seo.positive
+                                  ? "text-orange-1100"
+                                  : "text-red123"
+                              }`}
+                            >
+                              {row.seo.positive ? "✔" : "✖"}
+                            </span>
+                            <span className="max-w-[347px] w-full">
+                              {row.seo.text}
+                            </span>
+                          </div>
+                        </td>
+
+                        {/* ADS */}
+                        <td className="py-8 align-top">
+                          <div className="flex gap-2">
+                            <span
+                              className={`font-bold ${
+                                row.ads.positive
+                                  ? "text-orange-1100"
+                                  : "text-red123"
+                              }`}
+                            >
+                              {row.ads.positive ? "✔" : "✖"}
+                            </span>
+                            <span>{row.ads.text}</span>
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>

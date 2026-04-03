@@ -28,19 +28,9 @@ export function Clientswiper() {
         const entry = entries[0];
 
         if (entry.isIntersecting) {
-          if (wrapperRef.current) {
-            wrapperRef.current.style.pointerEvents = "auto";
-          }
-          swiper.slideTo(0, 0);
-          setTimeout(() => {
-            swiper.autoplay.start();
-          }, 50);
+          swiper.autoplay.start(); // continue from same slide
         } else {
-          swiper.autoplay.stop();
-          swiper.slideTo(0, 0);
-          if (wrapperRef.current) {
-            wrapperRef.current.style.pointerEvents = "auto";
-          }
+          swiper.autoplay.stop(); // pause only
         }
       },
       { threshold: 0.5 },
@@ -48,9 +38,7 @@ export function Clientswiper() {
 
     observer.observe(sectionRef.current);
 
-    return () => {
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -60,7 +48,7 @@ export function Clientswiper() {
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           direction="vertical"
           slidesPerView={1}
-          loop={false}
+          loop={true}
           speed={800}
           autoplay={{
             delay: 3000,

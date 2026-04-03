@@ -1,4 +1,5 @@
 "use client";
+import { Button, Dialog, DialogPanel, DialogTitle } from "@headlessui/react";
 import CtaButton from "@/components/Ctabutton";
 import ChallengeCards from "@/components/Challengecards";
 import Clientswiper from "@/components/Clientswiper";
@@ -98,6 +99,117 @@ const page = () => {
   const toggleCard = (index: number) => {
     setActiveIndex((prev) => (prev === index ? null : index));
   };
+  {
+    /*******/
+  }
+
+  const [form, setForm] = useState({
+    service: "Ein individuelles Angebot",
+    name: "",
+    company: "",
+    phone: "",
+    email: "",
+    website: "",
+    questions: "",
+  });
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  {
+    /********/
+  }
+
+  let [isOpen, setIsOpen] = useState(false);
+
+  function open() {
+    setIsOpen(true);
+  }
+  function close() {
+    setIsOpen(false);
+  }
+  let [isOpen2, setIsOpen2] = useState(false);
+
+  function open2() {
+    setIsOpen(false);
+    setIsOpen2(true);
+  }
+  function close2() {
+    setIsOpen2(false);
+  }
+  {
+    /********/
+  }
+
+  let [isOpen3, setIsOpen3] = useState(false);
+
+  function open3() {
+    setIsOpen3(true);
+  }
+  function close3() {
+    setIsOpen3(false);
+  }
+  let [isOpen4, setIsOpen4] = useState(false);
+
+  function open4() {
+    setIsOpen3(false);
+    setIsOpen4(true);
+  }
+  function close4() {
+    setIsOpen4(false);
+  }
+
+  {
+    /********/
+  }
+  const [urlInput, setUrlInput] = useState("");
+  const [emailInput, setEmailInput] = useState("");
+
+  let [isOpen5, setIsOpen5] = useState(false);
+
+  function open5() {
+    setIsOpen5(true);
+  }
+  function close5() {
+    setIsOpen5(false);
+  }
+
+  {
+    /********/
+  }
+
+  let [isOpen6, setIsOpen6] = useState(false);
+
+  function open6() {
+    setIsOpen6(true);
+  }
+  function close6() {
+    setIsOpen6(false);
+  }
+  let [isOpen7, setIsOpen7] = useState(false);
+
+  function open7() {
+    setIsOpen6(false);
+    setIsOpen7(true);
+  }
+  function close7() {
+    setIsOpen7(false);
+  }
+
+  {
+    /********/
+  }
+  let [isOpen8, setIsOpen8] = useState(false);
+
+  function open8() {
+    setIsOpen8(true);
+  }
+  function close8() {
+    setIsOpen8(false);
+  }
+
   return (
     <>
       <section
@@ -121,11 +233,13 @@ const page = () => {
             <BenefitsList />
           </div>
           <div>
-            <CtaButton
-              className="mb-5"
-              href="/"
-              label="Jetzt Kennenlerngespräch buchen!"
-            />
+            <div onClick={open6}>
+              <CtaButton
+                className="mb-5"
+                href="/"
+                label="Jetzt Kennenlerngespräch buchen!"
+              />
+            </div>
             <p className="text-sm font-normal text-white-1100 leading-4.25">
               Kostenlos & unverbindlich – nur für kurze Zeit verfügbar.
             </p>
@@ -136,21 +250,21 @@ const page = () => {
         </div>
       </section>
       <section className="xl:py-45 md:py-30 pt-20 pb-17.5 overflow-hidden">
-        <div className="max-w-338 w-full mx-auto md:px-10 px-4 xl:px-4">
+        <div className="">
           <div className="flex items-center md:flex-row flex-col lg:gap-10 xl:gap-15">
-            <div className="xl:w-[40%] md:w-1/2 w-full md:pb-0 pb-8">
+            <div className="md:w-1/2 w-full pl-4 md:pl-10 xl:pl-4 2xl:pl-[calc(50vw-609px)] md:pb-0 pb-8">
               <h2
                 className="xl:text-5xl md:text-[32px] text-[28px] leading-8.5 md:leading-11 font-bold xl:leading-16.75 text-white-1100 pb-3 md:normal-case
                uppercase"
               >
                 Gemeinsam <br /> mehr erreichen.
               </h2>
-              <p className="xl:text-base text-sm font-normal leading-4.25 xl:leading-5.5 text-white-1100">
+              <p className="xl:text-base max-w-[494px] w-full text-sm font-normal leading-4.25 xl:leading-5.5 text-white-1100">
                 Partnerschaft auf Augenhöhe: Zusammen entwickeln wir
                 individuelle Strategien und Lösungen für langfristigen Erfolg.
               </p>
             </div>
-            <div className="xl:w-[60%] md:w-1/2 w-full relative">
+            <div className=" relative md:max-w-[380px] xl:max-w-[704px] ml-auto">
               <PartnerLogosMarquee />
               <span className="bg-[linear-gradient(90deg,#060606_0.08%,rgba(6,6,6,0)_99.92%)] absolute top-0 left-0 w-10 md:w-40 h-full"></span>
               <span className="bg-[linear-gradient(90deg,#060606_0.08%,rgba(6,6,6,0)_99.92%)] sm:hidden block absolute top-0 right-0 w-10 md:w-40 h-full rotate-180"></span>
@@ -159,7 +273,7 @@ const page = () => {
         </div>
       </section>
       <section className="audience-sec">
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative">
           <div className="flex items-end md:flex-row flex-col-reverse lg:items-start lg:gap-17.75 relative z-1 rounded-2xl bg-black-1100 pt-10.75 md:pt-11.75 xl:pt-22.75 pr-6 xl:pr-12 shadow-4xl">
             <div className="lg:w-2/5 md:w-1/3 w-full relative z-1">
               <div ref={sectionRef} className="relative">
@@ -184,7 +298,7 @@ const page = () => {
               <ol className="flex flex-col items-right">
                 <li className="md:pb-6 pb-4">
                   <div className="flex items-center justify-end">
-                    <p className="xl:text-2xl md:text-xl text-base leading-4.75 md:leading-7 font-semibold xl:leading-8.25 text-white-1100">
+                    <p className="xl:text-2xl md:text-xl xs:text-base text-sm xs:leading-4.75 md:leading-7 font-semibold xl:leading-8.25 text-white-1100">
                       Mit maßgeschneiderter
                       <span className="text-orange-1100 mx-3">SEO</span>
                     </p>
@@ -195,7 +309,7 @@ const page = () => {
                 </li>
                 <li className="md:pb-6 pb-4">
                   <div className="flex items-center justify-end">
-                    <p className="xl:text-2xl md:text-xl text-base leading-4.75 md:leading-7 font-semibold xl:leading-8.25 text-white-1100">
+                    <p className="xl:text-2xl md:text-xl xs:text-base text-sm xs:leading-4.75 md:leading-7 font-semibold xl:leading-8.25 text-white-1100">
                       Effektiven
                       <span className="text-orange-1100 mx-3">Google Ads</span>
                     </p>
@@ -206,7 +320,7 @@ const page = () => {
                 </li>
                 <li>
                   <div className="flex items-center justify-end">
-                    <p className="xl:text-2xl md:text-xl text-base leading-4.75 md:leading-7 font-semibold xl:leading-8.25 text-white-1100">
+                    <p className="xl:text-2xl md:text-xl xs:text-base text-sm xs:leading-4.75 md:leading-7 font-semibold xl:leading-8.25 text-white-1100">
                       Strategischem
                       <span className="text-orange-1100 mx-3">
                         Online Marketing
@@ -238,7 +352,7 @@ const page = () => {
         </div>
       </section>
       <section className="xl:pt-45 md:py-30 py-20">
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="border-b border-solid border-white-1100/40 relative">
             <h2 className="xl:text-5xl md:text-[32px] text-xl leading-6 md:leading-11 font-bold pb-8 md:pb-10 max-w-294.5 mx-auto w-full text-white-1100 xl:leading-16.75 text-center">
               Warum ist
@@ -271,11 +385,13 @@ const page = () => {
             </p>
           </div>
           <div className="text-center">
-            <CtaButton
-              href="/"
-              className="mb-3 pl-5"
-              label="Website-Analyse anfordern"
-            />
+            <div onClick={open}>
+              <CtaButton
+                href="/"
+                className="mb-3 pl-5"
+                label="Website-Analyse anfordern"
+              />
+            </div>
             <p className="text-xs font-normal leading-4 text-white-1100">
               Finde heraus, wie Online Marketing dir mehr Kunden bringt.
             </p>
@@ -283,7 +399,7 @@ const page = () => {
         </div>
       </section>
       <section className="bg-linear-to-r from-yellow-1200 via-orange-1100 to-yellow-1200 py-12 md:py-14 xl:py-22">
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-8 md:pb-10 mb-8 md:mb-14 xl:mb-16 relative">
             <h2 className="xl:text-5xl md:text-[32px] text-xl leading-6 md:leading-11 text-white-1100 font-bold xl:leading-16.75">
               Kennst auch du diese <br className="xl:hidden block" />{" "}
@@ -295,7 +411,7 @@ const page = () => {
         </div>
       </section>
       <section className="md:pt-72 md:pb-42.5 xl:block hidden">
-        <div className="max-w-308 mx-auto w-full px-4">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308 mx-auto w-full px-4">
           <div className="grid grid-cols-2 gap-6">
             <div>
               <h3 className="text-3xl font-bold leading-10.5 text-white-1100">
@@ -364,7 +480,7 @@ const page = () => {
         </div>
       </section>
       <section className="xl:py-45 md:py-30 py-20 relative">
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative z-1">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative z-1">
           <div className="text-center border-b border-solid border-white-1100/40 pb-8 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
             <h2 className="xl:text-5xl md:text-[32px] text-xl text-white-1100 font-bold md:leading-11 xl:leading-16.75 leading-6 pb-8">
@@ -427,7 +543,7 @@ const page = () => {
         </div>
       </section>
       <section className="xl:pb-45 md:pb-30 pb-20">
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative z-40">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative z-40">
           <div className="text-center border-b border-solid border-white-1100/40 pb-8 xl:pb-10 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
             <h2 className="text-white md:max-w-full max-w-72.5 mx-auto w-full font-bold md:text-[32px] text-xl leading-6 md:leading-11 xl:text-5xl xl:leading-[140%]">
@@ -521,7 +637,7 @@ const page = () => {
         </div>
       </section>
       <section className="xl:pb-45 md:pb-30 pb-20">
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-8 md:pb-10 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
             <h2 className="text-white-1100 xl:text-5xl text-xl leading-6 md:text-[32px] md:leading-11 font-bold xl:leading-16.75">
@@ -543,7 +659,7 @@ const page = () => {
         </div>
       </section>
       <section className="xl:pb-45 md:pb-30 pb-20">
-        <div className="max-w-308 md:px-10 px-4 xl:px-4 mx-auto w-full">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308 md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 mb-14 xl:mb-16 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
             <h4 className="md:text-2xl font-semibold text-base leading-4.75 md:leading-8.25 text-white-1100 pb-6">
@@ -607,7 +723,7 @@ const page = () => {
         </div>
       </section>
       <section>
-        <div className="max-w-308 mx-auto w-full md:px-10 px-4 xl:px-4 relative z-40">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308 mx-auto w-full md:px-10 px-4 xl:px-4 relative z-40">
           <div className="text-center border-b border-solid border-white-1100/40 pb-8 xl:pb-10 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
             <h2 className="text-white font-bold xl:text-5xl text-xl md:tracking-normal -tracking-[0.4px] leading-6 md:text-[32px] md:leading-11 xl:leading-[140%]">
@@ -627,7 +743,7 @@ const page = () => {
         </div>
       </section>
       <section className="xl:pb-45 md:pb-30 pb-20 pt-87.5 -mt-[280px] md:-mt-45 xl:mt-[-180px] overflow-hidden">
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
           <div className="text-center border-b border-solid border-white-1100/40 md:pb-10 pb-8 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
             <h2 className="xl:text-5xl  md:text-[32px] text-xl text-white-1100 font-bold md:leading-11 xl:leading-16.75 leading-6">
@@ -637,11 +753,11 @@ const page = () => {
           </div>
         </div>
         <div className="md:pt-17 pt-8 -mx-5 ">
-          <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
+          <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
             <CaseStudiesSlider />
           </div>
         </div>
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full text-center xl:pt-3 pt-8">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full text-center xl:pt-3 pt-8">
           <CtaButton href="/" label="Website-Analyse anfordern" />
           <p className="text-xs leading-4 text-white-1100 font-normal pt-3">
             Finde heraus, wie Online Marketing dir mehr Kunden bringt.
@@ -649,7 +765,7 @@ const page = () => {
         </div>
       </section>
       <section className="xl:pb-45 md:pb-30 pb-20">
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
             <h2 className="xl:text-5xl text-xl leading-6 md:text-[32px] md:leading-11 font-bold xl:leading-16.75 text-white-1100 pb-6">
@@ -665,7 +781,7 @@ const page = () => {
           <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8 py-8 md:py-14 xl:py-16 xl:max-w-full max-w-166 mx-auto xl:w-auto w-full">
             <div className="md:p-px p-[0.01px] rounded-2xl group border border-transparent hover:border-white-1100 bg-linear-to-b from-yellow-1300 via-orange-1100 to-yellow-1300">
               <div className="rounded-2xl bg-black h-full overflow-hidden">
-                <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8">
+                <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2 xs:px-2.5 py-4 md:p-8">
                   <div className="absolute inset-0 bg-[url(/images/agentur-img1.png)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
 
                   {/* Hover background */}
@@ -677,7 +793,9 @@ const page = () => {
                       +312%
                     </h3>
                     <p className="text-xs font-normal text-white-1100 xl:max-w-53 w-full leading-3 md:leading-4 break-all">
-                      Steigerung der organischen Sichtbarkeit mit SEO
+                      Steigerung der <br className="block md:hidden" />{" "}
+                      organischen <br className="block md:hidden" />{" "}
+                      Sichtbarkeit mit SEO
                     </p>
                   </div>
                 </div>
@@ -685,7 +803,7 @@ const page = () => {
             </div>
             <div className="md:p-px p-[0.01px] rounded-2xl group border border-transparent hover:border-white-1100 bg-linear-to-b from-yellow-1300 via-orange-1100 to-yellow-1300">
               <div className="rounded-2xl bg-black h-full overflow-hidden">
-                <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8">
+                <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2 xs:px-2.5 py-4 md:p-8">
                   <div className="absolute inset-0 bg-[url(/images/agentur-img2.png)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
                   <div className="absolute inset-0 bg-[url(/images/statbg.png)] bg-no-repeat bg-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
                   <div className="relative z-10">
@@ -701,7 +819,7 @@ const page = () => {
             </div>
             <div className="md:p-px p-[0.01px] rounded-2xl group border border-transparent hover:border-white-1100 bg-linear-to-b from-yellow-1300 via-orange-1100 to-yellow-1300">
               <div className="rounded-2xl bg-black h-full overflow-hidden">
-                <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8">
+                <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2 xs:px-2.5 py-4 md:p-8">
                   <div className="absolute inset-0 bg-[url(/images/agentur-img3.png)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
                   <div className="absolute inset-0 bg-[url(/images/statbg.png)] bg-no-repeat bg-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
                   <div className="relative z-10">
@@ -718,7 +836,7 @@ const page = () => {
             </div>
             <div className="md:p-px p-[0.01px] rounded-2xl group border border-transparent hover:border-white-1100 bg-linear-to-b from-yellow-1300 via-orange-1100 to-yellow-1300">
               <div className="rounded-2xl bg-black h-full overflow-hidden">
-                <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2.5 py-4 md:p-8">
+                <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2 xs:px-2.5 py-4 md:p-8">
                   <div className="absolute inset-0 bg-[url(/images/agentur-img4.png)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
                   <div className="absolute inset-0 bg-[url(/images/statbg.png)] bg-no-repeat bg-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
                   <div className="relative z-10">
@@ -819,11 +937,13 @@ const page = () => {
             </div>
           </div>
           <div className="text-center">
-            <CtaButton
-              href="/"
-              label="Jetzt Kennenlerngespräch buchen"
-              className="mb-3"
-            />
+            <div onClick={open5}>
+              <CtaButton
+                href="/"
+                label="Jetzt Kennenlerngespräch buchen"
+                className="mb-3"
+              />
+            </div>
             <p className="text-xs text-white-1100 leading-4 font-normal">
               Kostenlos & unverbindlich – nur für kurze Zeit verfügbar.
             </p>
@@ -841,12 +961,12 @@ const page = () => {
           <ReviewCardGroup />
         </div>
       </section>
-      <section className="xl:py-45 md:min-h-237.5 md:pt-30 pt-20 relative bg-[url(/images/faq-bg.png)] bg-no-repeat bg-cover">
-        <div className="max-w-311.5 md:px-10 px-4 xl:px-4 mx-auto relative z-1">
+      <section className="xl:py-45 xl:min-h-237.5 md:pt-30 pt-20 relative bg-[url(/images/faq-bg.png)] bg-no-repeat bg-cover">
+        <div className="md:max-w-311.5 sm:max-w-[630px] max-w-311.5 md:px-10 px-4 xl:px-4 mx-auto relative z-1">
           <div className="flex items-start xl:gap-33.5 gap-8 md:gap-16 xl:flex-row flex-col">
             <div className="xl:max-w-72.5 w-full">
               <div className="xl:text-left text-center xl:border-b-0 border-b xl:pb-0 pb-8 md:pb-10 border-solid border-white-1100/40">
-                <h2 className="md:text-5xl text-2xl xl:pb-0 pb-8 md:pb-6 leading-11 text-white font-semibold  xl:leading-14.75">
+                <h2 className="xl:text-5xl md:text-[32px] text-xl leading-6 xl:pb-0 pb-8 md:pb-6 md:leading-11 text-white font-semibold  xl:leading-14.75">
                   FAQs
                 </h2>
                 <span className="bg-white-1100/40 h-px my-8 xl:block hidden"></span>
@@ -884,7 +1004,7 @@ const page = () => {
         </div>
       </section>
       <section className="overflow-hidden py-20 md:py-30 xl:pb-45">
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 relative">
             <h2 className="xl:text-5xl text-xl xl:max-w-full md:max-w-132.5 w-full max-w-full mx-auto text-white-1100 font-bold md:text-[32px] md:leading-11 xl:leading-16.75 leading-6">
               Insider-Wissen für dein Online Marketing: Full-Stack-Strategien
@@ -894,7 +1014,7 @@ const page = () => {
           </div>
         </div>
         <div className="md:pt-22 pt-8">
-          <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
+          <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
             <Articleslider />
             <div className="text-center pt-8">
               <CtaButton
@@ -908,7 +1028,7 @@ const page = () => {
       </section>
       <section className="relative">
         <div className="relative z-3 bg-[url(/images/securebg.png)] bg-no-repeat bg-cover">
-          <div className="max-w-308 mx-auto px-4 md:px-10 xl:px-4 w-full">
+          <div className="md:max-w-308 sm:max-w-[630px]  max-w-308 mx-auto px-4 md:px-10 xl:px-4 w-full">
             <div className="xl:max-w-192.25 max-w-134 w-full relative z-2 py-9.75 md:py-11">
               <h2 className="xl:text-5xl md:text-[40px] xl:leading-14.75 text-xl leading-6 md:leading-12.25 font-semibold md:max-w-full max-w-65.25 text-white-1100 uppercase pb-5 md:pb-8 xl:pb-10">
                 Geh den direkten <br className="xl:hidden md:block hidden" />{" "}
@@ -940,7 +1060,7 @@ const page = () => {
         <span className="-top-20 right-0 w-full md:w-196.25 h-41.25 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute  blur-[150px] opacity-60"></span>
       </section>
       <section className="xl:pt-45 md:pt-30 pt-20">
-        <div className="max-w-300 mx-auto w-full px-4 md:px-10 xl:px-4">
+        <div className="md:max-w-300  sm:max-w-[630px] max-w-300   mx-auto w-full px-4 md:px-10 xl:px-4">
           <div className="text-center pb-8 md:pb-14 xl:pb-16.75 relative">
             <h2 className="text-orange-1100 xl:text-5xl font-bold md:text-[32px] text-xl md:leading-11 xl:leading-16.75 leading-6  md:pb-2 xl:pb-3">
               Online Marketing Agentur:
@@ -957,11 +1077,13 @@ const page = () => {
               umfassenden Full-Service-Paketen, die alle Aspekte des digitalen
               Marketings abdecken.
             </p>
-            <CtaButton
-              href="/"
-              label="Fragen oder mehr erfahren?"
-              variant="transparent"
-            />
+            <div onClick={open3}>
+              <CtaButton
+                href="/"
+                label="Fragen oder mehr erfahren?"
+                variant="transparent"
+              />
+            </div>
             <p className="text-xs font-normal text-white-1100 leading-4 pt-3 xl:pt-3.75">
               Nummer eintragen - wir rufen zurück!
             </p>
@@ -1539,8 +1661,8 @@ const page = () => {
         </div>
       </section>
       <section className="xl:pt-45 md:pt-30 pt-20">
-        <div className="max-w-308  md:px-10  xl:px-4 mx-auto w-full">
-          <div className="text-center relative border-b border-solid border-white/50 pb-8 md:pb-10 mb-8 md:mb-14 xl:mb-16">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308   md:px-10  xl:px-4 mx-auto w-full">
+          <div className="text-center relative border-b border-solid border-white/50 pb-8 mx-4 md:pb-10 mb-8 md:mb-14 xl:mb-16">
             <h2 className="text-orange-1100 xl:text-5xl leading-6 text-xl md:text-[32px] font-bold md:leading-11 xl:leading-16.75  pb-1 md:pb-3">
               Online Marketing Agentur:
             </h2>
@@ -1560,7 +1682,9 @@ const page = () => {
             <ServicesSlider />
           </div>
           <div className="text-center 2xl:pt-0 pt-5 md:px-0 px-4">
-            <CtaButton href="/" label="Website-Analyse anfordern" />
+            <div onClick={open8}>
+              <CtaButton href="/" label="Website-Analyse anfordern" />
+            </div>
             <p className="text-xs text-white-1100 font-normal pt-3">
               Finde heraus, wie Online Marketing{" "}
               <br className="block md:hidden" /> dir mehr Kunden bringt.
@@ -1569,7 +1693,7 @@ const page = () => {
         </div>
       </section>
       <section className="xl:pt-45 md:pt-30 pt-20 xl:bg-[url(/images/marketingbg.jpg)] bg-no-repeat bg-cover agentur-sec relative">
-        <div className="max-w-308 pb-42 md:pb-68.5 xl:pb-97 md:px-10 px-4 xl:px-4 mx-auto w-full relative">
+        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308 pb-42 md:pb-68.5 xl:pb-97 md:px-10 px-4 xl:px-4 mx-auto w-full relative">
           <div className="text-center relative border-b border-solid border-white/50 pb-10 mb-8 md:mb-14 xl:mb-16">
             <h2 className="text-orange-1100 md:text-[32px] xl:text-5xl font-bold md:leading-11 xl:leading-16.75 text-xl leading-6 md:pb-3">
               Online Marketing Agentur:
@@ -2164,6 +2288,625 @@ const page = () => {
           className="xl:hidden block absolute -z-1 -bottom-33.25 md:-bottom-107.5 left-0 w-full h-75.25 md:h-full object-cover object-top"
         />
       </section>
+      {/**** Request a Quick Modal ****/}
+      <Dialog
+        open={isOpen}
+        as="div"
+        className="relative z-1000 focus:outline-none"
+        onClose={close}
+      >
+        <div className="fixed inset-0 z-10 bg-black/80 w-screen overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+            <DialogPanel
+              transition
+              className="w-full max-w-146.25 mx-auto backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0"
+            >
+              <div className="relative bg-[url(/images/Modal-bg.png)] bg-no-repeat bg-cover bg-center shadow-4xl rounded-2xl mx-auto max-w-247.75 w-full">
+                <Button
+                  className="absolute top-5 right-5 cursor-pointer z-100 inline-flex items-center w-6 h-6"
+                  onClick={close}
+                >
+                  <img src="/images/CloseButton.svg" alt="" />
+                </Button>
+                <div className="bg-white/10 lg:px-6 px-5 py-4 rounded-t-2xl">
+                  <h4 className="text-white-1100 md:text-xl text-base md:leading-[140%] leading-[124%] font-semibold">
+                    Kostenlose Website-Analyse erhalten!
+                  </h4>
+                </div>
+                <div className="md:p-5 px-4 py-2">
+                  <p className="text-white-1100 text-sm  leading-[124%] font-normal">
+                    Erfahre mehr über das Potenzial deiner Website! Unsere
+                    Analyse zeigt dir in wenigen Schritten, wie du deine
+                    Performance steigern kannst. Einfach Kontaktdaten eingeben,
+                    und wir senden dir die Analyse per Mail zu.
+                  </p>
+                </div>
+                <div className="lg:px-6 md:px-5 px-4 md:pt-5 pt-2 pb-8">
+                  <div className="">
+                    <form>
+                      <div className="grid grid-cols-1 gap-4">
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            Name
+                          </label>
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder=""
+                            value={form.name}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-11.5 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            Unternehmensname
+                          </label>
+                          <input
+                            type="text"
+                            name="company"
+                            placeholder=""
+                            value={form.company}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-11.5 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            Telefonnummer
+                          </label>
+                          <input
+                            type="text"
+                            name="phone"
+                            placeholder=""
+                            value={form.phone}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-11.5 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            E-Mail Adresse
+                          </label>
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder=""
+                            value={form.email}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-11.5 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            Gibt es spezielle Fragen oder Anliegen?
+                          </label>
+                          <input
+                            type="text"
+                            name="questions"
+                            placeholder=""
+                            value={form.questions}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-20 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+                      </div>
+                      <div className="mt-8 text-center">
+                        <Link
+                          href={"#"}
+                          onClick={open2}
+                          className="flex items-center justify-center bg-orange-1100 w-full hover:bg-white-1100 hover:text-black-1100 text-white-1100 cursor-pointer transition px-5 h-11.5 rounded-sm font-normal text-base leading-[140%]"
+                        >
+                          Website-Analyse anfordern
+                        </Link>
+                        <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4 text-center">
+                          Kostenlos & unverbindlich – nur für kurze Zeit
+                          verfügbar.
+                        </p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </DialogPanel>
+          </div>
+        </div>
+      </Dialog>
+
+      <Dialog
+        open={isOpen2}
+        as="div"
+        className="relative z-10 focus:outline-none"
+        onClose={close2}
+      >
+        <div className="fixed inset-0 z-10 bg-black/80 w-screen overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+            <DialogPanel
+              transition
+              className="w-full max-w-146.25 mx-auto backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0"
+            >
+              <div className="relative bg-[url(/images/Modal-bg.png)] bg-no-repeat bg-cover bg-center shadow-4xl rounded-2xl mx-auto max-w-247.75 w-full">
+                <Button
+                  className="absolute top-5 right-5 cursor-pointer z-100 inline-flex items-center w-6 h-6"
+                  onClick={close2}
+                >
+                  <img src="/images/CloseButton.svg" alt="" />
+                </Button>
+                <div className="bg-white/10 lg:px-6 px-5 py-4 rounded-t-2xl">
+                  <h4 className="text-white-1100 md:text-xl text-base md:leading-[140%] leading-[124%] font-semibold">
+                    Danke für deine Anfrage!
+                  </h4>
+                </div>
+                <div className="md:p-5 px-4 py-2 border-b border-solid border-white/20">
+                  <p className="text-white-1100 text-sm  leading-[124%] font-normal">
+                    Wir melden uns schnellstmöglich bei dir.
+                  </p>
+                </div>
+                <div className="p-5 text-right">
+                  <button className="bg-orange-1100 w-full max-w-36.5 ml-aut0 hover:bg-white-1100 hover:text-black-1100 text-white-1100 cursor-pointer transition px-5 h-9.5 rounded-sm font-normal text-sm leading-[124%]">
+                    Zur Hauptseite
+                  </button>
+                </div>
+              </div>
+            </DialogPanel>
+          </div>
+        </div>
+      </Dialog>
+
+      {/**** Request a Quick Modal ****/}
+      <Dialog
+        open={isOpen3}
+        as="div"
+        className="relative z-1000 focus:outline-none"
+        onClose={close3}
+      >
+        <div className="fixed inset-0 z-10 bg-black/80 w-screen overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+            <DialogPanel
+              transition
+              className="w-full max-w-146.25 mx-auto backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0"
+            >
+              <div className="relative bg-[url(/images/Modal-bg.png)] bg-no-repeat bg-cover bg-center shadow-4xl rounded-2xl mx-auto max-w-247.75 w-full">
+                <Button
+                  className="absolute top-5 right-5 cursor-pointer z-100 inline-flex items-center w-6 h-6"
+                  onClick={close3}
+                >
+                  <img src="/images/CloseButton.svg" alt="" />
+                </Button>
+                <div className="bg-white/10 lg:px-6 px-5 py-4 rounded-t-2xl">
+                  <h4 className="text-white-1100 md:text-xl text-base md:leading-[140%] leading-[124%] font-semibold">
+                    Jetzt Rückruf anfordern!
+                  </h4>
+                </div>
+                <div className="md:p-5 px-4 py-2">
+                  <p className="text-white-1100 text-sm  leading-[124%] font-normal">
+                    Erhalte Antworten auf deine Fragen – direkt von unseren
+                    Experten. Gebe deine Kontaktdaten an und wir melden uns
+                    innerhalb von 24 Stunden
+                  </p>
+                </div>
+                <div className="lg:px-6 md:px-5 px-4 md:pt-5 pt-2 pb-8">
+                  <div className="">
+                    <form>
+                      <div className="grid grid-cols-1 gap-4">
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            Name
+                          </label>
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder=""
+                            value={form.name}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-11.5 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            Unternehmensname
+                          </label>
+                          <input
+                            type="text"
+                            name="company"
+                            placeholder=""
+                            value={form.company}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-11.5 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            Telefonnummer
+                          </label>
+                          <input
+                            type="text"
+                            name="phone"
+                            placeholder=""
+                            value={form.phone}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-11.5 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            E-Mail Adresse
+                          </label>
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder=""
+                            value={form.email}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-11.5 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            Gibt es spezielle Fragen oder Anliegen?
+                          </label>
+                          <input
+                            type="text"
+                            name="questions"
+                            placeholder=""
+                            value={form.questions}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-20 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+                      </div>
+                      <div className="mt-8 text-center">
+                        <Link
+                          href={"#"}
+                          onClick={open4}
+                          className="flex items-center justify-center bg-orange-1100 w-full hover:bg-white-1100 hover:text-black-1100 text-white-1100 cursor-pointer transition px-5 h-11.5 rounded-sm font-normal text-base leading-[140%]"
+                        >
+                          Rückruf anfordern
+                        </Link>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </DialogPanel>
+          </div>
+        </div>
+      </Dialog>
+
+      <Dialog
+        open={isOpen4}
+        as="div"
+        className="relative z-10 focus:outline-none"
+        onClose={close4}
+      >
+        <div className="fixed inset-0 z-10 bg-black/80 w-screen overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+            <DialogPanel
+              transition
+              className="w-full max-w-146.25 mx-auto backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0"
+            >
+              <div className="relative bg-[url(/images/Modal-bg.png)] bg-no-repeat bg-cover bg-center shadow-4xl rounded-2xl mx-auto max-w-247.75 w-full">
+                <Button
+                  className="absolute top-5 right-5 cursor-pointer z-100 inline-flex items-center w-6 h-6"
+                  onClick={close4}
+                >
+                  <img src="/images/CloseButton.svg" alt="" />
+                </Button>
+                <div className="bg-white/10 lg:px-6 px-5 py-4 rounded-t-2xl">
+                  <h4 className="text-white-1100 md:text-xl text-base md:leading-[140%] leading-[124%] font-semibold">
+                    Danke für deine Anfrage!
+                  </h4>
+                </div>
+                <div className="md:p-5 px-4 py-2 border-b border-solid border-white/20">
+                  <p className="text-white-1100 text-sm  leading-[124%] font-normal">
+                    Wir melden uns schnellstmöglich bei dir
+                  </p>
+                </div>
+                <div className="p-5 text-right">
+                  <button className="bg-orange-1100 w-full max-w-36.5 ml-aut0 hover:bg-white-1100 hover:text-black-1100 text-white-1100 cursor-pointer transition px-5 h-9.5 rounded-sm font-normal text-sm leading-[124%]">
+                    Zur Hauptseite
+                  </button>
+                </div>
+              </div>
+            </DialogPanel>
+          </div>
+        </div>
+      </Dialog>
+
+      {/**** Request a Quick Modal ****/}
+      <Dialog
+        open={isOpen5}
+        as="div"
+        className="relative z-10 focus:outline-none"
+        onClose={close5}
+      >
+        <div className="fixed inset-0 z-10 bg-black/80 w-screen overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+            <DialogPanel
+              transition
+              className="w-full max-w-360 relative md:pt-30 md:pb-16.75 py-22 md:px-10 px-4 bg-[url(/images/Modal-bg2.jpg)] bg-no-repeat bg-cover bg-center shadow-4xl rounded-2xl mx-auto backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0"
+            >
+              <div className="w-full max-w-249.25 mx-auto">
+                <Button
+                  className="absolute md:top-18 md:right-18 top-4 right-4 cursor-pointer z-100 inline-flex items-center w-6 h-6"
+                  onClick={close5}
+                >
+                  <img src="/images/CloseButton.svg" alt="" />
+                </Button>
+                <div className="text-center lg:pb-12 pb-10 lg:border-b-0 border-b border-solid border-white-1100">
+                  <h4 className="text-white-1100 md:text-2xl text-base md:leading-[140%] leading-[124%] font-semibold">
+                    Nur für kurze Zeit: Dein kostenloses Kennenlerngespräch
+                  </h4>
+                  <p className="text-white-1100 text-base mt-5 leading-[140%] font-normal">
+                    Nutze diese Chance für ein kostenloses, unverbindliches
+                    Kennenlerngespräch. Erhalte konkrete Antworten und erste
+                    Impulse für deine Strategie – sichere dir jetzt deinen
+                    Termin, solange noch Verfügbarkeit besteht.“
+                  </p>
+                </div>
+                <div className="">
+                  <div className="">
+                    <MeetingEmbed />
+                  </div>
+                  <div className="w-full sm:mt-12 mt-10">
+                    <div className="w-full text-right">
+                      <p className="font-bold md:text-base text-sm leading-[140%] text-white/50">
+                        Oder möchtest du eine Kurzanalyse deiner Webseite per
+                        E-Mail erhalten?
+                      </p>
+                      <p className="font-normal text-xs mt-3 leading-[140%] text-white/50">
+                        Kein Problem – gib einfach deine URL an und wir schicken
+                        dir die wichtigsten Punkte.
+                      </p>
+                    </div>
+                    <div className="flex sm:flex-row flex-col gap-2 justify-end items-center sm:mt-10 mt-6">
+                      <input
+                        type="email"
+                        placeholder="E-Mail"
+                        value={emailInput}
+                        onChange={(e) => setEmailInput(e.target.value)}
+                        className="bg-black-1100 border border-grey-1100/20 rounded-lg h-12.25 px-6  text-white/50 text-xs font-normal sm:w-50 w-full focus:outline-none focus:border-grey-1100"
+                      />
+                      <div className="overflow-hidden flex-1 relative sm:w-114 w-full">
+                        <input
+                          type="url"
+                          placeholder="Deine URL"
+                          value={urlInput}
+                          onChange={(e) => setUrlInput(e.target.value)}
+                          className="bg-black-1100 border border-grey-1100/20 rounded-lg h-12.25 px-6  text-white/50 text-xs font-normal focus:outline-none w-full focus:border-grey-1100"
+                        />
+                        <button className="absolute top-0 right-0 bg-orange-1100 w-26 h-12.25 cursor-pointer text-white-1100 text-xs font-normal rounded-br-lg rounded-tr-lg hover:brightness-110 transition-all whitespace-nowrap">
+                          Schicken
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </DialogPanel>
+          </div>
+        </div>
+      </Dialog>
+
+      {/**** Request a Quick Modal ****/}
+      <Dialog
+        open={isOpen6}
+        as="div"
+        className="relative z-1000 focus:outline-none"
+        onClose={close6}
+      >
+        <div className="fixed inset-0 z-10 bg-black/80 w-screen overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+            <DialogPanel
+              transition
+              className="w-full max-w-146.25 mx-auto backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0"
+            >
+              <div className="relative bg-[url(/images/Modal-bg.png)] bg-no-repeat bg-cover bg-center shadow-4xl rounded-2xl mx-auto max-w-247.75 w-full">
+                <Button
+                  className="absolute top-5 right-5 cursor-pointer z-100 inline-flex items-center w-6 h-6"
+                  onClick={close6}
+                >
+                  <img src="/images/CloseButton.svg" alt="" />
+                </Button>
+                <div className="bg-white/10 lg:px-6 px-5 py-4 rounded-t-2xl">
+                  <h4 className="text-white-1100 md:text-xl text-base md:leading-[140%] leading-[124%] font-semibold">
+                    Willst du die Chance auf eine kostenlose Website-Analyse
+                    wirklich verpassen?
+                  </h4>
+                  <p className="text-white-1100 text-sm mt-4 leading-[124%] font-normal">
+                    Erhalte wertvolle Einblicke in deine Website, bevor du gehst
+                    – kostenlos und unverbindlich!
+                  </p>
+                </div>
+                <div className="lg:px-6 md:px-5 px-4 md:pt-5 pt-2 pb-8">
+                  <div className="">
+                    <form>
+                      <div className="grid grid-cols-1 gap-4">
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            Name
+                          </label>
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder=""
+                            value={form.name}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-11.5 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            Unternehmensname
+                          </label>
+                          <input
+                            type="text"
+                            name="company"
+                            placeholder=""
+                            value={form.company}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-11.5 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            Telefonnummer
+                          </label>
+                          <input
+                            type="text"
+                            name="phone"
+                            placeholder=""
+                            value={form.phone}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-11.5 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            E-Mail Adresse
+                          </label>
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder=""
+                            value={form.email}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-11.5 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="text-white-1100 text-sm leading-[124%] font-normal block mb-2">
+                            Gibt es spezielle Fragen oder Anliegen?
+                          </label>
+                          <input
+                            type="text"
+                            name="questions"
+                            placeholder=""
+                            value={form.questions}
+                            onChange={handleChange}
+                            className="input-style bg-black-1200/40 hover:bg-white/2 px-4 border border-solid border-white/50 hover:border-grey-1100 rounded-sm h-20 w-full text-white-1100 placeholder:text-white-1100 text-base leading-[140%] font-normal active:bg-white/10 focus:bg-white/10"
+                          />
+                        </div>
+                      </div>
+                      <div className="mt-8 text-center">
+                        <Link
+                          href={"#"}
+                          onClick={open7}
+                          className="flex items-center justify-center bg-orange-1100 w-full hover:bg-white-1100 hover:text-black-1100 text-white-1100 cursor-pointer transition px-5 h-11.5 rounded-sm font-normal text-base leading-[140%]"
+                        >
+                          Analyse anfordern
+                        </Link>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </DialogPanel>
+          </div>
+        </div>
+      </Dialog>
+
+      <Dialog
+        open={isOpen7}
+        as="div"
+        className="relative z-10 focus:outline-none"
+        onClose={close7}
+      >
+        <div className="fixed inset-0 z-10 bg-black/80 w-screen overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+            <DialogPanel
+              transition
+              className="w-full max-w-146.25 mx-auto backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0"
+            >
+              <div className="relative bg-[url(/images/Modal-bg.png)] bg-no-repeat bg-cover bg-center shadow-4xl rounded-2xl mx-auto max-w-247.75 w-full">
+                <Button
+                  className="absolute top-5 right-5 cursor-pointer z-100 inline-flex items-center w-6 h-6"
+                  onClick={close7}
+                >
+                  <img src="/images/CloseButton.svg" alt="" />
+                </Button>
+                <div className="bg-white/10 lg:px-6 px-5 py-4 rounded-t-2xl">
+                  <h4 className="text-white-1100 md:text-xl text-base md:leading-[140%] leading-[124%] font-semibold">
+                    Vielen Dank!
+                  </h4>
+                </div>
+                <div className="md:p-5 px-4 py-2 border-b border-solid border-white/20">
+                  <p className="text-white-1100 text-sm  leading-[124%] font-normal">
+                    Deine Website-Analyse ist in Bearbeitung und wird dir bald
+                    per E-Mail zugeschickt. Freu dich auf nützliche Einblicke
+                    für deinen Erfolg.
+                  </p>
+                </div>
+                <div className="p-5 text-right">
+                  <button className="bg-orange-1100 w-full max-w-36.5 ml-aut0 hover:bg-white-1100 hover:text-black-1100 text-white-1100 cursor-pointer transition px-5 h-9.5 rounded-sm font-normal text-sm leading-[124%]">
+                    Zur Hauptseite
+                  </button>
+                </div>
+              </div>
+            </DialogPanel>
+          </div>
+        </div>
+      </Dialog>
+
+      {/**** Request a Quick Modal ****/}
+      <Dialog
+        open={isOpen8}
+        as="div"
+        className="relative z-10 focus:outline-none"
+        onClose={close8}
+      >
+        <div className="fixed inset-0 z-10 bg-black/80 w-screen overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+            <DialogPanel
+              transition
+              className="w-full max-w-146.25 mx-auto backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0"
+            >
+              <div className="relative bg-[url(/images/Modal-bg.png)] bg-no-repeat bg-cover bg-center shadow-4xl rounded-2xl mx-auto max-w-247.75 w-full">
+                <Button
+                  className="absolute top-5 right-5 cursor-pointer z-100 inline-flex items-center w-6 h-6"
+                  onClick={close8}
+                >
+                  <img src="/images/CloseButton.svg" alt="" />
+                </Button>
+                <div className="bg-white/10 lg:px-6 px-5 py-4 rounded-t-2xl">
+                  <h4 className="text-white-1100 md:text-xl text-base md:leading-[140%] leading-[124%] font-semibold">
+                    Willst du die Chance auf eine kostenlose Website-Analyse
+                    wirklich verpassen?
+                  </h4>
+                </div>
+                <div className="md:p-5 px-4 py-2 border-b border-solid border-white/20">
+                  <p className="text-white-1100 text-sm  leading-[124%] font-normal">
+                    Unsere kostenlose Website-Analyse zeigt dir
+                    Optimierungspotenziale, die deine Sichtbarkeit und
+                    Performance steigern können. Lass dir die Chance nicht
+                    entgehen!
+                  </p>
+                </div>
+                <div className="p-5 grid md:grid-cols-2 grid-cols-1 gap-2">
+                  <button className="bg-orange-1100 w-full hover:bg-white-1100 hover:text-black-1100 text-white-1100 cursor-pointer transition px-5 h-9.5 rounded-sm font-normal text-sm leading-[124%]">
+                    Zur Hauptseite
+                  </button>
+                  <button className="bg-transparent border border-solid  border-white-1100 w-full hover:bg-white-1100 hover:text-black-1100 text-white-1100 cursor-pointer transition px-5 h-9.5 rounded-sm font-normal text-sm leading-[124%]">
+                    Ananlyse anfordern
+                  </button>
+                </div>
+              </div>
+            </DialogPanel>
+          </div>
+        </div>
+      </Dialog>
     </>
   );
 };

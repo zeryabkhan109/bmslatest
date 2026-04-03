@@ -140,7 +140,7 @@ export default function ArticlesSection({
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-7.5 mt-8 md:hidden">
+      <div className="flex items-center justify-center gap-7.5 md:mt-8 md:hidden">
         {ARTICLES.map((_, i) => (
           <button
             key={i}

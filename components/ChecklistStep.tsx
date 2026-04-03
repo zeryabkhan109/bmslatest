@@ -190,11 +190,11 @@ function AnswerButton({
   return (
     <button
       onClick={onClick}
-      className={`cursor-pointer flex flex-col items-center justify-center w-full  h-8.25 rounded transition-all duration-200 font-sora font-normal sm:text-xs text-[11px] text-center text-white-1100 leading-[140%]
+      className={`cursor-pointer flex flex-col items-center justify-center w-full h-8.25 rounded transition-all duration-200 font-sora font-normal sm:text-xs text-[11px] text-center text-white-1100 leading-[140%]
         ${
           selected
             ? "bg-yellow14 border border-yellow14"
-            : "bg-orange-1100 border border-solid border-orange-1100 hover:bg-yellow14 hover:border-yellow14"
+            : "bg-orange-1100 border border-solid border-orange-1100 hover:bg-yellow14 hover:border-yellow14 active:bg-orange-1200"
         }`}
     >
       {label}

@@ -8,7 +8,7 @@ interface Article {
 
 export function ArticleCard({ article }: { article: Article }) {
   return (
-    <div className="flex flex-col gap-4 items-start overflow-hidden pb-6 group md:pb-8 rounded-2xl h-full">
+    <div className="flex flex-col gap-4 items-start overflow-hidden  group md:pb-8 rounded-2xl h-full">
       <div className="h-60 overflow-hidden relative rounded-2xl shrink-0 w-full group">
         <div className="absolute inset-0 border border-white/50 rounded-2xl z-10 pointer-events-none" />
 

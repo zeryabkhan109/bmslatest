@@ -170,36 +170,32 @@ const page = () => {
       <section className='bg-[url("/images/seo-agentur-hero-bg.png")] bg-cover bg-bottom relative pt-66 pb-36'>
         <div className="max-w-310 md:px-10 px-4 xl:px-5 mx-auto w-full">
           <div className="text-center max-w-197.5 w-full mx-auto">
-            <h1 className="font-sora font-extrabold xl:text-[70px] text-[50px] leading-13 xl:leading-[104%] text-white-1100 text-shadow-xl uppercase">
+            <h1 className="font-sora font-extrabold xl:text-[70px] md:text-[50px] text-[30px] leading-[31px] md:leading-13 xl:leading-[104%] text-white-1100 text-shadow-xl uppercase">
               Erhöhe deine Sichtbarkeit bei Google!
             </h1>
             <h4 className="text-white-1100 max-w-107.5 w-full mx-auto xl:text-[32px] text-2xl leading-7.25 xl:leading-[124%] font-medium mt-4 mb-12">
               Mehr Traffic. Mehr Umsatz. Mit deiner SEO Agentur
             </h4>
-            <CtaButton
-              href="/"
-              label="Kostenloses Kennenlernen"
-              variant="transparent"
-            />
+            <CtaButton href="/" label="Kostenlose SEO-Analyse anfordern" />
             <p className="text-white-1100 font-normal text-sm leading-[124%] mt-5">
               Finde heraus, wie SEO dein Ranking verbessert.
             </p>
           </div>
         </div>
-        <span className="text-gradient2 absolute -bottom-8 left-0 text-center w-full block font-bold xl:text-[155px] text-[81px] leading-21 xl:leading-[104%] -tracking-[6.48px] xl:tracking-[-12.4px] uppercase">
+        <span className="text-gradient2 absolute -bottom-8 left-0 text-center w-full block font-bold xl:text-[155px] md:text-[81px] text-[41px] leading-[42px] md:leading-21 xl:leading-[104%] -tracking-[3px] md:-tracking-[6.48px] xl:tracking-[-12.4px] uppercase">
           SEO-OPTIMIERUNG
         </span>
       </section>
       <section className="xl:pt-48.75 md:py-41 py-22 xl:pb-50">
         <div className="max-w-310 md:px-10 px-4 xl:px-5 mx-auto w-full">
-          <h2 className="border-b border-solid border-white-1100/40 xl:text-5xl md:text-[32px] text-xl leading-6 md:leading-11 font-bold pb-8 md:pb-10 max-w-294.5 mx-auto w-full text-white-1100 xl:leading-16.75 text-center">
+          <h2 className="border-b border-solid border-white-1100/40 xl:text-5xl md:text-[32px] text-xl leading-6 md:leading-11 font-bold pb-8 md:pb-10 max-w-294.5 mx-auto w-full md:tracking-normal -tracking-[0.4px] text-white-1100 xl:leading-16.75 text-center">
             Suchmaschinenoptimierung für
             <span className="text-orange-1100 block">
               {" "}
               bessere Sichtbarkeit, mehr Kunden und langfristigen Erfolg{" "}
             </span>
           </h2>
-          <div className="xl:mt-22 mt-16">
+          <div className="xl:mt-22 md:mt-16 mt-12">
             <ServicesOfferedCard />
           </div>
         </div>
@@ -218,7 +214,7 @@ const page = () => {
       <section className="xl:pt-50 md:pt-41 pt-22">
         <div className="max-w-310 md:px-10 px-4 xl:px-5 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10">
-            <h2 className="xl:text-5xl  md:max-w-166  max-w-full font-bold text-white-1100 md:text-[32px] text-xl leading-6 md:leading-11 xl:leading-[140%] xl:max-w-225 w-full mx-auto">
+            <h2 className="xl:text-5xl  md:max-w-166  max-w-[310px] font-bold text-white-1100 md:text-[32px] text-xl leading-6 md:leading-11 xl:leading-[140%] xl:max-w-225 w-full mx-auto">
               <span className="text-orange-1100">Erfolgreiche SEO </span>{" "}
               Betreuung für nachhaltige Ergebnisse
             </h2>
@@ -231,9 +227,9 @@ const page = () => {
               dank SEO Agentur und <span className="text-orange-1100">142</span>{" "}
               neue Leads
             </h3>
-            <div className="grid grid-cols-2 gap-6 md:mt-10 mt-8 xl:mt-22">
+            <div className="md:grid flex flex-col-reverse md:grid-cols-2 gap-6 md:mt-10 mt-8 xl:mt-22">
               <div className="">
-                <div className="xl:mb-6 mb-4">
+                <div className="md:mb-6 mb-4">
                   <h4 className="text-white-1100 xl:text-base text-sm md:leading-4.75 leading-4.25 font-bold xl:leading-[140%] mb-2 xl:mb-3">
                     Branche:
                   </h4>
@@ -241,7 +237,7 @@ const page = () => {
                     Gebäudereinigung:
                   </p>
                 </div>
-                <div className="xl:mb-6 mb-4">
+                <div className="md:mb-6 mb-4">
                   <h4 className="text-white-1100 xl:text-base text-sm md:leading-4.75 leading-4.25 font-bold xl:leading-[140%] mb-2 xl:mb-3">
                     Service:
                   </h4>
@@ -249,7 +245,7 @@ const page = () => {
                     SEO und Content-Marketing.
                   </p>
                 </div>
-                <div className="xl:mb-6 mb-4">
+                <div className="md:mb-6 mb-4">
                   <h4 className="text-white-1100 xl:text-base text-sm md:leading-4.75 leading-4.25 font-bold xl:leading-[140%] mb-2 xl:mb-3">
                     Herausforderungen:{" "}
                   </h4>
@@ -276,12 +272,12 @@ const page = () => {
               </div>
               <div className="">
                 <div className="bg-white-1100 rounded-2xl shadow-4xl xl:py-8 xl:px-10 py-6 px-4">
-                  <h4 className="text-black-1100 font-semibold md:text-xl md:leading-7 text-lg leading-[22px] md:tracking-normal -tarcking-[0.18px] xl:text-2xl xl:leading-[140%]">
+                  <h4 className="text-black-1100 font-semibold md:text-xl md:leading-7 text-lg leading-5.5 md:tracking-normal -tarcking-[0.18px] xl:text-2xl xl:leading-[140%]">
                     Ergebnisse:
                   </h4>
-                  <ul className="mt-6">
-                    <li className="flex items-start gap-4 mb-4">
-                      <span className="w-5 h-5 flex items-center justify-center">
+                  <ul className="md:mt-6 mt-4">
+                    <li className="flex items-start md:gap-4 gap-2 mb-4">
+                      <span className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center">
                         <Image
                           src="/images/check-black.svg"
                           alt=""
@@ -294,8 +290,8 @@ const page = () => {
                         Sichtbarkeit in Suchmaschinen.
                       </p>
                     </li>
-                    <li className="flex items-start gap-4 mb-4">
-                      <span className="w-5 h-5 flex items-center justify-center">
+                    <li className="flex items-start md:gap-4 gap-2 mb-4">
+                      <span className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center">
                         <Image
                           src="/images/check-black.svg"
                           alt=""
@@ -310,8 +306,8 @@ const page = () => {
                         </span>
                       </p>
                     </li>
-                    <li className="flex items-start gap-4 mb-4">
-                      <span className="w-5 h-5 flex items-center justify-center">
+                    <li className="flex items-start md:gap-4 gap-2 mb-4">
+                      <span className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center">
                         <Image
                           src="/images/check-black.svg"
                           alt=""
@@ -327,7 +323,7 @@ const page = () => {
                       </p>
                     </li>
                     <li className="flex items-start gap-4">
-                      <span className="w-5 h-5 flex items-center justify-center">
+                      <span className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center">
                         <Image
                           src="/images/check-black.svg"
                           alt=""
@@ -365,9 +361,9 @@ const page = () => {
               in nur <span className="text-orange-1100">9 Monaten</span> durch
               Suchmaschinenoptimierun
             </h3>
-            <div className="grid grid-cols-2 gap-6 md:mt-10 mt-8 xl:mt-22">
+            <div className="md:grid flex flex-col-reverse md:grid-cols-2 gap-6 md:mt-10 mt-8 xl:mt-22">
               <div className="">
-                <div className="mb-6">
+                <div className="md:mb-6 mb-4">
                   <h4 className="text-white-1100 xl:text-base text-sm md:leading-4.75 leading-4.25 font-bold xl:leading-[140%] mb-2 xl:mb-3">
                     Branche:
                   </h4>
@@ -375,7 +371,7 @@ const page = () => {
                     Online-Shop für Uhren
                   </p>
                 </div>
-                <div className="mb-6">
+                <div className="md:mb-6 mb-4">
                   <h4 className="text-white-1100 xl:text-base text-sm md:leading-4.75 leading-4.25 font-bold xl:leading-[140%] mb-2 xl:mb-3">
                     Service:{" "}
                   </h4>
@@ -383,7 +379,7 @@ const page = () => {
                     E-Commerce SEO und Conversion Optimierung.
                   </p>
                 </div>
-                <div className="mb-6">
+                <div className="md:mb-6 mb-4">
                   <h4 className="text-white-1100 xl:text-base text-sm md:leading-4.75 leading-4.25 font-bold xl:leading-[140%] mb-2 xl:mb-3">
                     Herausforderungen:{" "}
                   </h4>
@@ -408,12 +404,12 @@ const page = () => {
               </div>
               <div className="">
                 <div className="bg-white-1100 rounded-2xl shadow-4xl xl:py-8 xl:px-10 py-6 px-4">
-                  <h4 className="text-black-1100 font-semibold md:text-xl md:leading-7 text-lg leading-[22px] md:tracking-normal -tarcking-[0.18px] xl:text-2xl xl:leading-[140%]">
+                  <h4 className="text-black-1100 font-semibold md:text-xl md:leading-7 text-lg leading-5.5 md:tracking-normal -tarcking-[0.18px] xl:text-2xl xl:leading-[140%]">
                     Ergebnisse:
                   </h4>
-                  <ul className="mt-6">
-                    <li className="flex items-start gap-4 mb-4">
-                      <span className="w-5 h-5 flex items-center justify-center">
+                  <ul className="md:mt-6 mt-4">
+                    <li className="flex items-start md:gap-4 gap-2 mb-4">
+                      <span className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center">
                         <Image
                           src="/images/check-black.svg"
                           alt=""
@@ -426,8 +422,8 @@ const page = () => {
                         Umsatzsteigerung über organischen Traffic.
                       </p>
                     </li>
-                    <li className="flex items-start gap-4 mb-4">
-                      <span className="w-5 h-5 flex items-center justify-center">
+                    <li className="flex items-start md:gap-4 gap-2 mb-4">
+                      <span className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center">
                         <Image
                           src="/images/check-black.svg"
                           alt=""
@@ -442,8 +438,8 @@ const page = () => {
                         Verkäufe über SEO-generierte Besucher.
                       </p>
                     </li>
-                    <li className="flex items-start gap-4 mb-4">
-                      <span className="w-5 h-5 flex items-center justify-center">
+                    <li className="flex items-start md:gap-4 gap-2 mb-4">
+                      <span className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center">
                         <Image
                           src="/images/check-black.svg"
                           alt=""
@@ -459,7 +455,7 @@ const page = () => {
                       </p>
                     </li>
                     <li className="flex items-start gap-4">
-                      <span className="w-5 h-5 flex items-center justify-center">
+                      <span className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center">
                         <Image
                           src="/images/check-black.svg"
                           alt=""
@@ -494,9 +490,9 @@ const page = () => {
               Durch Local SEO-Beratung{" "}
               <span className="text-orange-1100">+377%</span> mehr Anfragen
             </h3>
-            <div className="grid grid-cols-2 gap-6 md:mt-10 mt-8 xl:mt-22">
+            <div className="md:grid flex flex-col-reverse md:grid-cols-2 gap-6 md:mt-10 mt-8 xl:mt-22">
               <div className="">
-                <div className="mb-6">
+                <div className="md:mb-6 mb-4">
                   <h4 className="text-white-1100 xl:text-base text-sm md:leading-4.75 leading-4.25 font-bold xl:leading-[140%] mb-2 xl:mb-3">
                     Branche:
                   </h4>
@@ -504,7 +500,7 @@ const page = () => {
                      Lokale Tischlerei
                   </p>
                 </div>
-                <div className="mb-6">
+                <div className="md:mb-6 mb-4">
                   <h4 className="text-white-1100 xl:text-base text-sm md:leading-4.75 leading-4.25 font-bold xl:leading-[140%] mb-2 xl:mb-3">
                     Service:{" "}
                   </h4>
@@ -512,7 +508,7 @@ const page = () => {
                      Local SEO und Google My Business Optimierung.
                   </p>
                 </div>
-                <div className="mb-6">
+                <div className="md:mb-6 mb-4">
                   <h4 className="text-white-1100 xl:text-base text-sm md:leading-4.75 leading-4.25 font-bold xl:leading-[140%] mb-2 xl:mb-3">
                     Herausforderungen:{" "}
                   </h4>
@@ -541,9 +537,9 @@ const page = () => {
                   <h4 className="text-black-1100 font-semibold md:text-xl md:leading-7 text-lg leading-5.5 md:tracking-normal -tarcking-[0.18px] xl:text-2xl xl:leading-[140%]">
                     Ergebnisse:
                   </h4>
-                  <ul className="mt-6">
-                    <li className="flex items-start gap-4 mb-4">
-                      <span className="w-5 h-5 flex items-center justify-center">
+                  <ul className="md:mt-6 mt-4">
+                    <li className="flex items-start md:gap-4 gap-2 mb-4">
+                      <span className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center">
                         <Image
                           src="/images/check-black.svg"
                           alt=""
@@ -557,7 +553,7 @@ const page = () => {
                       </p>
                     </li>
                     <li className="flex items-start gap-4">
-                      <span className="w-5 h-5 flex items-center justify-center">
+                      <span className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center">
                         <Image
                           src="/images/check-black.svg"
                           alt=""
@@ -570,8 +566,8 @@ const page = () => {
                         <span className="text-orange-1100">um +254%.</span>
                       </p>
                     </li>
-                    <li className="flex items-start gap-4 mb-4">
-                      <span className="w-5 h-5 flex items-center justify-center">
+                    <li className="flex items-start md:gap-4 gap-2 mb-4">
+                      <span className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center">
                         <Image
                           src="/images/check-black.svg"
                           alt=""
@@ -584,8 +580,8 @@ const page = () => {
                         <span className="text-orange-1100">von 6 auf 64.</span>
                       </p>
                     </li>
-                    <li className="flex items-start gap-4 mb-4">
-                      <span className="w-5 h-5 flex items-center justify-center">
+                    <li className="flex items-start md:gap-4 gap-2 mb-4">
+                      <span className="md:w-5 md:h-5 w-4 h-4 flex items-center justify-center">
                         <Image
                           src="/images/check-black.svg"
                           alt=""
@@ -610,12 +606,12 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="xl:py-50 md:pt-50 md:pb-41 pb-22">
+      <section className="xl:py-50 md:pt-50 pt-[130px] md:pb-41 pb-22">
         <div className="max-w-310 md:px-10 px-4 xl:px-5 mx-auto w-full">
           <div className="text-center">
             <h3 className="text-white-1100 mb-12 xl:text-[32px] md:text-2xl md:leading-7.25 font-semibold md:font-medium xl:leading-[124%]">
               Finde heraus, wie das volle Potenzial deiner Website durch eine
-              gezielte SEO-Analyse sichtbar wird und mehr Kunden erreicht!
+              gezielte SEO-Analyse sichtbar wird und mehr Kunden erreicht!{" "}
               <span className="text-orange-1100">
                 Lass dir in einer Analyse zeigen, was möglich ist.
               </span>
@@ -627,7 +623,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="mb-50 xl:bg-[url('/images/seo-agentur-bg.png')] md:bg-[url('/images/seo-agentur-tablet-bg.png')] bg-[url('/images/seo-agentur-mbl-bg.png')] bg-cover bg-center">
+      <section className="xl:mb-50 md:mb-41 mb-22 xl:bg-[url('/images/seo-agentur-bg.png')] md:bg-[url('/images/seo-agentur-tablet-bg.png')] bg-[url('/images/seo-agentur-mbl-bg.png')] bg-cover bg-center">
         <div className="max-w-310 md:px-10 px-4 xl:px-5 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10">
             <h2 className="xltext-5xl md:text-[32px] text-xl leading-6 md:tracking-normal -tracking-[0.4px] md:leading-11 font-bold text-white-1100 xl:leading-[140%] max-w-262.5 w-full mx-auto">
@@ -637,7 +633,7 @@ const page = () => {
               Warum sie dein Schlüssel zu nachhaltigem Wachstum ist
             </h2>
           </div>
-          <div className="grid grid-cols-2 gap-4 md:gap-12.5 xl:gap-2 md:mt-16 mt-8 xl:mt-22.5">
+          <div className="grid sm:grid-cols-2 gap-4 md:gap-12.5 xl:gap-2 md:mt-16 mt-8 xl:mt-22.5">
             <div className="max-w-120.25 w-full">
               <div className="rounded-2xl mb-4 xl:mb-24.75 bg-black-1100 shadow-4xl md:py-4 md:px-5 p-4  xl:p-7 xl:max-w-94.5 md:max-w-[267px] max-w-[228px] w-full ml-auto">
                 <h4 className="text-orange-1100 font-semibold md:font-bold text-sm leading-4.25 md:leading-4.75 xl:text-base xl:leading-[140%]">
@@ -710,9 +706,9 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="xl:pb-50 md:pb-41 pb-[108px]">
+      <section className="xl:pb-50 md:pb-41 pb-27">
         <div className="max-w-308 md:px-10 px-4 xl:px-4 mx-auto w-full">
-          <div className="text-center border-b border-solid border-white-1100/40 pb-10 mb-10 md:mb-22 mb-14 xl:mb-16 relative">
+          <div className="text-center border-b border-solid border-white-1100/40 pb-10 mb-10 md:mb-22  xl:mb-16 relative">
             <span className="md:w-191.5  w-full h-37.5 hidden items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
             <h4 className="xl:text-2xl md:text-xl md:leading-7 text-base leading-[19px] max-w-[940px] mx-auto w-full font-semibold leading-8.25 text-white-1100 pb-6">
               <span className="text-orange-1100">
@@ -803,13 +799,17 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="relative bg-[url('/images/Call-to-Action-Banner.png')] bg-cover bg-center pt-[35px] xl:pt-10.25">
+      <section className="relative bg-[url('/images/Call-to-Action-Banner.png')] bg-cover bg-center pt-8.75 xl:pt-10.25">
         <span className="w-120 hidden h-69.75 absolute top-0 left-0 xl:block rounded-[480px] bg-white-1100 opacity-60 blur-[120px]"></span>
-        <div className="flex xl:items-center items-start 2xl:gap-17.75 gap-10 md:gap-[55px] xl:gap-7.5">
-          <div className="w-4/12 relative z-1">
-            <img src="/images/3d-rendring-img.png" alt="SEO Agentur CTA" />
+        <div className="flex xl:items-center md:flex-row flex-col-reverse items-center md:items-start 2xl:gap-17.75 gap-10 md:gap-13.75 xl:gap-7.5">
+          <div className="md:w-4/12 w-full relative z-1">
+            <img
+              src="/images/3d-rendring-img.png"
+              className="md:max-w-full max-w-[250px]"
+              alt="SEO Agentur CTA"
+            />
           </div>
-          <div className="w-8/12">
+          <div className="md:w-8/12 w-full md:px-0 px-4 md:text-left text-center">
             <div className="">
               <h3 className="text-white-1100 max-w-199.75 w-full xl:text-5xl md:text-[29px] md:leading-10 text-xl leading-6 md:tracking-normal -tracking-[0.4px] xl:leading-[124%] font-semibold uppercase mb-3 xl:mb-12">
                 Erhalte Antworten auf deine SEO-Fragen – wir beraten dich
@@ -841,14 +841,14 @@ const page = () => {
             </div>
           </div>
           <div className="md:pt-22 pt-8">
-            <h4 className="text-white-1100 xl:text-[32px] text-center font-medium md:text-2xl text-lg leading-[22px] md:tracking-normal -tracking-[0.18px] md:leading-[29px] xl:leading-[124%]">
+            <h4 className="text-white-1100 xl:text-[32px] text-center font-medium md:text-2xl text-lg leading-5.5 md:tracking-normal -tracking-[0.18px] md:leading-7.25 xl:leading-[124%]">
               Was ist SEO? – Die Bedeutung der Suchmaschinenoptimierung erklärt
               von deiner SEO Agentur
             </h4>
             <div className="grid xl:grid-cols-2 xl:gap-8 mt-8 md:mt-16 xl:mt-22">
-              <div className="">
-                <div className="bg-black-1200 rounded-2xl shadow-4xl px-10 py-8 mb-8">
-                  <h4 className="text-white-1100 md:text-2xl font-semibold md:tracking-normal -tracking-[0.18px] text-base leading-[22px] md:leading-[140%] mb-4">
+              <div className="mb-4 md:mb-6 lg:mb-0">
+                <div className="bg-black-1200 rounded-2xl shadow-4xl md:px-10 px-4 py-6 md:py-8 mb-4 md:mb-6 lg:mb-8">
+                  <h4 className="text-white-1100 md:text-2xl font-semibold md:tracking-normal -tracking-[0.18px] text-lg leading-5.5 md:leading-[140%] mb-4">
                     <span className="text-orange-1100 block">
                       Professionelle Suchmaschinenoptimierung
                     </span>
@@ -871,32 +871,32 @@ const page = () => {
                     Suchmaschinenoptimierung profitiert.
                   </p>
                 </div>
-                <div className="bg-black-1200 rounded-2xl shadow-4xl px-10 py-8 xl:h-[calc(100%-460px)]">
-                  <h4 className="text-white-1100 md:text-2xl font-semibold md:tracking-normal -tracking-[0.18px] text-base leading-[22px] md:leading-[140%] mb-4">
+                <div className="bg-black-1200 rounded-2xl shadow-4xl px-4 py-6 md:px-10 md:py-8 xl:h-[calc(100%-460px)]">
+                  <h4 className="text-white-1100 md:text-2xl font-semibold md:tracking-normal -tracking-[0.18px] text-lg leading-5.5 md:leading-[140%] mb-4">
                     Die wichtigsten Bestandteile der{" "}
                     <span className="text-orange-1100">SEO</span>
                   </h4>
-                  <p className="text-white-1100 mb-4 text-sm font-normal leading-[124%]">
+                  <p className="text-white-1100 mb-4 xl:text-sm font-normal md:text-base md:leading-5.5 text-sm leading-4.25 xl:leading-[124%]">
                     SEO besteht aus mehreren Teilbereichen, die gemeinsam das
                     Ranking deiner Website verbessern. Als SEO Agentur bieten
                     wir dir eine Rundum-Betreuung, die alle Aspekte der
                     Suchmaschinenoptimierung abdeckt:
                   </p>
                   <ul>
-                    <li className="flex items-start gap-4 mb-4">
+                    <li className="flex items-start md:gap-4 gap-2 mb-4">
                       <span className="max-w-31.5 w-full text-white-1100 text-sm font-semibold leading-[140%] underline block">
                         OnPage-SEO:
                       </span>
-                      <p className="text-white-1100 text-base font-normal leading-[140%]">
+                      <p className="text-white-1100 md:text-base font-normal text-sm leading-[17px] md:leading-[140%]">
                         Optimierung von Inhalten, Keywords, Meta-Tags und
                         internen Verlinkungen auf deiner Website.
                       </p>
                     </li>
-                    <li className="flex items-start gap-4">
+                    <li className="flex items-start md:gap-4 gap-2 mb-4">
                       <span className="max-w-31.5 w-full text-white-1100 text-sm font-semibold leading-[140%] underline block">
                         OffPage-SEO:
                       </span>
-                      <p className="text-white-1100 text-base font-normal leading-[140%]">
+                      <p className="text-white-1100 md:text-base font-normal text-sm leading-[17px] md:leading-[140%]">
                         Aufbau von Backlinks, um die Autorität deiner Website zu
                         steigern.
                       </p>
@@ -905,7 +905,7 @@ const page = () => {
                       <span className="max-w-31.5 w-full text-white-1100 text-sm font-semibold leading-[140%] underline block">
                         Technical-SEO:
                       </span>
-                      <p className="text-white-1100 text-base font-normal leading-[140%]">
+                      <p className="text-white-1100 md:text-base font-normal text-sm leading-[17px] md:leading-[140%]">
                         Verbesserung der Ladezeiten, URL-Struktur und
                         Mobiloptimierung für beste Performance.
                       </p>
@@ -913,12 +913,12 @@ const page = () => {
                   </ul>
                 </div>
               </div>
-              <div className="">
-                <div className="bg-gradient rounded-2xl shadow-4xl px-10 py-8  mb-8">
-                  <h4 className="text-white-1100 md:text-2xl font-semibold md:tracking-normal -tracking-[0.18px] text-base leading-[22px] md:leading-[140%] mb-4">
+              <div className="mb-4 md:mb-6 lg:mb-0">
+                <div className="bg-gradient rounded-2xl shadow-4xl px-4 py-6 md:px-10 md:py-8  mb-4 md:mb-6 lg:mb-8">
+                  <h4 className="text-white-1100 md:text-2xl font-semibold md:tracking-normal -tracking-[0.18px] text-lg leading-5.5 md:leading-[140%] mb-4">
                     Wie funktioniert SEO? <br />– Die Funktionsweise erklärt
                   </h4>
-                  <p className="text-white-1100 text-base font-normal leading-[140%] mb-4">
+                  <p className="text-white-1100 md:text-base font-normal text-sm leading-[17px] md:leading-[140%] mb-4">
                     SEO basiert auf der Optimierung von Inhalten und technischen
                     Aspekten einer Website, um den Anforderungen von
                     Suchmaschinenalgorithmen gerecht zu werden. Google
@@ -950,7 +950,7 @@ const page = () => {
                           />
                         </svg>
                       </span>
-                      <p className="text-white-1100 text-base font-normal leading-[140%]">
+                      <p className="text-white-1100 md:text-base font-normal text-sm leading-[17px] md:leading-[140%]">
                         Inhaltsrelevanz: Google prüft, ob deine Inhalte zur
                         Suchanfrage passen.
                       </p>
@@ -970,7 +970,7 @@ const page = () => {
                           />
                         </svg>
                       </span>
-                      <p className="text-white-1100 text-base font-normal leading-[140%]">
+                      <p className="text-white-1100 md:text-base font-normal text-sm leading-[17px] md:leading-[140%]">
                         Technische Performance: Schnelle Ladezeiten und
                         Mobilfreundlichkeit sind entscheidend.
                       </p>
@@ -990,7 +990,7 @@ const page = () => {
                           />
                         </svg>
                       </span>
-                      <p className="text-white-1100 text-base font-normal leading-[140%]">
+                      <p className="text-white-1100 md:text-base font-normal text-sm leading-[17px] md:leading-[140%]">
                         Backlinks: Hochwertige Backlinks signalisieren Vertrauen
                         und Autorität.
                       </p>
@@ -1010,18 +1010,18 @@ const page = () => {
                           />
                         </svg>
                       </span>
-                      <p className="text-white-1100 text-base font-normal leading-[140%]">
+                      <p className="text-white-1100 md:text-base font-normal text-sm leading-[17px] md:leading-[140%]">
                         Benutzerfreundlichkeit: Eine gute User Experience
                         verbessert das Ranking Ihrer Website.
                       </p>
                     </li>
                   </ul>
                 </div>
-                <div className="bg-black-1200 rounded-2xl shadow-4xl px-10 py-8">
+                <div className="bg-black-1200 rounded-2xl shadow-4xl md:px-10 px-4 py-6 md:py-8">
                   <h4 className="text-white-1100 md:text-2xl font-semibold md:tracking-normal -tracking-[0.18px] text-base leading-[22px] md:leading-[140%] mb-4">
                     <span className="text-orange-1100">
                       Wie lange dauert es,
-                    </span>
+                    </span>{" "}
                     bis SEO-Ergebnisse sichtbar werden?
                   </h4>
                   <p className="text-white-1100 mb-4 text-sm font-normal leading-[124%]">
@@ -1043,7 +1043,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-8 bg-black-1200 rounded-2xl shadow-4xl px-10 py-8 xl:h-[calc(100%-460px)]">
+            <div className="xl:mt-8 bg-black-1200 rounded-2xl shadow-4xl px-4 py-6 md:px-10 md:py-8 xl:h-[calc(100%-460px)]">
               <h4 className="text-white-1100 md:text-2xl font-semibold md:tracking-normal -tracking-[0.18px] text-base leading-[22px] md:leading-[140%] mb-4">
                 Wie beeinflusst SEO die User Experience?
               </h4>
@@ -1060,7 +1060,7 @@ const page = () => {
                   <span className="max-w-37.5 w-full text-orange-1100 text-sm font-semibold leading-[140%] block">
                     Mobilfreundlichkeit
                   </span>
-                  <p className="text-white-1100 text-base font-normal leading-[140%]">
+                  <p className="text-white-1100 md:text-base font-normal text-sm leading-[17px] md:leading-[140%]">
                     Google bevorzugt mobile Webseiten.
                   </p>
                 </li>
@@ -1068,7 +1068,7 @@ const page = () => {
                   <span className="max-w-37.5 w-full text-orange-1100 text-sm font-semibold leading-[140%] block">
                     Einfache Navigation:
                   </span>
-                  <p className="text-white-1100 text-base font-normal leading-[140%]">
+                  <p className="text-white-1100 md:text-base font-normal text-sm leading-[17px] md:leading-[140%]">
                     Eine intuitive Menüführung verbessert die User Experience.
                   </p>
                 </li>
@@ -1076,7 +1076,7 @@ const page = () => {
                   <span className="max-w-37.5 w-full text-orange-1100 text-sm font-semibold leading-[140%] block">
                     Schnelle Ladezeiten:
                   </span>
-                  <p className="text-white-1100 text-base font-normal leading-[140%]">
+                  <p className="text-white-1100 md:text-base font-normal text-sm leading-[17px] md:leading-[140%]">
                     Schnelle Webseiten senken die Absprungrate.
                   </p>
                 </li>
@@ -1085,27 +1085,36 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="pb-50">
+      <section className="xl:pb-50 md:pb-41 pb-22">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 relative">
-            <h2 className="md:text-[32px] text-xl text-white-1100 font-medium leading-[124%]">
-              <span className="text-orange-1100 block">
+            <h2 className="md:text-[32px] md:tracking-normal -tracking-[0.4px] text-xl text-white-1100 font-bold xl:font-medium leading-[124%]">
+              <span className="text-orange-1100 xl:block">
                 Warum eine SEO Agentur unverzichtbar ist –{" "}
               </span>
               Vorteile der SEO Optimierung für dein Unternehmen
             </h2>
           </div>
-          <div className="flex gap-8 mt-22">
-            <div className="max-w-93.75 w-full">
-              <img src="/images/trading-img.png" alt="" className="w-full" />
+          <div className="flex xl:flex-row flex-col-reverse gap-8 md:gap-16 xl:gap-8 mt-8 md:mt-16 xl:mt-22">
+            <div className="xl:max-w-93.75 max-w-full w-full">
+              <img
+                src="/images/trading-img.png"
+                alt=""
+                className="w-full xl:h-auto h-62 object-cover object-center xl:block hidden rounded-2xl"
+              />
+              <img
+                src="/images/trading-img-tablet.jpg"
+                alt=""
+                className="w-full xl:h-auto h-62 object-cover object-center xl:hidden block rounded-2xl"
+              />
             </div>
-            <div className="flex-1 w-full h-160.5 overflow-y-scroll pr-10 custom-scroll">
+            <div className="xl:flex-1 w-full h-160.5 overflow-y-scroll pr-5 md:pr-10 custom-scroll">
               <div className="">
-                <div className="mb-8">
-                  <h4 className="text-orange-1100 font-semibold text-2xl mb-3 leading-[140%]">
+                <div className="xl:mb-8 md:mb-12 mb-6">
+                  <h4 className="text-orange-1100 font-semibold xl:text-2xl md:text-xl text-base leading-4.75 mb-3 md:leading-[140%]">
                     Erhöhte Sichtbarkeit durch Suchmaschinenoptimierung
                   </h4>
-                  <p className="text-white-1100 text-base leading-[140%] font-normal">
+                  <p className="text-white-1100 md:text-base text-sm leading-4.25 md:leading-[140%] font-normal">
                     Die Sichtbarkeit in den Suchmaschinen ist ein
                     Schlüsselfaktor für den Erfolg jeder Website. Durch
                     professionelle SEO optimiert-Strategien kann deine Seite in
@@ -1118,12 +1127,12 @@ const page = () => {
                     Marke nachhaltig.
                   </p>
                 </div>
-                <div className="mb-8">
-                  <h4 className="text-orange-1100 font-semibold text-2xl mb-3 leading-[140%]">
+                <div className="xl:mb-8 md:mb-12 mb-6">
+                  <h4 className="text-orange-1100 font-semibold xl:text-2xl md:text-xl text-base leading-4.75 mb-3 md:leading-[140%]">
                     Steigerung des organischen Traffics durch gezielte
                     SEO-Maßnahmen
                   </h4>
-                  <p className="text-white-1100 text-base leading-[140%] font-normal">
+                  <p className="text-white-1100 md:text-base text-sm leading-4.25 md:leading-[140%] font-normal">
                     Organischer Traffic ist einer der wichtigsten Vorteile von
                     SEO. Durch die gezielte Optimierung deiner Website für
                     relevante Keywords können Nutzer deine Inhalte leicht
@@ -1135,11 +1144,11 @@ const page = () => {
                     Dienstleistungen interessieren.
                   </p>
                 </div>
-                <div className="mb-8">
-                  <h4 className="text-orange-1100 font-semibold text-2xl mb-3 leading-[140%]">
+                <div className="xl:mb-8 md:mb-12 mb-6">
+                  <h4 className="text-orange-1100 font-semibold xl:text-2xl md:text-xl text-base leading-4.75 mb-3 md:leading-[140%]">
                     Marketingkosten senken mit einer effizienten SEO-Strategie
                   </h4>
-                  <p className="text-white-1100 text-base leading-[140%] font-normal">
+                  <p className="text-white-1100 md:text-base text-sm leading-4.25 md:leading-[140%] font-normal">
                     SEO ist eine kosteneffiziente Marketingstrategie. Während
                     bezahlte Anzeigen kontinuierlich Budget verschlingen, bietet
                     SEO langfristige Ergebnisse ohne wiederkehrende Kosten.
@@ -1150,12 +1159,12 @@ const page = () => {
                     setzen.
                   </p>
                 </div>
-                <div className="mb-8">
-                  <h4 className="text-orange-1100 font-semibold text-2xl mb-3 leading-[140%]">
+                <div className="xl:mb-8 md:mb-12 mb-6">
+                  <h4 className="text-orange-1100 font-semibold xl:text-2xl md:text-xl text-base leading-4.75 mb-3 md:leading-[140%]">
                     Vertrauen und Glaubwürdigkeit aufbauen durch SEO und
                     Top-Rankings
                   </h4>
-                  <p className="text-white-1100 text-base leading-[140%] font-normal">
+                  <p className="text-white-1100 md:text-base text-sm leading-4.25 md:leading-[140%] font-normal">
                     Eine gute SEO Optimierung trägt zum Aufbau von Vertrauen und
                     Glaubwürdigkeit bei. Websites, die organisch auf den
                     vorderen Plätzen in den Suchergebnissen erscheinen, werden
@@ -1166,11 +1175,11 @@ const page = () => {
                     höheren Konversionsraten führt.
                   </p>
                 </div>
-                <div className="mb-8">
-                  <h4 className="text-orange-1100 font-semibold text-2xl mb-3 leading-[140%]">
+                <div className="xl:mb-8 md:mb-12 mb-6">
+                  <h4 className="text-orange-1100 font-semibold xl:text-2xl md:text-xl text-base leading-4.75 mb-3 md:leading-[140%]">
                     Verbesserte Benutzererfahrung dank SEO Optimierung{" "}
                   </h4>
-                  <p className="text-white-1100 text-base leading-[140%] font-normal">
+                  <p className="text-white-1100 md:text-base text-sm leading-4.25 md:leading-[140%] font-normal">
                     SEO geht Hand in Hand mit einer positiven Benutzererfahrung
                     (UX). Eine gut optimierte Website lädt schneller, ist
                     mobilfreundlich und bietet eine intuitive Navigation. All
@@ -1181,12 +1190,12 @@ const page = () => {
                     Benutzerfreundlichkeit deiner Website zu optimieren.
                   </p>
                 </div>
-                <div className="mb-8">
-                  <h4 className="text-orange-1100 font-semibold text-2xl mb-3 leading-[140%]">
+                <div className="xl:mb-8 md:mb-12 mb-6">
+                  <h4 className="text-orange-1100 font-semibold xl:text-2xl md:text-xl text-base leading-4.75 mb-3 md:leading-[140%]">
                     Wettbewerbsvorteil sichern durch maßgeschneiderte
                     SEO-Strategien
                   </h4>
-                  <p className="text-white-1100 text-base leading-[140%] font-normal">
+                  <p className="text-white-1100 md:text-base text-sm leading-4.25 md:leading-[140%] font-normal">
                     In einem umkämpften Marktumfeld ist es entscheidend, sich
                     von der Konkurrenz abzuheben. Unternehmen, die SEO
                     ignorieren, riskieren, hinter ihren Wettbewerbern
@@ -1198,10 +1207,10 @@ const page = () => {
                   </p>
                 </div>
                 <div className="">
-                  <h4 className="text-orange-1100 font-semibold text-2xl mb-3 leading-[140%]">
+                  <h4 className="text-orange-1100 font-semibold xl:text-2xl md:text-xl text-base leading-4.75 mb-3 md:leading-[140%]">
                     Langfristige SEO-Ergebnisse für nachhaltigen Erfolg
                   </h4>
-                  <p className="text-white-1100 text-base leading-[140%] font-normal">
+                  <p className="text-white-1100 md:text-base text-sm leading-4.25 md:leading-[140%] font-normal">
                     Im Gegensatz zu kurzfristigen Marketingstrategien bietet SEO
                     nachhaltige Ergebnisse. Auch wenn SEO ein kontinuierlicher
                     Prozess ist, können die erzielten Ergebnisse langfristig
@@ -1217,10 +1226,10 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="relative bg-[url('/images/call-action-bg.jpg')] bg-cover bg-center py-26">
+      <section className="relative bg-[url('/images/call-action-bg.jpg')] bg-cover bg-center pt-10 md:pt-15.25 pb-[287px] xl:py-26">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="">
-            <h3 className="text-white-1100 font-semibold text-5xl mb-12 leading-[124%] uppercase max-w-177.25 w-full">
+            <h3 className="text-white-1100 font-semibold md:text-[40px] md:leading-12.25 text-[28px] leading-8.5 xl:text-5xl mb-8 md:mb-12 xl:leading-[124%] uppercase max-w-177.25 w-full">
               Du fragst dich: Ist das überhaupt relevant für mich? Wir zeigen es
               dir
             </h3>
@@ -1230,14 +1239,19 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col absolute -top-21.5 right-0">
-          <img src="/images/spaceMen.png" alt="" />
+        <div className="flex flex-col absolute top-auto xl:bottom-auto -bottom-[87px] md:-bottom-21.75 xl:-top-21.5 right-0">
+          <img src="/images/spaceMen.png" alt="" className="xl:block hidden" />
+          <img
+            src="/images/mbl-spaceman.png"
+            className="xl:hidden block h-100 object-cover object-center"
+            alt=""
+          />
         </div>
       </section>
-      <section className="relative py-50">
+      <section className="relative xl:py-50 md:py-41 py-22">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 relative">
-            <h2 className="md:text-5xl text-xl text-white-1100 font-medium leading-[124%]">
+            <h2 className="xl:text-5xl md:text-[32px] md:leading-11 text-xl leading-6 text-white-1100 font-medium xl:leading-[124%]">
               <span className="text-orange-1100 block">
                 SEO-Techniken und -Strategien
               </span>
@@ -1250,19 +1264,19 @@ const page = () => {
               variant="transparent"
             />
           </div>
-          <div className="flex gap-8 mt-22">
+          <div className="flex gap-8 xl:mt-22 md:mt-16 mt-12 xl:flex-row flex-col">
             <div className="flex-1 w-full">
-              <h4 className="text-white-1100 font-semibold text-2xl leading-[140%]">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl text-base leading-[19px] md:text-xl md:leading-7 xl:leading-[140%]">
                 OnPage SEO Optimierung – Wie deine SEO Agentur dein
                 Google-Ranking verbessert
               </h4>
-              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center p-8'>
-                <div className="mb-8">
+              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center py-8 px-4 md:p-8'>
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Effektive Keyword-Recherche und technische
                     OnPage-Optimierung für maximale Sichtbarkeit
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Eine erfolgreiche SEO-Optimierung beginnt mit einer
                     fundierten Keyword-Recherche, bei der gezielt Suchbegriffe
                     mit hohem Suchvolumen und geringer Konkurrenz identifiziert
@@ -1273,12 +1287,12 @@ const page = () => {
                     Suchmaschinen höchste Relevanz signalisiert.
                   </p>
                 </div>
-                <div className="mb-8">
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Content-Optimierung: Hochwertige Inhalte für bessere
                     Rankings und Nutzerbindung
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Die Erstellung von SEO-optimierten Inhalten ist der
                     Schlüssel zu nachhaltigem Erfolg. Deine SEO Agentur
                     entwickelt Texte, Bilder und Videos, die perfekt auf deine
@@ -1293,7 +1307,7 @@ const page = () => {
                     Interne Verlinkungsstrategien: Optimale Navigation für
                     Nutzer und Suchmaschinen
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Eine durchdachte interne Verlinkungsstrategie ist
                     essenziell, um eine SEO-optimierte Website zu schaffen. Sie
                     hilft sowohl den Nutzern als auch den Suchmaschinen, sich
@@ -1306,27 +1320,32 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col max-w-120.25 w-full">
+            <div className="flex flex-col xl:max-w-120.25 w-full">
               <img
                 src="/images/Onpage-img.jpg"
                 alt=""
-                className="w-full h-full object-cover object-center rounded-2xl"
+                className="w-full object-cover object-center xl:block hidden rounded-2xl xl:h-auto h-62 "
+              />
+              <img
+                src="/images/strategien-img1.jpg"
+                alt=""
+                className="w-full object-cover xl:hidden block object-center rounded-2xl xl:h-auto h-62"
               />
             </div>
           </div>
-          <div className="flex gap-8 mt-22">
+          <div className="flex gap-8 xl:mt-22 md:mt-16 mt-12 xl:flex-row flex-col">
             <div className="flex-1 w-full order-2">
-              <h4 className="text-white-1100 font-semibold text-2xl leading-[140%]">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl text-base leading-4.75 md:text-xl md:leading-7 xl:leading-[140%]">
                 OffPage SEO: Steigere deine Autorität durch gezielte Backlinks
                 mit einer SEO Agentur
               </h4>
-              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center p-8'>
-                <div className="mb-8">
+              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center py-8 px-4 md:p-8'>
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Erfolgreiches Linkbuilding: Backlinks für bessere
                     Suchmaschinenoptimierung
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Linkbuilding ist ein zentraler Baustein jeder erfolgreichen
                     OffPage-SEO-Optimierung. Es geht darum, qualitativ
                     hochwertige Backlinks von vertrauenswürdigen Websites zu
@@ -1339,12 +1358,12 @@ const page = () => {
                     Sichtbarkeit in den Suchergebnissen nachhaltig.
                   </p>
                 </div>
-                <div className="mb-8">
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Social Signals für SEO: Nutze die Kraft von Social Media mit
                     einer erfahrenen SEO Agentur
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Social Media spielt eine immer größere Rolle für die
                     SEO-Sichtbarkeit. Social Signals, wie Likes, Shares und
                     Kommentare, zeigen Suchmaschinen, dass deine Inhalte
@@ -1361,7 +1380,7 @@ const page = () => {
                     Reputation Management für besseres Ranking: So optimiert
                     deine SEO Agentur deine Online-Reputation
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Ein positives Online-Reputation-Management ist für jedes
                     Unternehmen unerlässlich, um langfristig erfolgreich zu
                     sein. Negative Bewertungen und Kommentare können deinem
@@ -1375,7 +1394,7 @@ const page = () => {
                   </p>
                 </div>
                 <div className="">
-                  <p className="text-white-1100 font-light text-xs italic leading-[124%] mt-8">
+                  <p className="text-white-1100 font-light text-xs italic leading-[124%] mt-3 xl:mt-8">
                     Eine starke Reputation ist ebenso entscheidend wie
                     Backlinks. Erfahre mehr über gezielte{" "}
                     <Link href={"#"} className="underline">
@@ -1387,27 +1406,32 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col max-w-120.25 w-full order-1">
+            <div className="flex flex-col xl:max-w-120.25 w-full order-2 xl:order-1">
               <img
                 src="/images/offPage-img.jpg"
                 alt=""
-                className="w-full h-full object-cover object-center rounded-2xl"
+                className="w-full object-cover xl:block hidden object-center rounded-2xl xl:h-auto h-62 "
+              />
+              <img
+                src="/images/strategien-img2.jpg"
+                alt=""
+                className="w-full object-cover xl:hidden block object-center rounded-2xl xl:h-auto h-62 "
               />
             </div>
           </div>
-          <div className="flex gap-8 mt-22">
+          <div className="flex gap-8 xl:mt-22 md:mt-16 mt-12 xl:flex-row flex-col">
             <div className="flex-1 w-full">
-              <h4 className="text-white-1100 font-semibold text-2xl leading-[140%]">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl text-base leading-[19px] md:text-xl md:leading-7 xl:leading-[140%]">
                 Technisches SEO mit deiner SEO Agentur: Ladezeiten, Sicherheit &
                 mehr
               </h4>
-              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center p-8'>
-                <div className="mb-8">
+              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center py-8 px-4 md:p-8'>
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Mobile- und Website-Optimierung: Mobilfreundliches Design
                     und klare Architektur für SEO-Erfolg
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Eine mobil-optimierte Website ist entscheidend, da Google
                     mobilefreundliche Seiten bevorzugt und in den Rankings
                     besser bewertet. Deine SEO Agentur sorgt dafür, dass deine
@@ -1425,7 +1449,7 @@ const page = () => {
                     Sicherheitsprotokolle und SSL: Vertrauen und Schutz für
                     bessere SEO-Ergebnisse
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Sicherheit ist ein wichtiger Ranking-Faktor in der
                     Suchmaschinenoptimierung. SSL-Zertifikate (HTTPS) schützen
                     nicht nur die Daten der Nutzer, sondern stärken auch das
@@ -1438,27 +1462,32 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col max-w-120.25 w-full">
+            <div className="flex flex-col xl:max-w-120.25 w-full">
               <img
                 src="/images/technisches-img.jpg"
                 alt=""
-                className="w-full h-full object-cover object-center rounded-2xl"
+                className="w-full object-cover xl:block hidden object-center rounded-2xl xl:h-auto h-62 "
+              />
+              <img
+                src="/images/strategien-img3.jpg"
+                alt=""
+                className="w-full object-cover xl:hidden block object-center rounded-2xl xl:h-auto h-62 "
               />
             </div>
           </div>
-          <div className="flex gap-8 mt-22">
+          <div className="flex gap-8 xl:mt-22 md:mt-16 mt-12 xl:flex-row flex-col">
             <div className="flex-1 w-full order-2">
-              <h4 className="text-white-1100 font-semibold text-2xl leading-[140%]">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl text-base leading-[19px] md:text-xl md:leading-7 xl:leading-[140%]">
                 Local SEO – Werde lokal gefunden dank professioneller
                 SEO-Beratung
               </h4>
-              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center p-8'>
-                <div className="mb-8">
+              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center py-8 px-4 md:p-8'>
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Google My Business Optimierung: Lokale Auffindbarkeit mit
                     deiner SEO Agentur steigern
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Eine optimierte Google My Business-Eintragung ist
                     entscheidend für Unternehmen, die lokal gefunden werden
                     möchten. Durch die Pflege eines vollständigen und gut
@@ -1473,12 +1502,12 @@ const page = () => {
                     steigert.
                   </p>
                 </div>
-                <div className="mb-8">
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Eintragung in lokale Verzeichnisse: Mehr Reichweite durch
                     gezielte SEO-Strategien
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Um deine lokale SEO-Optimierung zu stärken, ist die
                     Eintragung in relevante lokale Verzeichnisse unerlässlich.
                     Branchenverzeichnisse wie Yelp, Gelbe Seiten oder andere
@@ -1497,7 +1526,7 @@ const page = () => {
                     Kundenbewertungen für Local SEO: Vertrauensaufbau und
                     bessere Suchergebnisse
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Kundenbewertungen spielen eine wichtige Rolle im Local SEO,
                     da sie das Vertrauen und die Glaubwürdigkeit deines
                     Unternehmens bei potenziellen Kunden steigern. Positive
@@ -1513,27 +1542,32 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col max-w-120.25 w-full order-1">
+            <div className="flex flex-col xl:max-w-120.25 w-full order-2 xl:order-1">
               <img
                 src="/images/local-seo-img.jpg"
                 alt=""
-                className="w-full h-full object-cover object-center rounded-2xl"
+                className="w-full object-cover xl:block hidden object-center rounded-2xl xl:h-auto h-62 "
+              />
+              <img
+                src="/images/strategien-img4.jpg"
+                alt=""
+                className="w-full object-cover xl:hidden block object-center rounded-2xl xl:h-auto h-62 "
               />
             </div>
           </div>
-          <div className="flex gap-8 mt-22">
+          <div className="flex gap-8 xl:mt-22 md:mt-16 mt-12 xl:flex-row flex-col">
             <div className="flex-1 w-full">
-              <h4 className="text-white-1100 font-semibold text-2xl leading-[140%]">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl text-base leading-[19px] md:text-xl md:leading-7 xl:leading-[140%]">
                 E-Commerce SEO: Mehr Verkäufe mithilfe deiner SEO Agentur
               </h4>
-              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center p-8'>
-                <div className="mb-8">
+              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center py-8 px-4 md:p-8'>
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Produkt- und Kategorie-Seitenoptimierung: Sichtbarkeit und
                     Benutzererfahrung durch gezielte Suchmaschinenoptimierung
                     steigern
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Die Optimierung von Produkt- und Kategorie-Seiten ist ein
                     zentraler Bestandteil des E-Commerce SEO. Durch die
                     strategische Platzierung relevanter Keywords und
@@ -1549,7 +1583,7 @@ const page = () => {
                     Conversion Optimierung im E-Commerce: Mehr Umsatz durch
                     technische und inhaltliche SEO-Maßnahmen
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Eine gut strukturierte und optimierte Kategorie-Seite ist
                     essenziell für die Benutzererfahrung und die SEO-Performance
                     eines Online-Shops. SEO-Agenturen arbeiten daran, dass deine
@@ -1563,7 +1597,7 @@ const page = () => {
                     Rankings in den Suchergebnissen.
                   </p>
                 </div>
-                <p className="text-white-1100 font-light text-xs italic leading-[124%] mt-8">
+                <p className="text-white-1100 font-light text-xs italic leading-[124%] mt-3 xl:mt-8">
                   Erfahre mehr über{" "}
                   <Link href={"/conversion-optimierung"} className="underline">
                     {" "}
@@ -1573,27 +1607,32 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col max-w-120.25 w-full">
+            <div className="flex flex-col xl:max-w-120.25 w-full">
               <img
                 src="/images/E-Commerce-img.jpg"
                 alt=""
-                className="w-full h-full object-cover object-center rounded-2xl"
+                className="w-full object-cover xl:block hidden object-center rounded-2xl xl:h-auto h-62"
+              />
+              <img
+                src="/images/strategien-img5.jpg"
+                alt=""
+                className="w-full object-cover xl:hidden block object-center rounded-2xl xl:h-auto h-62"
               />
             </div>
           </div>
-          <div className="flex gap-8 mt-22">
+          <div className="flex gap-8 xl:mt-22 md:mt-16 mt-12 xl:flex-row flex-col">
             <div className="flex-1 w-full order-2">
-              <h4 className="text-white-1100 font-semibold text-2xl leading-[140%]">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl text-base leading-[19px] md:text-xl md:leading-7 xl:leading-[140%]">
                 Mobile SEO mit Unterstützung einer SEO Agentur – Optimiere deine
                 Website für die mobile Suche
               </h4>
-              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center p-8'>
-                <div className="mb-8">
+              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center py-8 px-4 md:p-8'>
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Responsive Design für Mobile SEO: Wie deine SEO Agentur
                     deine Website für mobile Geräte optimiert
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Ein responsives Design ist unverzichtbar, um in der mobilen
                     Suche erfolgreich zu sein. Deine SEO Agentur stellt sicher,
                     dass deine Website auf allen mobilen Endgeräten optimal
@@ -1607,12 +1646,12 @@ const page = () => {
                     deiner Seite und die Konversionsraten steigen.
                   </p>
                 </div>
-                <div className="mb-8">
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     SEO Agentur für Mobile PageSpeed: Ladezeitenoptimierung für
                     bessere mobile Suchmaschinen-Rankings
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Die Ladegeschwindigkeit ist einer der wichtigsten Faktoren
                     für die mobile Suchmaschinenoptimierung. Langsame Ladezeiten
                     führen zu höheren Absprungraten und einer schlechten User
@@ -1631,7 +1670,7 @@ const page = () => {
                     Erfolgreiches Mobile First Indexing: Wie deine Website für
                     Googles mobile Strategie optimiert wird
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Seit Google das Mobile First Indexing eingeführt hat, wird
                     die mobile Version einer Website vorrangig für das Ranking
                     in den Suchergebnissen verwendet. Das bedeutet, dass deine
@@ -1646,27 +1685,32 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col max-w-120.25 w-full order-1">
+            <div className="flex flex-col xl:max-w-120.25 w-full order-2 xl:order-1">
               <img
                 src="/images/mobile-seo-img.jpg"
                 alt=""
-                className="w-full h-full object-cover object-center rounded-2xl"
+                className="w-full object-cover xl:block hidden object-center rounded-2xl xl:h-auto h-62 "
+              />
+              <img
+                src="/images/strategien-img6.jpg"
+                alt=""
+                className="w-full object-cover xl:hidden block object-center rounded-2xl xl:h-auto h-62"
               />
             </div>
           </div>
-          <div className="flex gap-8 mt-22">
+          <div className="flex gap-8 xl:mt-22 md:mt-16 mt-12 xl:flex-row flex-col">
             <div className="flex-1 w-full">
-              <h4 className="text-white-1100 font-semibold text-2xl leading-[140%]">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl text-base leading-[19px] md:text-xl md:leading-7 xl:leading-[140%]">
                 Content-Marketing & SEO: Wie relevante Inhalte deine
                 Sichtbarkeit steigern
               </h4>
-              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center p-8'>
-                <div className="mb-8">
+              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center py-8 px-4 md:p-8'>
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     SEO Agentur für Content-Erstellung: Relevante Inhalte, die
                     deine Suchmaschinenoptimierung vorantreiben
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Die Content-Erstellung ist ein zentraler Bestandteil einer
                     SEO-optimierten Strategie. Deine SEO Agentur erstellt
                     einzigartige und relevante Inhalte, die sowohl deine
@@ -1680,12 +1724,12 @@ const page = () => {
                     was sich positiv auf deine Rankings auswirkt.
                   </p>
                 </div>
-                <div className="mb-8">
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Regelmäßige SEO-Blogs und Artikel: Wie deine SEO Agentur
                     deine Website kontinuierlich stärkt
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Regelmäßige Blogbeiträge und Artikel sind essenziell, um die
                     Sichtbarkeit deiner Website kontinuierlich zu verbessern.
                     Deine SEO Agentur plant und erstellt Inhalte, die relevante
@@ -1703,7 +1747,7 @@ const page = () => {
                     Content-Strategie: Langfristige Planung der Inhalte für
                     maximale SEO-Wirkung
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Eine gut durchdachte Content-Strategie ist entscheidend, um
                     langfristig erfolgreich zu sein. Deine SEO Agentur
                     entwickelt umfassende Content-Pläne, die auf eine
@@ -1716,7 +1760,7 @@ const page = () => {
                     nachhaltig gestärkt wird.
                   </p>
                 </div>
-                <p className="text-white-1100 font-light text-xs italic leading-[124%] mt-8">
+                <p className="text-white-1100 font-light text-xs italic leading-[124%] mt-3 xl:mt-8">
                   Visuelle Inhalte, wie{" "}
                   <Link href={"/"} className="underline">
                     {" "}
@@ -1731,26 +1775,31 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col max-w-120.25 w-full">
+            <div className="flex flex-col xl:max-w-120.25 w-full">
               <img
                 src="/images/Content-img.jpg"
                 alt=""
-                className="w-full h-full object-cover object-center rounded-2xl"
+                className="w-full object-cover  xl:block hidden object-center rounded-2xl xl:h-auto h-62 "
+              />
+              <img
+                src="/images/strategien-img7.jpg"
+                alt=""
+                className="w-full object-cover xl:hidden block object-center rounded-2xl xl:h-auto h-62"
               />
             </div>
           </div>
-          <div className="flex gap-8 mt-22">
+          <div className="flex gap-8 xl:mt-22 md:mt-16 mt-12 xl:flex-row flex-col">
             <div className="flex-1 w-full order-2">
-              <h4 className="text-white-1100 font-semibold text-2xl leading-[140%]">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl text-base leading-[19px] md:text-xl md:leading-7 xl:leading-[140%]">
                 SEO-Analyse und Reporting – Deine SEO Agentur gibt dir präzise
                 Insights
               </h4>
-              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center p-8'>
-                <div className="mb-8">
+              <div className='bg-black mt-8 rounded-2xl shadow-4xl bg-[url("/images/galaxy-img2.jpg")] bg-cover bg-center py-8 px-4 md:p-8'>
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Umfassende Website-Analyse für bessere SEO-Leistungen
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Eine gründliche SEO-Analyse ist der erste Schritt, um das
                     volle Potenzial deiner Website auszuschöpfen. Deine SEO
                     Agentur untersucht technische Faktoren, Inhaltsqualität,
@@ -1760,12 +1809,12 @@ const page = () => {
                     Suchmaschinenanforderungen abgestimmt werden.
                   </p>
                 </div>
-                <div className="mb-8">
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Wettbewerbsanalyse: Deine Position im Vergleich zur
                     Konkurrenz
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Durch die Wettbewerbsanalyse erhältst du Einblicke in die
                     Strategien deiner Mitbewerber. Deine SEO Agentur vergleicht
                     deine SEO-Performance mit der deiner Konkurrenz und
@@ -1774,12 +1823,12 @@ const page = () => {
                     Steigerung deiner Sichtbarkeit zu entwickeln.
                   </p>
                 </div>
-                <div className="mb-8">
+                <div className="md:mb-8 mb-6">
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Regelmäßige Fortschrittsberichte für eine klare Sicht auf
                     deine SEO-Leistungen
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Deine SEO Agentur erstellt regelmäßige Berichte, die die
                     Entwicklung deiner Sichtbarkeit, Rankings und des
                     organischen Traffics aufzeigen. Durch das Monitoring der
@@ -1792,7 +1841,7 @@ const page = () => {
                   <h5 className="text-orange-1100 font-bold text-base leading-[140%]">
                     Datenbasierte Optimierung für kontinuierliche Verbesserung
                   </h5>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-4">
+                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3 xl:mt-4">
                     Die gewonnenen Erkenntnisse aus der SEO-Analyse und dem
                     Reporting ermöglichen eine datenbasierte Anpassung der
                     SEO-Optimierung. Mit diesen kontinuierlichen Optimierungen
@@ -1805,31 +1854,41 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col max-w-120.25 w-full order-1">
+            <div className="flex flex-col xl:max-w-120.25 w-full order-2 xl:order-1">
               <img
                 src="/images/Analyse-img.jpg"
                 alt=""
-                className="w-full h-full object-cover object-center rounded-2xl"
+                className="w-full object-cover xl:block hidden object-center rounded-2xl xl:h-auto h-62 "
+              />
+              <img
+                src="/images/strategien-img8.jpg"
+                alt=""
+                className="w-full object-cover xl:hidden block object-center rounded-2xl xl:h-auto h-62 "
               />
             </div>
           </div>
         </div>
       </section>
-      <section className="relative bg-[url('/images/Call-to-Action-2.jpg')] bg-cover bg-center shadow-4xl pt-17.25 pb-19.5">
+      <section className="relative bg-[url('/images/Call-to-Action-2.jpg')]  bg-cover bg-center shadow-4xl xl:pt-17.25 pt-[34px] md:py-7.25 xl:pb-19.5">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
-          <div className="flex items-center">
-            <div className="w-5/12">
-              <div className="-ml-23.5 float-left -mt-28 -mb-46.25">
+          <div className="flex items-center md:flex-row flex-col-reverse">
+            <div className="md:w-5/12 relative w-full">
+              <div className="3xl:-ml-23.5 2xl:-ml-16 float-right md:float-left  md:-mt-28 md:-mb-46.25">
                 <img
                   src="/images/3d-rendring.png"
                   alt="SEO Agentur CTA"
-                  className="max-w-[inherit]"
+                  className="xl:h-155.5 h-[331px] md:h-106.75 relative z-1"
                 />
               </div>
+              <img
+                src="/images/big-circle.png"
+                className="absolute 2xl:-top-[108px] md:-top-[150px] md:bottom-auto bottom-0 left-5 md:-left-10 2xl:left-7 3xl:-left-1.5 h-[264px] xl:h-[436px]"
+                alt=""
+              />
             </div>
-            <div className="w-7/12">
+            <div className="md:w-7/12">
               <div className="">
-                <h3 className="text-white-1100 max-w-199.75 w-full text-5xl leading-[124%] font-semibold uppercase mb-10">
+                <h3 className="text-white-1100 max-w-199.75 w-full xl:text-5xl md:text-left text-center md:text-[32px] md:leading-11 text-xl leading-6 md:tracking-normal -tracking-[0.4px] xl:leading-[124%] font-semibold uppercase mb-8 md:mb-10">
                   Erfahre, warum du noch keine Kunden über Deine Website
                   bekommst!
                 </h3>
@@ -1841,19 +1900,33 @@ const page = () => {
             </div>
           </div>
         </div>
+        <img
+          src="/images/circle-shape.svg"
+          className="absolute top-1/2 md:-top-10 2xl:top-9.25 left-0"
+          alt=""
+        />
       </section>
-      <section className="py-50">
+      <section className="xl:py-50 md:py-41 py-22">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-8 md:pb-10 relative">
-            <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
-            <h2 className="text-white-1100 md:text-5xl text-xl leading-6 md:leading-11 font-bold xl:leading-16.75">
+            <span className="md:w-191.5 w-full h-37.5 hidden items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
+            <h2 className="text-white-1100 xl:text-5xl text-xl leading-6 md:text-[32px] md:leading-7 font-bold xl:leading-16.75">
               <span className="text-orange-1100 block">Deine SEO Agentur:</span>
-              Individuelle Strategien, modernste Tools und messbare Erfolge für
-              langfristige Sichtbarkeit
+              <span className="xl:text-5xl md:text-xl md:leading-7 xl:pt-0 xl:inline-block block pt-3 text-base leading-[19px] font-bold xl:leading-16.75">
+                {" "}
+                Individuelle Strategien, modernste Tools und messbare Erfolge
+                für langfristige Sichtbarkeit
+              </span>
             </h2>
+            <CtaButton
+              href="/"
+              label="Kostenloses Kennenlernen"
+              className="mt-10"
+              variant="transparent"
+            />
           </div>
-          <div className="py-22">
-            <h3 className="text-[32px] text-center leading-[124%] font-medium text-white-1100">
+          <div className="xl:py-22 md:pt-16 md:pb-12 py-8">
+            <h3 className="md:text-[32px] text-xl leading-6 md:tarcking-normal -tracking-[0.4px] text-center md:leading-[124%] font-medium text-white-1100">
               Der SEO Prozess - Step by Step zu Top Rankings mit deiner SEO
               Agentur
             </h3>
@@ -1862,31 +1935,31 @@ const page = () => {
         </div>
       </section>
       <section className="overflow-hidden">
-        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
+        <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 relative">
-            <h2 className="md:text-[32px] max-w-205 w-full mx-auto text-white-1100 font-medium leading-[124%]">
+            <h2 className="md:text-[32px] text-xl leading-6 md:tarcking-normal -tracking-[0.4px] xl:max-w-205 w-full mx-auto text-white-1100 font-medium leading-[124%]">
               Unsere SEO Agentur Pakete – Maßgeschneiderte Lösungen für deinen
               Erfolg
             </h2>
           </div>
         </div>
-        <div className="md:pt-22 pt-8">
+        <div className="xl:pt-22 md:pt-16 pt-8">
           <div className="max-w-308 md:px-10 px-4 xl:px-4 mx-auto w-full ">
             <Pricingslider />
           </div>
         </div>
       </section>
-      <section className="overflow-hidden py-50">
+      <section className="overflow-hidden xl:pt-50 md:pt-41 pb-0 py-22">
         <div className="max-w-308 md:px-10 px-4 xl:px-4 mx-auto w-full ">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 relative">
-            <h2 className="md:text-[32px] max-w-225 w-full mx-auto text-white-1100 font-medium leading-[124%]">
+            <h2 className="xl:text-[32px] max-w-225 w-full mx-auto text-white-1100 font-medium md:text-2xl md:leading-[29px] text-xl leading-6 md:tarcking-normal -tracking-[0.4px] xl:leading-[124%]">
               Die besten SEO-Tools im Einsatz – Deine SEO Agentur nutzt
               modernste Technologien
             </h2>
           </div>
-          <div className="card-grid mt-22">
-            <div className="card-google-analytics bg-black-1200 rounded-2xl shadow-4x p-6">
-              <h4 className="text-white-1100 font-semibold text-2xl mb-2 leading-[140%]">
+          <div className="xl:grid hidden grid-cols-3 xl:grid-cols-4 gap-8 xl:mt-22 mt-16">
+            <div className="card-google-analytics xl:col-span-1 col-span-2  bg-black-1200 rounded-2xl shadow-4xl p-6">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl md:text-xl text-base leading-[19px] md:leading-7 mb-2 xl:leading-[140%]">
                 Google <br /> Analytics{" "}
               </h4>
               <p className="text-white-1100 font-normal text-xs leading-[140%]">
@@ -1900,10 +1973,10 @@ const page = () => {
                 <img src="/images/up-arw.svg" alt="" />
               </Link>
             </div>
-            <div className="card-ga-logo bg-white-1100 rounded-2xl shadow-5xl p-8 flex items-center justify-center">
+            <div className="card-ga-logo bg-white-1100 rounded-2xl xl:col-span-1 col-span-2 shadow-5xl p-8 flex items-center justify-center">
               <img src="/images/signal2.png" alt="" />
             </div>
-            <div className="card-hero-image-top border border-solid border-orange-1100 rounded-2xl">
+            <div className="card-hero-image-top xl:col-span-2 border border-solid border-orange-1100 rounded-2xl">
               <img
                 src="/images/Analytics-img.jpg"
                 alt=""
@@ -1913,8 +1986,8 @@ const page = () => {
             <div className="card-semrush-logo bg-white-1100 rounded-2xl shadow-5xl p-8 flex items-center justify-center">
               <img src="/images/semrush-img.png" alt="" />
             </div>
-            <div className="card-semrush-text bg-black-1200 rounded-2xl shadow-4x p-6">
-              <h4 className="text-white-1100 font-semibold text-2xl mb-2 leading-[140%]">
+            <div className="card-semrush-text bg-black-1200 rounded-2xl shadow-4xl p-4 md:p-6">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl md:text-xl text-base leading-[19px] md:leading-7 mb-2 xl:leading-[140%]">
                 SEMrush{" "}
               </h4>
               <p className="text-white-1100 font-normal text-xs leading-[140%]">
@@ -1931,8 +2004,8 @@ const page = () => {
             <div className="card-ahrefs-logo bg-white-1100 rounded-2xl shadow-5xl p-8 flex items-center justify-center">
               <img src="/images/ahrefs.png" alt="" />
             </div>
-            <div className="card-ahrefs-text bg-black-1200 rounded-2xl shadow-4x p-6">
-              <h4 className="text-white-1100 font-semibold text-2xl mb-2 leading-[140%]">
+            <div className="card-ahrefs-text  bg-black-1200 rounded-2xl shadow-4xl p-4 md:p-6">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl md:text-xl text-base leading-[19px] md:leading-7 mb-2 xl:leading-[140%]">
                 Ahrefs{" "}
               </h4>
               <p className="text-white-1100 font-normal text-xs leading-[140%]">
@@ -1946,15 +2019,15 @@ const page = () => {
                 <img src="/images/up-arw.svg" alt="" />
               </Link>
             </div>
-            <div className="card-hero-image-bottom border border-solid border-orange-1100 rounded-2xl">
+            <div className="card-hero-image-bottom xl:col-span-2 border border-solid border-orange-1100 rounded-2xl">
               <img
                 src="/images/sistrix-img.jpg"
                 alt=""
                 className="w-full h-full object-cover rounded-2xl"
               />
             </div>
-            <div className="card-sistrix-text bg-black-1200 rounded-2xl shadow-4x p-6">
-              <h4 className="text-white-1100 font-semibold text-2xl mb-2 leading-[140%]">
+            <div className="card-sistrix-text bg-black-1200 rounded-2xl shadow-4xl p-6">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl md:text-xl text-base leading-[19px] md:leading-7 mb-2 xl:leading-[140%]">
                 SISTRIX{" "}
               </h4>
               <p className="text-white-1100 font-normal text-xs leading-[140%]">
@@ -1969,19 +2042,211 @@ const page = () => {
               </Link>
             </div>
             <div className="card-sistrix-logo bg-white-1100 rounded-2xl shadow-5xl px-5 flex items-center justify-center">
-              <img src="/images/sistrx-img.png" alt="" />
+              <img
+                src="/images/sistrx-img.png"
+                className="h-[66px] md:h-auto object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="xl:hidden md:grid hidden grid-cols-3 xl:grid-cols-4 gap-4 xl:gap-8 xl:mt-22 mt-16">
+            <div className="col-span-3 grid grid-cols-2 gap-4">
+              <div className="card-google-analytics bg-black-1200 rounded-2xl shadow-4xl p-4 md:p-6">
+                <h4 className="text-white-1100 font-semibold xl:text-2xl md:text-xl text-base leading-[19px] md:leading-7 mb-2 xl:leading-[140%]">
+                  Google <br /> Analytics{" "}
+                </h4>
+                <p className="text-white-1100 font-normal text-xs leading-[140%]">
+                  Es werden tiefgehende Einblicke in das Verhalten deiner Nutzer
+                  gewonnen.{" "}
+                </p>
+                <Link
+                  href={"/"}
+                  className="flex items-center mt-2.25 justify-center ml-auto border border-solid border-white-1100 w-10 h-10 rounded-full"
+                >
+                  <img src="/images/up-arw.svg" alt="" />
+                </Link>
+              </div>
+              <div className="card-ga-logo bg-white-1100 rounded-2xl shadow-5xl p-8 flex items-center justify-center">
+                <img src="/images/signal2.png" alt="" />
+              </div>
+            </div>
+            <div className="card-hero-image-top xl:col-span-2 border border-solid border-orange-1100 rounded-2xl">
+              <img
+                src="/images/Analytics-img.jpg"
+                alt=""
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div className="card-semrush-logo bg-white-1100 rounded-2xl shadow-5xl p-8 flex items-center justify-center">
+              <img src="/images/semrush-img.png" alt="" />
+            </div>
+            <div className="card-semrush-text bg-black-1200 rounded-2xl shadow-4xl p-4 md:p-6">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl md:text-xl text-base leading-[19px] md:leading-7 mb-2 xl:leading-[140%]">
+                SEMrush{" "}
+              </h4>
+              <p className="text-white-1100 font-normal text-xs leading-[140%]">
+                Wertvolle Keywords werden identifiziert und die Konkurrenz
+                analysiert – alles mit SEMrush.
+              </p>
+              <Link
+                href={"/"}
+                className="flex items-center mt-2.25 justify-center ml-auto border border-solid border-white-1100 w-10 h-10 rounded-full"
+              >
+                <img src="/images/up-arw.svg" alt="" />
+              </Link>
+            </div>
+            <div className="col-span-3 grid grid-cols-2 gap-4">
+              <div className="card-ahrefs-logo bg-white-1100 rounded-2xl shadow-5xl p-8 flex items-center justify-center">
+                <img src="/images/ahrefs.png" alt="" />
+              </div>
+              <div className="card-ahrefs-text  bg-black-1200 rounded-2xl shadow-4xl p-4 md:p-6">
+                <h4 className="text-white-1100 font-semibold xl:text-2xl md:text-xl text-base leading-[19px] md:leading-7 mb-2 xl:leading-[140%]">
+                  Ahrefs{" "}
+                </h4>
+                <p className="text-white-1100 font-normal text-xs leading-[140%]">
+                  Das Linkprofil wird optimiert und Backlinks analysiert, die
+                  für dein Wachstum entscheidend sind.
+                </p>
+                <Link
+                  href={"/"}
+                  className="flex items-center mt-2.25 justify-center ml-auto border border-solid border-white-1100 w-10 h-10 rounded-full"
+                >
+                  <img src="/images/up-arw.svg" alt="" />
+                </Link>
+              </div>
+            </div>
+            <div className="card-hero-image-bottom xl:col-span-2 border border-solid border-orange-1100 rounded-2xl">
+              <img
+                src="/images/sistrix-img.jpg"
+                alt=""
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div className="card-sistrix-text bg-black-1200 rounded-2xl shadow-4xl p-6">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl md:text-xl text-base leading-[19px] md:leading-7 mb-2 xl:leading-[140%]">
+                SISTRIX{" "}
+              </h4>
+              <p className="text-white-1100 font-normal text-xs leading-[140%]">
+                Die Sichtbarkeit deiner Website wird überwacht, um Potenziale
+                zur Optimierung zu erkennen.
+              </p>
+              <Link
+                href={"/"}
+                className="flex items-center mt-2.25 justify-center ml-auto border border-solid border-white-1100 w-10 h-10 rounded-full"
+              >
+                <img src="/images/up-arw.svg" alt="" />
+              </Link>
+            </div>
+            <div className="card-sistrix-logo bg-white-1100 rounded-2xl shadow-5xl px-5 flex items-center justify-center">
+              <img
+                src="/images/sistrx-img.png"
+                className="h-[66px] md:h-auto object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="md:hidden grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-8 xl:mt-22 mt-16">
+            <div className="card-google-analytics bg-black-1200 rounded-2xl shadow-4xl p-4 md:p-6">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl md:text-xl text-base leading-[19px] md:leading-7 mb-2 xl:leading-[140%]">
+                Google <br /> Analytics{" "}
+              </h4>
+              <p className="text-white-1100 font-normal text-xs leading-[140%]">
+                Es werden tiefgehende Einblicke in das Verhalten deiner Nutzer
+                gewonnen.{" "}
+              </p>
+              <Link
+                href={"/"}
+                className="flex items-center mt-2.25 justify-center ml-auto border border-solid border-white-1100 w-10 h-10 rounded-full"
+              >
+                <img src="/images/up-arw.svg" alt="" />
+              </Link>
+            </div>
+            <div className="card-ga-logo bg-white-1100 rounded-2xl shadow-5xl p-8 flex items-center justify-center">
+              <img src="/images/signal2.png" alt="" />
+            </div>
+            <div className="card-hero-image-top xl:col-span-2 border border-solid border-orange-1100 rounded-2xl">
+              <img
+                src="/images/Analytics-img.jpg"
+                alt=""
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div className="card-semrush-logo bg-white-1100 rounded-2xl shadow-5xl p-8 flex items-center justify-center">
+              <img src="/images/semrush-img.png" alt="" />
+            </div>
+            <div className="card-semrush-text bg-black-1200 rounded-2xl shadow-4xl p-4 md:p-6">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl md:text-xl text-base leading-[19px] md:leading-7 mb-2 xl:leading-[140%]">
+                SEMrush{" "}
+              </h4>
+              <p className="text-white-1100 font-normal text-xs leading-[140%]">
+                Wertvolle Keywords werden identifiziert und die Konkurrenz
+                analysiert – alles mit SEMrush.
+              </p>
+              <Link
+                href={"/"}
+                className="flex items-center mt-2.25 justify-center ml-auto border border-solid border-white-1100 w-10 h-10 rounded-full"
+              >
+                <img src="/images/up-arw.svg" alt="" />
+              </Link>
+            </div>
+            <div className="card-ahrefs-logo bg-white-1100 rounded-2xl shadow-5xl p-8 flex items-center justify-center">
+              <img src="/images/ahrefs.png" alt="" />
+            </div>
+            <div className="card-ahrefs-text  bg-black-1200 rounded-2xl shadow-4xl p-4 md:p-6">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl md:text-xl text-base leading-[19px] md:leading-7 mb-2 xl:leading-[140%]">
+                Ahrefs{" "}
+              </h4>
+              <p className="text-white-1100 font-normal text-xs leading-[140%]">
+                Das Linkprofil wird optimiert und Backlinks analysiert, die für
+                dein Wachstum entscheidend sind.
+              </p>
+              <Link
+                href={"/"}
+                className="flex items-center mt-2.25 justify-center ml-auto border border-solid border-white-1100 w-10 h-10 rounded-full"
+              >
+                <img src="/images/up-arw.svg" alt="" />
+              </Link>
+            </div>
+            <div className="card-hero-image-bottom  border border-solid border-orange-1100 rounded-2xl">
+              <img
+                src="/images/sistrix-img.jpg"
+                alt=""
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+            <div className="card-sistrix-text bg-black-1200 rounded-2xl shadow-4xl p-6">
+              <h4 className="text-white-1100 font-semibold xl:text-2xl md:text-xl text-base leading-[19px] md:leading-7 mb-2 xl:leading-[140%]">
+                SISTRIX{" "}
+              </h4>
+              <p className="text-white-1100 font-normal text-xs leading-[140%]">
+                Die Sichtbarkeit deiner Website wird überwacht, um Potenziale
+                zur Optimierung zu erkennen.
+              </p>
+              <Link
+                href={"/"}
+                className="flex items-center mt-2.25 justify-center ml-auto border border-solid border-white-1100 w-10 h-10 rounded-full"
+              >
+                <img src="/images/up-arw.svg" alt="" />
+              </Link>
+            </div>
+            <div className="card-sistrix-logo bg-white-1100 rounded-2xl shadow-5xl px-5 flex items-center justify-center">
+              <img
+                src="/images/sistrx-img.png"
+                className="h-[66px] md:h-auto object-cover"
+                alt=""
+              />
             </div>
           </div>
         </div>
       </section>
-      <section className="overflow-hidden py-50">
+      <section className="overflow-hidden xl:py-50 md:py-41 py-22">
         <div className="max-w-308 md:px-10 px-4 xl:px-4 mx-auto w-full ">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 relative">
-            <h2 className="md:text-[32px] max-w-225 w-full mx-auto text-white-1100 font-medium leading-[124%]">
+            <h2 className="md:text-[32px] max-w-225 w-full mx-auto text-xl leading-6 md:tarcking-normal -tracking-[0.4px] text-white-1100 font-bold xl:font-medium md:leading-[124%]">
               SEO für verschiedene Branchen – Wie unsere SEO Agentur dir hilft,
               in deinem Markt zu dominieren
             </h2>
-            <p className="text-base text-white-1100 font-normal leading-[140%] mt-6">
+            <p className="xl:text-base text-white-1100 font-normal text-xs leading-4 xl:leading-[140%] mt-6">
               SEO ist heute ein entscheidender Erfolgsfaktor für fast jede
               Branche. Unsere SEO Agentur hat Erfahrung in verschiedenen
               Branchen. Mit maßgeschneiderten Strategien machen wir deine
@@ -1989,7 +2254,7 @@ const page = () => {
               Markenbekanntheit.
             </p>
           </div>
-          <div className="pt-8">
+          <div className="pt-8 xl:block hidden">
             <h2 className="text-2xl text-white-1100 font-semibold leading-[140%]">
               Unsere SEO Agentur hat Erfahrung in verschiedenen Branchen
             </h2>
@@ -1999,7 +2264,7 @@ const page = () => {
               Mehrwert schaffen.
             </p>
           </div>
-          <div className="mt-22 grid grid-cols-2 gap-8">
+          <div className="xl:mt-22 md:mt-16 mt-8 grid xl:grid-cols-2 md:gap-4 gap-8 xl:gap-8">
             <div className="">
               <div className='bg-[url("/images/galaxy-img4.jpg")] bg-cover bg-center px-8 pb-6 pt-5 rounded-2xl shadow-4xl'>
                 <div className="flex items-center justify-center">
@@ -2009,10 +2274,10 @@ const page = () => {
                   <span className="flex items-center justify-center w-10 h-10 mb-3">
                     <img src="/images/bus-icon.svg" alt="" />
                   </span>
-                  <h3 className="text-white-1100 font-medium text-[32px] leading-[124%]">
+                  <h3 className="text-white-1100 font-medium xl:text-[32px] md:text-2xl md:leading-[29px] text-lg leading-[22px] md:tracking-normal -tracking-[0.18px] xl:leading-[124%]">
                     SEO für die Automobilindustrie
                   </h3>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3">
+                  <p className="text-white-1100 font-normal md:text-sm text-xs leading-4 md:leading-[124%] mt-3">
                     Autohersteller, Werkstätten und Händler profitieren von SEO,
                     um ihre Produkte und Dienstleistungen online zu vermarkten.
                     Durch gezielte Keyword-Recherche und Optimierung von
@@ -2028,7 +2293,7 @@ const page = () => {
                   </Link>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-8 mt-8">
+              <div className="grid md:grid-cols-2 md:gap-4 gap-8 xl:gap-8 xl:mt-8 md:mt-6 mt-8">
                 <div className="bg-white-1100 rounded-2xl shadow-4xl p-4">
                   <span className="flex items-center justify-center w-6 h-6 mb-3">
                     <svg
@@ -2105,7 +2370,7 @@ const page = () => {
               </div>
             </div>
             <div className="">
-              <div className="grid grid-cols-2 gap-8 mb-8">
+              <div className="grid md:grid-cols-2 md:gap-4 gap-8 xl:gap-8 mb-8">
                 <div className="bg-white-1100 rounded-2xl shadow-4xl p-4">
                   <span className="flex items-center justify-center w-6 h-6 mb-2">
                     <svg
@@ -2187,10 +2452,10 @@ const page = () => {
                   <span className="flex items-center justify-center w-10 h-10 mb-3">
                     <img src="/images/home-hand.svg" alt="" />
                   </span>
-                  <h3 className="text-white-1100 font-medium text-[32px] leading-[124%]">
+                  <h3 className="text-white-1100 font-medium xl:text-[32px] md:text-2xl md:leading-[29px] text-lg leading-[22px] md:tracking-normal -tracking-[0.18px] xl:leading-[124%]">
                     SEO für den Immobiliensektor
                   </h3>
-                  <p className="text-white-1100 font-normal text-sm leading-[124%] mt-3">
+                  <p className="text-white-1100 font-normal md:text-sm text-xs leading-4 md:leading-[124%] mt-3">
                     Die Immobilienbranche profitiert stark von lokalen
                     Suchanfragen und zielgerichteten SEO-Maßnahmen. Unsere
                     Agentur unterstützt Makler und Immobilienbüros dabei, mit
@@ -2209,15 +2474,15 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="pb-50">
+      <section className="xl:pb-50 md:pb-41 pb-22">
         <div className="max-w-308 md:px-10 px-4 xl:px-4 mx-auto w-full ">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 relative">
-            <h2 className="md:text-[32px] max-w-225 w-full mx-auto text-white-1100 font-medium leading-[124%]">
+            <h2 className="xl:text-[32px] xl:max-w-225 w-full mx-auto text-white-1100 font-medium text-lg leading-[22px] md:tracking-normal -tracking-[0.18px] md:text-2xl md:leading-[29px] xl:leading-[124%]">
               SEO vs. Google Ads – Deine SEO Agentur zeigt dir die langfristigen
               Vorteile von SEO
             </h2>
           </div>
-          <div className="mt-22">
+          <div className="xl:mt-22 md:mt-16 mt-8">
             <ComparisonAccordion sections={data} />
             <p className="text-white-1100 text-xs italic font-light leading-[124%] mt-6">
               SEO bietet dir langfristigen Erfolg, aber auch{" "}
@@ -2236,11 +2501,11 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="relative shadow-4xl">
-        <div className="relative z-3 bg-[url(/images/securebg.png)] bg-no-repeat bg-cover py-25.5">
+      <section className="relative shadow-4xl overflow-hidden">
+        <div className="relative z-3 bg-[url(/images/securebg.png)] bg-no-repeat bg-cover py-[17px] md:py-25.5">
           <div className="max-w-308 mx-auto px-4 w-full">
             <div className="xl:max-w-192.25 max-w-134 w-full relative z-2">
-              <h2 className="xl:text-5xl md:text-[40px] xl:leading-14.75 text-xl leading-6 md:leading-12.25 font-semibold text-white-1100 uppercase pb-5 md:pb-8 xl:pb-10">
+              <h2 className="xl:text-5xl md:text-[29px] sm:max-w-full max-w-[238px] xl:leading-14.75 text-xl leading-6 md:leading-10 font-semibold text-white-1100 uppercase pb-5 md:pb-8 xl:pb-10">
                 Wir unterstützen Dich bei der SEO Optimierung deiner Website!
               </h2>
               <CtaButton href="/" label="Jetzt Kennenlerngespräch buchen" />
@@ -2252,16 +2517,16 @@ const page = () => {
           <img
             src="images/secure-img.png"
             alt=""
-            className="absolute bottom-0 xl:h-121 h-71.25 md:h-118.75 right-20 z-1"
+            className="absolute bottom-0 xl:h-121 h-71.25 md:h-118.75 -right-24 xl:right-20 z-1"
           />
         </div>
       </section>
-      <section className="mt-50 md:min-h-260 pb-110.75 relative">
+      <section className="xl:mt-50 md:mt-41 mt-22 md:min-h-260 pb-[257px] md:pb-[381px] xl:pb-110.75 relative">
         <div className="max-w-311.5 md:px-10 px-4 xl:px-4 mx-auto relative z-1">
           <div className="flex items-start xl:gap-33.5 gap-8 md:gap-16 xl:flex-row flex-col">
             <div className="xl:max-w-72.5 w-full">
               <div className="xl:text-left text-center xl:border-b-0 border-b xl:pb-0 pb-8 md:pb-10 border-solid border-white-1100/40">
-                <h2 className="md:text-5xl text-2xl xl:pb-0 pb-8 md:pb-6 leading-11 text-white font-semibold  xl:leading-14.75">
+                <h2 className="xl:text-5xl md:text-[32px] text-xl leading-6 xl:pb-0 pb-8 md:pb-6 md:leading-11 text-white font-semibold  xl:leading-14.75">
                   FAQs
                 </h2>
                 <span className="bg-white-1100/40 h-px my-8 xl:block hidden"></span>
@@ -2281,7 +2546,7 @@ const page = () => {
         <img
           src="images/faq-bg2.png"
           alt=""
-          className="absolute bottom-0 left-0 w-full object-cover object-center"
+          className="absolute bottom-0 md:h-auto h-[410px] left-0 w-full object-cover object-left md:object-center"
         />
       </section>
     </>

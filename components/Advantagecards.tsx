@@ -61,7 +61,6 @@ export default function AdvantageCards({
               active === i ? "bg-white/10" : "bg-transparent hover:bg-white/5"
             }`}
           >
-            {/* Title + Arrow */}
             <div className="flex items-center justify-between">
               <p
                 className={`xl:text-2xl text-sm xl:font-semibold md:tracking-normal -tracking-[0.14px] md:font-bold font-semibold leading-4.25 md:leading-4.75 xl:leading-8.25 transition-colors duration-300 ${
