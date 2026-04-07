@@ -27,17 +27,21 @@ const Footer = () => {
                   <span>
                     <img src="images/pin.svg" alt="" />
                   </span>
-                  <p className="text-base font-normal leading-5 -tracking-[0.16px] text-white-1100">
-                    Ballindamm 15, 20095 Hamburg
-                  </p>
+                  <Link href="/">
+                    <p className="text-base font-normal leading-5 -tracking-[0.16px] text-white-1100">
+                      Ballindamm 15, 20095 Hamburg
+                    </p>
+                  </Link>
                 </li>
                 <li className="flex items-center gap-4">
                   <span>
                     <img src="images/clock.svg" alt="" />
                   </span>
-                  <p className="text-base font-normal leading-5 -tracking-[0.16px] text-white-1100">
-                    Mo-Fr 09:00–20:00 | Sa 09:00–16:00
-                  </p>
+                  <Link href="/">
+                    <p className="text-base font-normal leading-5 -tracking-[0.16px] text-white-1100">
+                      Mo-Fr 09:00–20:00 | Sa 09:00–16:00
+                    </p>
+                  </Link>
                 </li>
                 <li className="flex items-center gap-4">
                   <span>
@@ -69,17 +73,21 @@ const Footer = () => {
                   <span>
                     <img src="images/pin.svg" alt="" />
                   </span>
-                  <p className="text-base font-normal leading-5 -tracking-[0.16px] text-white-1100">
-                    Ballindamm 15, 20095 Hamburg
-                  </p>
+                  <Link href="/">
+                    <p className="text-base hover:text-orange-1100 font-normal leading-5 -tracking-[0.16px] text-white-1100">
+                      Ballindamm 15, 20095 Hamburg
+                    </p>
+                  </Link>
                 </li>
                 <li className="flex items-center gap-4">
                   <span>
                     <img src="images/clock.svg" alt="" />
                   </span>
-                  <p className="text-base font-normal leading-5 -tracking-[0.16px] text-white-1100">
-                    Mo-Fr 09:00–20:00 | Sa 09:00–16:00
-                  </p>
+                  <Link href="/">
+                    <p className="text-base hover:text-orange-1100 font-normal leading-5 -tracking-[0.16px] text-white-1100">
+                      Mo-Fr 09:00–20:00 | Sa 09:00–16:00
+                    </p>
+                  </Link>
                 </li>
                 <li className="flex items-center gap-4">
                   <span>
@@ -87,7 +95,7 @@ const Footer = () => {
                   </span>
                   <Link
                     href="mailto:Info@benchmark-media.de"
-                    className="text-base font-normal leading-5 -tracking-[0.16px] text-white-1100"
+                    className="text-base font-normal hover:text-orange-1100 leading-5 -tracking-[0.16px] text-white-1100"
                   >
                     Info@benchmark-media.de
                   </Link>
@@ -98,7 +106,7 @@ const Footer = () => {
                   </span>
                   <Link
                     href="https://benchmark-media.de/"
-                    className="text-base font-normal leading-5 -tracking-[0.16px] text-white-1100"
+                    className="text-base font-normal leading-5 hover:text-orange-1100 -tracking-[0.16px] text-white-1100"
                   >
                     Website
                   </Link>
@@ -109,7 +117,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/"
-                      className="text-base font-normal leading-5.5 text-white-1100"
+                      className="text-base font-normal leading-5.5 text-white-1100 hover:text-orange-1100"
                     >
                       Datenschutz
                     </Link>
@@ -120,18 +128,18 @@ const Footer = () => {
                   <li>
                     <Link
                       href="/"
-                      className="text-base font-normal leading-5.5 text-white-1100"
+                      className="text-base font-normal leading-5.5 text-white-1100 hover:text-orange-1100"
                     >
                       AGB
                     </Link>
                   </li>
-                  <li className="text-base font-normal leading-5.5 text-white-1100">
+                  <li className="text-base font-normal leading-5.5 text-white-1100 ">
                     |
                   </li>
                   <li>
                     <Link
                       href="/"
-                      className="text-base font-normal leading-5.5 text-white-1100"
+                      className="text-base font-normal leading-5.5 text-white-1100 hover:text-orange-1100"
                     >
                       Impressum
                     </Link>

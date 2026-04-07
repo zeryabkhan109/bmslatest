@@ -9,13 +9,13 @@ import Link from "next/link";
 
 const imgArrow = "images/arw-circle.svg";
 
-const imgSide1 = "images/slide-img1.jpg";
-const imgSide2 = "images/slide-img2.jpg";
-const imgSide3 = "images/slide-img3.jpg";
-const imgSide4 = "images/slide-img4.jpg";
-const imgSide5 = "images/slide-img5.jpg";
-const imgSide6 = "images/slide-img6.jpg";
-const imgSide7 = "images/slide-img7.jpg";
+const imgSide1 = "images/slide-img1.webp";
+const imgSide2 = "images/slide-img2.webp";
+const imgSide3 = "images/slide-img3.webp";
+const imgSide4 = "images/slide-img4.webp";
+const imgSide5 = "images/slide-img5.webp";
+const imgSide6 = "images/slide-img6.webp";
+const imgSide7 = "images/slide-img7.webp";
 
 interface ServiceCard {
   title: string;

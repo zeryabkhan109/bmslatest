@@ -7,11 +7,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const SLIDE_IMAGES = [
-  "images/case-study-img1.png",
-  "images/case-study-img2.png",
-  "images/case-study-img3.png",
-  "images/case-study-img4.png",
-  "images/case-study-img5.png",
+  "images/case-study-img1.webp",
+  "images/case-study-img2.webp",
+  "images/case-study-img3.webp",
+  "images/case-study-img4.webp",
+  "images/case-study-img5.webp",
 ];
 
 interface CaseStudy {

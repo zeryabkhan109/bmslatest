@@ -15,7 +15,7 @@ const BENEFITS: Benefit[] = [
     title: "Deine SEO Agentur analysiert deine Website und Zielgruppe",
     description:
       "Der erste Schritt im SEO-Prozess ist eine detaillierte Analyse Ihrer Website sowie eine umfassende Zielgruppenanalyse. Eine SEO Agentur untersucht technische Aspekte, bestehende Inhalte und die aktuelle Sichtbarkeit in den Suchmaschinen. Gleichzeitig wird analysiert, wer Ihre potenziellen Kunden sind, welche Suchbegriffe sie verwenden und wie sie Ihre Website finden. Diese Informationen bilden die Grundlage für die Entwicklung einer maßgeschneiderten SEO Optimierung, die perfekt auf Ihre Unternehmensziele abgestimmt ist",
-    image: "images/Agentur-img1.jpg",
+    image: "images/deine-agentur-img1.webp",
     length: 0,
   },
   {
@@ -23,7 +23,7 @@ const BENEFITS: Benefit[] = [
       "Deine SEO Agentur entwickelt eine maßgeschneiderte SEO-Strategie für dich",
     description:
       "In der zweiten Phase entwickelt die SEO Agentur eine maßgeschneiderte SEO Optimierung, die auf den Ergebnissen der Analyse aufbaut. Diese Strategie beinhaltet die Auswahl der relevanten Keywords, technische Optimierungsmaßnahmen und Content-Strategien, die Ihre Website langfristig an die Spitze der Suchergebnisse bringen. Die Strategie wird individuell auf Ihre B",
-    image: "images/Agentur-img2.jpg",
+    image: "images/deine-agentur-img2.webp",
     length: 0,
   },
   {
@@ -31,7 +31,7 @@ const BENEFITS: Benefit[] = [
       "Deine SEO Agentur setzt OnPage- und OffPage-Optimierungen gezielt um",
     description:
       "Nach der strategischen Planung erfolgt die Implementierung der SEO-Maßnahmen. Hierzu gehören OnPage-Optimierungen wie die Verbesserung der Seitengeschwindigkeit, die Optimierung von Meta-Tags, die Integration von Keywords in den Content und die Optimierung der Seitenstruktur. Gleichzeitig werden OffPage-Optimierungen durchgeführt, wie der Aufbau von hochwertigen Backlinks und die Erhöhung der Sichtbarkeit in externen Quellen. Diese umfassenden Optimierungen sorgen dafür, dass Ihre Website sowohl technisch als auch inhaltlich optimal aufgestellt ist.",
-    image: "images/Agentur-img3.jpg",
+    image: "images/deine-agentur-img3.webp",
     length: 0,
   },
   {
@@ -39,7 +39,7 @@ const BENEFITS: Benefit[] = [
       "Deine SEO Agentur überwacht und analysiert deine SEO-Ergebnisse kontinuierlich",
     description:
       "SEO ist ein fortlaufender Prozess, der kontinuierliches Monitoring erfordert. In dieser Phase überwacht die SEO Agentur die Leistung Ihrer Website in den Suchmaschinen, analysiert den Traffic und wertet die Rankings für die relevanten Keywords aus. Anhand dieser Daten wird regelmäßig ein Reporting erstellt, das die Fortschritte und die erzielten Erfolge aufzeigt. So bleiben Sie stets über den Erfolg der SEO-Maßnahmen informiert und können bei Bedarf Anpassungen vornehmen.",
-    image: "images/Agentur-img4.jpg",
+    image: "images/deine-agentur-img4.webp",
     length: 0,
   },
   {
@@ -48,7 +48,7 @@ const BENEFITS: Benefit[] = [
       "Basierend auf den Erkenntnissen aus dem Monitoring und Reporting wird der SEO-Prozess in der letzten Phase weiter skaliert. Die SEO Agentur passt die Strategien und Maßnahmen an, um das Wachstum Ihrer Website kontinuierlich zu fördern. Durch die Skalierung der erfolgreichen Maßnahmen können Sie langfristig noch mehr organischen Traffic generieren, Ihre Sichtbarkeit weiter steigern und Ihre Position im Wettbewerb stärken.",
     description2:
       "Während SEO eine langfristige Strategie ist, kannst du mit Google Ads schneller Ergebnisse erzielen und sofort die Sichtbarkeit deiner Marke steigern. Klicke hier, um mehr darüber zu erfahren.",
-    image: "images/Agentur-img5.jpg",
+    image: "images/deine-agentur-img5.webp",
     length: 1,
   },
 ];

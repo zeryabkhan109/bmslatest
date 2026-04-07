@@ -91,7 +91,7 @@ const page = () => {
       title: "Conversion Optimierung",
       subtitle: "Conversion",
       desc: "Verbessere die Nutzererfahrung auf deiner Website und erhöhe die Anzahl der Besucher, die zu Kunden werden.",
-      img: "/images/Conversion-img.jpg",
+      img: "/images/Conversion-img.webp",
     },
   ];
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -213,8 +213,8 @@ const page = () => {
   return (
     <>
       <section
-        className="bg-[linear-gradient(180deg,#060606_0%,rgba(6,6,6,0)_18.5%,rgba(6,6,6,0)_84.79%,#060606_100%),url('/images/hero-mblbg.jpg')]
-  md:bg-[linear-gradient(180deg,#060606_0%,rgba(6,6,6,0)_18.5%,rgba(6,6,6,0)_84.79%,#060606_100%),url('/images/herobg.jpg')]
+        className="bg-[linear-gradient(180deg,#060606_0%,rgba(6,6,6,0)_18.5%,rgba(6,6,6,0)_84.79%,#060606_100%),url('/images/hero-mblbg.webp')]
+  md:bg-[linear-gradient(180deg,#060606_0%,rgba(6,6,6,0)_18.5%,rgba(6,6,6,0)_84.79%,#060606_100%),url('/images/herobg.webp')]
   bg-no-repeat bg-cover bg-center
   pt-93.25 md:pt-77 xl:pt-55.75 pb-29.75 xl:pb-5
 "
@@ -283,7 +283,7 @@ const page = () => {
                     className="size-full origin-bottom-left"
                   >
                     <img
-                      src="/images/audience-img.png"
+                      src="/images/audience-img.webp"
                       alt="Audience target"
                       className="xl:size-full md:h-73 h-71 object-cover"
                     />
@@ -385,7 +385,7 @@ const page = () => {
             </p>
           </div>
           <div className="text-center">
-            <div onClick={open}>
+            <div className="inline-block" onClick={open}>
               <CtaButton
                 href="/"
                 className="mb-3 pl-5"
@@ -479,22 +479,24 @@ const page = () => {
           <Clientswiper />
         </div>
       </section>
-      <section className="xl:py-45 md:py-30 py-20 relative">
+      <section className="xl:py-45 md:py-30 py-20 relative ">
         <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative z-1">
           <div className="text-center border-b border-solid border-white-1100/40 pb-8 relative">
-            <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
-            <h2 className="xl:text-5xl md:text-[32px] text-xl text-white-1100 font-bold md:leading-11 xl:leading-16.75 leading-6 pb-8">
-              Gewinne nachhaltig mehr Neukunden mit deiner Online Marketing
-              Agentur aus Hamburg
-            </h2>
-            <CtaButton
-              href="/"
-              label="Fragen oder mehr erfahren"
-              className="mb-4 md:h-12 h-10.25"
-            />
-            <p className="text-base leading-5.5 font-normal text-white-1100">
-              Nummer eintragen - wir rufen zurück
-            </p>
+            <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[150px] opacity-60"></span>
+            <div className="relative z-2">
+              <h2 className="xl:text-5xl md:text-[32px] text-xl text-white-1100 font-bold md:leading-11 xl:leading-16.75 leading-6 pb-8">
+                Gewinne nachhaltig mehr Neukunden mit deiner Online Marketing
+                Agentur aus Hamburg
+              </h2>
+              <CtaButton
+                href="/"
+                label="Fragen oder mehr erfahren"
+                className="mb-4 md:h-12 h-10.25"
+              />
+              <p className="text-base leading-5.5 font-normal text-white-1100">
+                Nummer eintragen - wir rufen zurück
+              </p>
+            </div>
           </div>
           <div className="flex xl:items-center md:flex-row flex-col gap-6 xl:gap-8 pt-8 md:pt-16">
             <div className="xl:w-1/2 md:w-2/3 w-full">
@@ -524,17 +526,17 @@ const page = () => {
             </div>
             <div className="xl:w-1/2 md:w-1/3 w-full">
               <img
-                src="images/online-marketing.jpg"
+                src="images/online-marketing.webp"
                 alt=""
                 className="rounded-xl shadow-4xl xl:h-auto xl:block hidden h-50 sm:h-full object-cover"
               />
               <img
-                src="images/online-marketing-tablet.jpg"
+                src="images/online-marketing-tablet.webp"
                 alt=""
                 className="rounded-xl shadow-4xl xl:h-auto xl:hidden sm:block hidden h-50 sm:h-full object-cover"
               />
               <img
-                src="images/online-marketing-mbl.jpg"
+                src="images/online-marketing-mbl.webp"
                 alt=""
                 className="rounded-xl shadow-4xl h-50 w-full sm:hidden block object-cover"
               />
@@ -543,7 +545,7 @@ const page = () => {
         </div>
       </section>
       <section className="xl:pb-45 md:pb-30 pb-20">
-        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative z-40">
+        <div className="md:max-w-308 sm:max-w-157.5  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full relative z-40">
           <div className="text-center border-b border-solid border-white-1100/40 pb-8 xl:pb-10 relative">
             <span className="md:w-191.5 w-full h-37.5 flex items-center justify-center rounded-[100%] bg-linear-to-r from-yellow13 from-0% to-white to-100% absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-1 blur-[150px] opacity-50"></span>
             <h2 className="text-white md:max-w-full max-w-72.5 mx-auto w-full font-bold md:text-[32px] text-xl leading-6 md:leading-11 xl:text-5xl xl:leading-[140%]">
@@ -757,8 +759,10 @@ const page = () => {
             <CaseStudiesSlider />
           </div>
         </div>
-        <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full text-center xl:pt-3 pt-8">
-          <CtaButton href="/" label="Website-Analyse anfordern" />
+        <div className="md:max-w-308 sm:max-w-157.5  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full text-center xl:pt-3 pt-8">
+          <div className="inline-block" onClick={open}>
+            <CtaButton href="/" label="Website-Analyse anfordern" />
+          </div>
           <p className="text-xs leading-4 text-white-1100 font-normal pt-3">
             Finde heraus, wie Online Marketing dir mehr Kunden bringt.
           </p>
@@ -782,12 +786,10 @@ const page = () => {
             <div className="md:p-px p-[0.01px] rounded-2xl group border border-transparent hover:border-white-1100 bg-linear-to-b from-yellow-1300 via-orange-1100 to-yellow-1300">
               <div className="rounded-2xl bg-black h-full overflow-hidden">
                 <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2 xs:px-2.5 py-4 md:p-8">
-                  <div className="absolute inset-0 bg-[url(/images/agentur-img1.png)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
+                  <div className="absolute inset-0 bg-[url(/images/agentur-img1.webp)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
 
-                  {/* Hover background */}
                   <div className="absolute inset-0 bg-[url(/images/statbg.png)] bg-no-repeat bg-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
 
-                  {/* Content */}
                   <div className="relative z-10">
                     <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
                       +312%
@@ -804,7 +806,7 @@ const page = () => {
             <div className="md:p-px p-[0.01px] rounded-2xl group border border-transparent hover:border-white-1100 bg-linear-to-b from-yellow-1300 via-orange-1100 to-yellow-1300">
               <div className="rounded-2xl bg-black h-full overflow-hidden">
                 <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2 xs:px-2.5 py-4 md:p-8">
-                  <div className="absolute inset-0 bg-[url(/images/agentur-img2.png)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
+                  <div className="absolute inset-0 bg-[url(/images/agentur-img2.webp)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
                   <div className="absolute inset-0 bg-[url(/images/statbg.png)] bg-no-repeat bg-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
                   <div className="relative z-10">
                     <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
@@ -820,7 +822,7 @@ const page = () => {
             <div className="md:p-px p-[0.01px] rounded-2xl group border border-transparent hover:border-white-1100 bg-linear-to-b from-yellow-1300 via-orange-1100 to-yellow-1300">
               <div className="rounded-2xl bg-black h-full overflow-hidden">
                 <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2 xs:px-2.5 py-4 md:p-8">
-                  <div className="absolute inset-0 bg-[url(/images/agentur-img3.png)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
+                  <div className="absolute inset-0 bg-[url(/images/agentur-img3.webp)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
                   <div className="absolute inset-0 bg-[url(/images/statbg.png)] bg-no-repeat bg-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
                   <div className="relative z-10">
                     <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
@@ -837,7 +839,7 @@ const page = () => {
             <div className="md:p-px p-[0.01px] rounded-2xl group border border-transparent hover:border-white-1100 bg-linear-to-b from-yellow-1300 via-orange-1100 to-yellow-1300">
               <div className="rounded-2xl bg-black h-full overflow-hidden">
                 <div className="relative h-full rounded-2xl 2xl:p-8 xl:p-6 px-2 xs:px-2.5 py-4 md:p-8">
-                  <div className="absolute inset-0 bg-[url(/images/agentur-img4.png)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
+                  <div className="absolute inset-0 bg-[url(/images/agentur-img4.webp)] bg-no-repeat bg-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0" />
                   <div className="absolute inset-0 bg-[url(/images/statbg.png)] bg-no-repeat bg-cover opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100" />
                   <div className="relative z-10">
                     <h3 className="text-gradient text-[28px] md:text-[40px] xl:text-5xl font-semibold uppercase leading-8.5 md:leading-12.25 xl:leading-14.75 pb-3 md:pb-4">
@@ -987,7 +989,7 @@ const page = () => {
                     }}
                   >
                     <img
-                      src="images/ai-human.png"
+                      src="images/ai-human.webp"
                       alt="ai human"
                       className="relative z-1"
                     />
@@ -1003,7 +1005,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="overflow-hidden py-20 md:py-30 xl:pb-45">
+      <section className="xl:overflow-hidden py-20 md:py-30 xl:pb-45">
         <div className="md:max-w-308 sm:max-w-[630px]  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full ">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 relative">
             <h2 className="xl:text-5xl text-xl xl:max-w-full md:max-w-132.5 w-full max-w-full mx-auto text-white-1100 font-bold md:text-[32px] md:leading-11 xl:leading-16.75 leading-6">
@@ -1682,7 +1684,7 @@ const page = () => {
             <ServicesSlider />
           </div>
           <div className="text-center 2xl:pt-0 pt-5 md:px-0 px-4">
-            <div onClick={open8}>
+            <div onClick={open}>
               <CtaButton href="/" label="Website-Analyse anfordern" />
             </div>
             <p className="text-xs text-white-1100 font-normal pt-3">

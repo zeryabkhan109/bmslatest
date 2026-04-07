@@ -476,7 +476,7 @@ const page = () => {
             </div>
           </div>
           <div className="xl:-mt-72.5 -mt-40 flex items-center justify-center w-full relative -bottom-17.5">
-            <img src="/images/Chart2.png" alt="Chart 2" className="w-full" />
+            <img src="/images/Chart2.webp" alt="Chart 2" className="w-full" />
           </div>
         </div>
       </section>
@@ -602,7 +602,7 @@ const page = () => {
             </div>
           </div>
           <div className="xl:-mt-72.5 -mt-30 flex items-center justify-center w-full relative -bottom-17.5">
-            <img src="/images/Chart3.png" alt="Chart 3" className="w-full" />
+            <img src="/images/Chart3.webp" alt="Chart 3" className="w-full" />
           </div>
         </div>
       </section>
@@ -806,7 +806,7 @@ const page = () => {
         <div className="flex xl:items-center md:flex-row flex-col-reverse items-center md:items-start 2xl:gap-17.75 gap-10 md:gap-13.75 xl:gap-7.5">
           <div className="md:w-4/12 w-full relative z-1">
             <img
-              src="/images/3d-rendring-img.png"
+              src="/images/3d-rendring-img.webp"
               className="md:max-w-full max-w-[250px]"
               alt="SEO Agentur CTA"
             />
@@ -1228,7 +1228,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="relative bg-[url('/images/call-action-bg.jpg')] bg-cover bg-center pt-10 md:pt-15.25 pb-[287px] xl:py-26">
+      <section className="relative bg-[url('/images/call-action-bg.webp')] bg-cover bg-center pt-10 md:pt-15.25 pb-[287px] xl:py-26">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="">
             <h3 className="text-white-1100 font-semibold md:text-[40px] md:leading-12.25 text-[28px] leading-8.5 xl:text-5xl mb-8 md:mb-12 xl:leading-[124%] uppercase max-w-177.25 w-full">
@@ -1242,9 +1242,9 @@ const page = () => {
           </div>
         </div>
         <div className="flex flex-col absolute top-auto xl:bottom-auto -bottom-[87px] md:-bottom-21.75 xl:-top-21.5 right-0">
-          <img src="/images/spaceMen.png" alt="" className="xl:block hidden" />
+          <img src="/images/spaceMen.webp" alt="" className="xl:block hidden" />
           <img
-            src="/images/mbl-spaceman.png"
+            src="/images/mbl-spaceman.webp"
             className="xl:hidden block h-100 object-cover object-center"
             alt=""
           />
@@ -1466,7 +1466,7 @@ const page = () => {
             </div>
             <div className="flex flex-col xl:max-w-120.25 w-full">
               <img
-                src="/images/technisches-img.jpg"
+                src="/images/technisches-img.webp"
                 alt=""
                 className="w-full object-cover xl:block hidden object-center rounded-2xl xl:h-auto h-62 "
               />
@@ -1694,7 +1694,7 @@ const page = () => {
                 className="w-full object-cover xl:block hidden object-center rounded-2xl xl:h-auto h-62 "
               />
               <img
-                src="/images/strategien-img6.jpg"
+                src="/images/strategien-img6.webp"
                 alt=""
                 className="w-full object-cover xl:hidden block object-center rounded-2xl xl:h-auto h-62"
               />
@@ -1784,7 +1784,7 @@ const page = () => {
                 className="w-full object-cover  xl:block hidden object-center rounded-2xl xl:h-auto h-62 "
               />
               <img
-                src="/images/strategien-img7.jpg"
+                src="/images/strategien-img7.webp"
                 alt=""
                 className="w-full object-cover xl:hidden block object-center rounded-2xl xl:h-auto h-62"
               />
@@ -1858,12 +1858,12 @@ const page = () => {
             </div>
             <div className="flex flex-col xl:max-w-120.25 w-full order-2 xl:order-1">
               <img
-                src="/images/Analyse-img.jpg"
+                src="/images/Analyse-img.webp"
                 alt=""
                 className="w-full object-cover xl:block hidden object-center rounded-2xl xl:h-auto h-62 "
               />
               <img
-                src="/images/strategien-img8.jpg"
+                src="/images/strategien-img8.webp"
                 alt=""
                 className="w-full object-cover xl:hidden block object-center rounded-2xl xl:h-auto h-62 "
               />
@@ -1877,13 +1877,13 @@ const page = () => {
             <div className="md:w-5/12 relative w-full">
               <div className="3xl:-ml-23.5 2xl:-ml-16 float-right md:float-left  md:-mt-28 md:-mb-46.25">
                 <img
-                  src="/images/3d-rendring.png"
+                  src="/images/3d-rendring.webp"
                   alt="SEO Agentur CTA"
                   className="xl:h-155.5 h-[331px] md:h-106.75 relative z-1"
                 />
               </div>
               <img
-                src="/images/big-circle.png"
+                src="/images/big-circle.webp"
                 className="absolute 2xl:-top-[108px] md:-top-[150px] md:bottom-auto bottom-0 left-5 md:-left-10 2xl:left-7 3xl:-left-1.5 h-[264px] xl:h-[436px]"
                 alt=""
               />
@@ -1980,7 +1980,7 @@ const page = () => {
             </div>
             <div className="card-hero-image-top xl:col-span-2 border border-solid border-orange-1100 rounded-2xl">
               <img
-                src="/images/Analytics-img.jpg"
+                src="/images/Analytics-img.webp"
                 alt=""
                 className="w-full h-full object-cover rounded-2xl"
               />
@@ -2074,7 +2074,7 @@ const page = () => {
             </div>
             <div className="card-hero-image-top xl:col-span-2 border border-solid border-orange-1100 rounded-2xl">
               <img
-                src="/images/Analytics-img.jpg"
+                src="/images/Analytics-img.webp"
                 alt=""
                 className="w-full h-full object-cover rounded-2xl"
               />
@@ -2168,7 +2168,7 @@ const page = () => {
             </div>
             <div className="card-hero-image-top xl:col-span-2 border border-solid border-orange-1100 rounded-2xl">
               <img
-                src="/images/Analytics-img.jpg"
+                src="/images/Analytics-img.webp"
                 alt=""
                 className="w-full h-full object-cover rounded-2xl"
               />

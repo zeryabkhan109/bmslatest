@@ -7,11 +7,11 @@ import "swiper/css";
 import "swiper/css/grid";
 import { ArticleCard } from "./ArticleCard";
 
-const seoagenturimg1 = "images/seoagentur-img1.jpg";
-const seoagenturimg2 = "images/seoagentur-img2.jpg";
-const seoagenturimg3 = "images/seoagentur-img3.jpg";
-const seoagenturimg4 = "images/seoagentur-img4.jpg";
-const seoagenturimg5 = "images/seoagentur-img1.jpg";
+const seoagenturimg1 = "images/seoagentur-img1.webp";
+const seoagenturimg2 = "images/seoagentur-img2.webp";
+const seoagenturimg3 = "images/seoagentur-img3.webp";
+const seoagenturimg4 = "images/seoagentur-img4.webp";
+const seoagenturimg5 = "images/seoagentur-img1.webp";
 
 interface Article {
   id: number;

@@ -4,7 +4,7 @@ import Link from "next/link";
 const servicesData = [
   {
     id: 1,
-    image: "/images/employee-working-img.jpg",
+    image: "/images/employee-working-img.webp",
     title: "OnPage",
     highlight: "-SEO",
     description:
@@ -13,7 +13,7 @@ const servicesData = [
   },
   {
     id: 2,
-    image: "/images/Servicesoffered2.jpg",
+    image: "/images/Servicesoffered2.webp",
     title: "OffPage",
     highlight: "-SEO",
     description:
@@ -22,7 +22,7 @@ const servicesData = [
   },
   {
     id: 3,
-    image: "/images/Servicesoffered3.jpg",
+    image: "/images/Servicesoffered3.webp",
     title: "",
     highlight: "Technisches SEO",
     description: "Die Struktur deiner Website wird umfassend optimiert...",
@@ -30,7 +30,7 @@ const servicesData = [
   },
   {
     id: 4,
-    image: "/images/Servicesoffered4.jpg",
+    image: "/images/Servicesoffered4.webp",
     title: "",
     highlight: "Local SEO",
     description:
@@ -39,7 +39,7 @@ const servicesData = [
   },
   {
     id: 5,
-    image: "/images/Servicesoffered5.jpg",
+    image: "/images/Servicesoffered5.webp",
     title: "",
     highlight: "E-Commerce SEO",
     description:
@@ -48,7 +48,7 @@ const servicesData = [
   },
   {
     id: 6,
-    image: "/images/Servicesoffered6.jpg",
+    image: "/images/Servicesoffered6.webp",
     title: "",
     highlight: "Mobile SEO",
     description:
@@ -57,7 +57,7 @@ const servicesData = [
   },
   {
     id: 7,
-    image: "/images/Servicesoffered7.jpg",
+    image: "/images/Servicesoffered7.webp",
     title: "",
     highlight: "Content-Marketing",
     description:
@@ -66,7 +66,7 @@ const servicesData = [
   },
   {
     id: 8,
-    image: "/images/Servicesoffered8.jpg",
+    image: "/images/Servicesoffered8.webp",
     title: "",
     highlight: "SEO-Analyse und Reporting",
     description:

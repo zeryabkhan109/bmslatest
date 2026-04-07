@@ -452,7 +452,7 @@ const page = () => {
             </div>
             <div className="flex flex-col lg:max-w-120.25 max-w-full w-full">
               <img
-                src="/images/DeineSEO-img1.jpg"
+                src="/images/DeineSEO-img1.webp"
                 alt=""
                 className="w-full lg:h-full h-75 object-cover object-center rounded-2xl"
               />
@@ -502,7 +502,7 @@ const page = () => {
             </div>
             <div className="flex flex-col lg:max-w-120.25 max-w-full w-full lg:order-1 order-2">
               <img
-                src="/images/DeineSEO-img2.jpg"
+                src="/images/DeineSEO-img2.webp"
                 alt=""
                 className="w-full lg:h-full h-75 object-cover object-center rounded-2xl"
               />
@@ -552,7 +552,7 @@ const page = () => {
             </div>
             <div className="flex flex-col lg:max-w-120.25 max-w-full w-full">
               <img
-                src="/images/DeineSEO-img3.jpg"
+                src="/images/DeineSEO-img3.webp"
                 alt=""
                 className="w-full lg:h-full h-75 object-cover object-center rounded-2xl"
               />
@@ -645,7 +645,7 @@ const page = () => {
             </div>
             <div className="flex flex-col lg:max-w-120.25 max-w-full w-full lg:order-1 order-2">
               <img
-                src="/images/DeineSEO-img4.jpg"
+                src="/images/DeineSEO-img4.webp"
                 alt=""
                 className="w-full lg:h-full h-75 object-cover object-center rounded-2xl"
               />
@@ -695,7 +695,7 @@ const page = () => {
             </div>
             <div className="flex flex-col lg:max-w-120.25 max-w-full w-full">
               <img
-                src="/images/DeineSEO-img5.jpg"
+                src="/images/DeineSEO-img5.webp"
                 alt=""
                 className="w-full lg:h-full h-75 object-cover object-center rounded-2xl"
               />
@@ -741,7 +741,7 @@ const page = () => {
             </div>
             <div className="flex flex-col lg:max-w-120.25 max-w-full w-full lg:order-1 order-2">
               <img
-                src="/images/DeineSEO-img6.jpg"
+                src="/images/DeineSEO-img6.webp"
                 alt=""
                 className="w-full lg:h-full h-75 object-cover object-center rounded-2xl"
               />
@@ -770,7 +770,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="md:bg-none bg-[url('/images/Agentur-bg.png')] bg-cover bg-center relative lg:py-50 md:py-41 py-22">
+      <section className="md:bg-none bg-[url('/images/Agentur-bg.webp')] bg-cover bg-center relative lg:py-50 md:py-41 py-22">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="text-center border-b border-solid border-white-1100/40 pb-10 relative">
             <h2 className="lg:text-5xl md:text-[32px] text-xl text-white-1100 font-bold leading-[124%] md:max-w-full max-w-97.5 md:mx-0 mx-auto">
@@ -1358,7 +1358,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="relative sm:bg-[url('/images/call-action-bg.jpg')] bg-[url('/images/call-action-bg-small.jpg')] bg-cover bg-center lg:pt-0 md:pt-12 pt-10 lg:pb-0 md:pb-65.25 pb-77.5">
+      <section className="relative sm:bg-[url('/images/call-action-bg.webp')] bg-[url('/images/call-action-bg-small.webp')] bg-cover bg-center lg:pt-0 md:pt-12 pt-10 lg:pb-0 md:pb-65.25 pb-77.5">
         <div className="max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full">
           <div className="lg:py-22 lg:block hidden">
             <h3 className="md:block hidden text-white-1100 font-semibold xl:text-5xl lg:text-4xl md:text-[40px] text-[28px] md:mb-12 mb-8 leading-[124%] uppercase xl:max-w-177.25 max-w-145 w-full">
@@ -1428,7 +1428,7 @@ const page = () => {
             }}
           >
             <img
-              src="images/aihuman.png"
+              src="images/aihuman.webp"
               alt="ai human"
               className="relative z-1"
             />
@@ -1450,7 +1450,7 @@ const page = () => {
             }}
           >
             <img
-              src="images/aihuman.png"
+              src="images/aihuman.webp"
               alt="ai human"
               className="relative z-1 lg:h-187.5 md:h-124.75 h-75"
             />

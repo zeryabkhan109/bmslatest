@@ -13,31 +13,31 @@ const BENEFITS: Benefit[] = [
     title: "Mehr Kundenanfragen",
     description:
       "Eine erhöhte Sichtbarkeit sorgt für mehr qualifizierte Leads und potenzielle Neukunden.",
-    image: "images/advantage-img1.jpg",
+    image: "images/advantage-img1.webp",
   },
   {
     title: "Umsatzwachstum",
     description:
       "Durch gezielte Online-Marketing-Maßnahmen steigern wir deinen Umsatz nachhaltig und messbar.",
-    image: "images/advantage-img2.jpg",
+    image: "images/advantage-img2.webp",
   },
   {
     title: "Wettbewerbsvorteil",
     description:
       "Hebe dich von der Konkurrenz ab und positioniere dich als erste Wahl in deiner Branche.",
-    image: "images/advantage-img3.jpg",
+    image: "images/advantage-img3.webp",
   },
   {
     title: "Attraktivität als Arbeitgeber",
     description:
       "Eine starke Online-Präsenz hilft dir, qualifizierte Fachkräfte auf dich aufmerksam zu machen.",
-    image: "images/advantage-img4.jpg",
+    image: "images/advantage-img4.webp",
   },
   {
     title: "Nachhaltiger Erfolg",
     description:
       "Langfristige Strategien sorgen für kontinuierliches Wachstum – weit über kurzfristige Kampagnen hinaus.",
-    image: "images/advantage-img5.jpg",
+    image: "images/advantage-img5.webp",
   },
 ];
 
