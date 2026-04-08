@@ -233,7 +233,7 @@ const page = () => {
             <BenefitsList />
           </div>
           <div>
-            <div onClick={open6}>
+            <div>
               <CtaButton
                 className="mb-5"
                 href="/"
@@ -385,7 +385,7 @@ const page = () => {
             </p>
           </div>
           <div className="text-center">
-            <div className="inline-block" onClick={open}>
+            <div>
               <CtaButton
                 href="/"
                 className="mb-3 pl-5"
@@ -488,11 +488,13 @@ const page = () => {
                 Gewinne nachhaltig mehr Neukunden mit deiner Online Marketing
                 Agentur aus Hamburg
               </h2>
-              <CtaButton
-                href="/"
-                label="Fragen oder mehr erfahren"
-                className="mb-4 md:h-12 h-10.25"
-              />
+              <div className="inline-block" onClick={open3}>
+                <CtaButton
+                  href="/"
+                  label="Fragen oder mehr erfahren"
+                  className="mb-4 md:h-12 h-10.25"
+                />
+              </div>
               <p className="text-base leading-5.5 font-normal text-white-1100">
                 Nummer eintragen - wir rufen zurück
               </p>
@@ -651,11 +653,13 @@ const page = () => {
             <h3 className="xl:text-2xl md:text-xl text-base leading-4.75 md:leading-7 font-semibold xl:leading-8.25 text-grey-1100">
               Dein Nutzen im Überblick:
             </h3>
-            <CtaButton
-              href="/"
-              label="Fragen oder mehr erfahren?"
-              variant="transparent"
-            />
+            <div className="inline-block" onClick={open3}>
+              <CtaButton
+                href="/"
+                label="Fragen oder mehr erfahren?"
+                variant="transparent"
+              />
+            </div>
           </div>
           <AdvantageCards />
         </div>
@@ -718,7 +722,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="md:w-[64%] w-full xl:mx-0 md:mx-auto mx-0">
+            <div className="md:w-[64%] h-full w-full xl:mx-0 md:mx-auto mx-0">
               <MeetingEmbed />
             </div>
           </div>
@@ -760,7 +764,7 @@ const page = () => {
           </div>
         </div>
         <div className="md:max-w-308 sm:max-w-157.5  max-w-308  md:px-10 px-4 xl:px-4 mx-auto w-full text-center xl:pt-3 pt-8">
-          <div className="inline-block" onClick={open}>
+          <div>
             <CtaButton href="/" label="Website-Analyse anfordern" />
           </div>
           <p className="text-xs leading-4 text-white-1100 font-normal pt-3">
@@ -939,7 +943,7 @@ const page = () => {
             </div>
           </div>
           <div className="text-center">
-            <div onClick={open5}>
+            <div>
               <CtaButton
                 href="/"
                 label="Jetzt Kennenlerngespräch buchen"
@@ -1037,7 +1041,9 @@ const page = () => {
                 Weg zu mehr Kunden – sichere dir deine Online Marketing Beratung
                 jetzt!
               </h2>
-              <CtaButton href="/" label="Jetzt Kennenlerngespräch buchen" />
+              <div className="inline-block" onClick={open5}>
+                <CtaButton href="/" label="Jetzt Kennenlerngespräch buchen" />
+              </div>
               <p className="text-xs leading-4 text-white-1100 pt-3">
                 Kostenlos & unverbindlich – nur für kurze Zeit verfügbar.
               </p>
@@ -2654,9 +2660,54 @@ const page = () => {
                     Termin, solange noch Verfügbarkeit besteht.“
                   </p>
                 </div>
-                <div className="">
-                  <div className="">
-                    <MeetingEmbed />
+                <div>
+                  <div className="flex md:max-w-135 max-w-full xl:max-w-249.25 xl:flex-row flex-col w-full mx-auto bg-white-1100 rounded-2xl">
+                    <div className="bg-white-1100 md:rounded-tl-2xl rounded-t-2xl md:rounded-bl-2xl  xl:py-7.25 py-6 px-6 xl:mx-0 md:mx-auto mx-0 md:w-[42%]  xl:w-[36%] w-full">
+                      <Link
+                        href="/"
+                        className="xl:mb-13.5 mb-9 md:mb-11.25 inline-flex"
+                      >
+                        <img
+                          src="images/benchmedia.svg"
+                          alt=""
+                          className="xl:h-auto h-3.25"
+                        />
+                      </Link>
+                      <h3 className="xl:text-xl font-extrabold md:text-[13px] md:leading-4 text-xl leading-6 xl:leading-6 text-orange-1100 uppercase">
+                        KENNENLERNGESPRÄCH
+                      </h3>
+                      <p className="xl:text-xs text-[8px] font-light leading-2.25 xl:leading-3.5 text-black-1200 -tracking-[0.12px] py-2 xl:py-3">
+                        30 Minuten - Google Meet
+                      </p>
+                      <h4 className="text-black-1200 text-[10px] xl:text-base font-bold leading-sm xl:leading-5.5 pb-3 md:pb-1">
+                        ONLINE MARKETING BERATUNG
+                      </h4>
+                      <p className="text-black-1200 xl:text-sm text-[9px] leading-3 font-semibold xl:leading-4.75">
+                        DU VERDIENST ES, ONLINE SICHTBAR ZU SEIN!
+                      </p>
+                      <div className="xl:pt-8 pt-4">
+                        <p className="xl:text-xs md:text-[8px] md:leading-2.25 text-sm leading-4.5 font-normal xl:leading-3.5 -tracking-[0.12px] pb-4">
+                          Im Kennenlerngespräch analysieren wir gemeinsam deine
+                          Online-Präsenz und besprechen, wie du deine
+                          Reichweite, Sichtbarkeit und den Erfolg steigern
+                          kannst.
+                        </p>
+                        <p className="xl:text-xs md:text-[8px] md:leading-2.25 text-sm leading-4.5 font-normal xl:leading-3.5 -tracking-[0.12px] pb-4">
+                          <span className="text-orange-1100">
+                            Wähle einfach deinen Wunschtermin im Kalender aus
+                          </span>{" "}
+                          und gib deine Kontaktdaten ein. Du erhältst im
+                          Anschluss eine E-Mail mit deinem persönlichen
+                          Meeting-Link.
+                        </p>
+                        <p className="xl:text-xs md:text-[8px] md:leading-2.25 text-sm leading-4.5 font-normal xl:leading-3.5 -tracking-[0.12px]">
+                          Wir freuen uns auf unser Treffen!
+                        </p>
+                      </div>
+                    </div>
+                    <div className="md:w-[64%] w-full xl:mx-0 md:mx-auto mx-0">
+                      <MeetingEmbed />
+                    </div>
                   </div>
                   <div className="w-full sm:mt-12 mt-10">
                     <div className="w-full text-right">

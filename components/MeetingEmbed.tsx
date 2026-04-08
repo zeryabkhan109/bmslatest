@@ -23,6 +23,11 @@ export default function MeetingEmbed() {
       <Script
         src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
         strategy="afterInteractive"
+        onLoad={() => {
+          if (window.HubSpotMeetings) {
+            window.HubSpotMeetings.load();
+          }
+        }}
       />
 
       <div
