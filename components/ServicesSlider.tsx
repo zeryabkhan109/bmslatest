@@ -208,10 +208,10 @@ function ServiceInfoCard({ card }: { card: ServiceCard }) {
   return (
     <div className="relative flex items-center justify-center bg-[url(/images/card-bg.png)] bg-no-repeat bg-cover py-6 px-4 md:p-6 xl:py-9.75 xl:px-8 rounded-2xl shadow-4xl">
       <div className="relative flex flex-col gap-2 w-full">
-        <p className="font-semibold text-sm leading-4.75 text-orange-1100 line-clamp-2">
+        <p className="font-semibold xl:text-base xl:leading-[140%] xl:font-bold text-sm leading-4.75 text-orange-1100 line-clamp-2">
           {card.title}
         </p>
-        <p className="font-light text-[10px] leading-sm text-white-1100 line-clamp-4">
+        <p className="font-light xl:text-sm xl:font-normal xl:leading-[124%] text-[10px] leading-sm text-white-1100 line-clamp-4">
           {card.description}
         </p>
       </div>
