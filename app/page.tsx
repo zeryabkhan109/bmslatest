@@ -2660,7 +2660,7 @@ const page = () => {
                     Termin, solange noch Verfügbarkeit besteht.“
                   </p>
                 </div>
-                <div>
+                <div className="lg:pt-0 pt-10">
                   <div className="flex md:max-w-135 max-w-full xl:max-w-249.25 xl:flex-row flex-col w-full mx-auto bg-white-1100 rounded-2xl">
                     <div className="bg-white-1100 md:rounded-tl-2xl rounded-t-2xl md:rounded-bl-2xl  xl:py-7.25 py-6 px-6 xl:mx-0 md:mx-auto mx-0 md:w-[42%]  xl:w-[36%] w-full">
                       <Link
